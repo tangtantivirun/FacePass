@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B3561F25CBA4003A0913 /* Login.storyboard */; };
 		2435B3611F25D86D003A0913 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3601F25D86D003A0913 /* LoginViewController.swift */; };
+		2435B3631F25DCD4003A0913 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 2435B3621F25DCD4003A0913 /* GoogleService-Info (1).plist */; };
 		24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB51F25C73100756D70 /* AppDelegate.swift */; };
 		24C47EB81F25C73100756D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB71F25C73100756D70 /* ViewController.swift */; };
 		24C47EBB1F25C73100756D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EB91F25C73100756D70 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		2435B3561F25CBA4003A0913 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2435B3601F25D86D003A0913 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2435B3621F25DCD4003A0913 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		24C47EB21F25C73100756D70 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C47EB51F25C73100756D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C47EB71F25C73100756D70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				24C47EBC1F25C73100756D70 /* Assets.xcassets */,
+				2435B3621F25DCD4003A0913 /* GoogleService-Info (1).plist */,
 				24C47EC11F25C73100756D70 /* Info.plist */,
 			);
 			name = Supporting;
@@ -222,6 +225,7 @@
 			files = (
 				2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */,
 				24C47EC01F25C73100756D70 /* LaunchScreen.storyboard in Resources */,
+				2435B3631F25DCD4003A0913 /* GoogleService-Info (1).plist in Resources */,
 				24C47EBD1F25C73100756D70 /* Assets.xcassets in Resources */,
 				24C47EBB1F25C73100756D70 /* Main.storyboard in Resources */,
 			);
