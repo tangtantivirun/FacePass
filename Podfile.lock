@@ -54,6 +54,7 @@ PODS:
   - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
+  - AWSCore
   - AWSRekognition
   - Firebase/Auth
   - Firebase/Core
@@ -78,6 +79,6 @@ SPEC CHECKSUMS:
   Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
   nanopb: 22bc080fa3955e2116b6ff3ee6c2cb3c15ab97cb
 
-PODFILE CHECKSUM: 93a17878e62cd7b2ec864fc5070da9813723de6a
+PODFILE CHECKSUM: fb0bb503fdf384855799562d0950a5c01ab6555b
 
 COCOAPODS: 1.2.1
