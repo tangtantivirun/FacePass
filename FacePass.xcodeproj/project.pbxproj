@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B3561F25CBA4003A0913 /* Login.storyboard */; };
 		2435B3611F25D86D003A0913 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3601F25D86D003A0913 /* LoginViewController.swift */; };
+		2435B3671F25E062003A0913 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3661F25E062003A0913 /* User.swift */; };
+		2435B3691F25E077003A0913 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3681F25E077003A0913 /* UserService.swift */; };
+		2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */; };
 		24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB51F25C73100756D70 /* AppDelegate.swift */; };
 		24C47EB81F25C73100756D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB71F25C73100756D70 /* ViewController.swift */; };
 		24C47EBB1F25C73100756D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EB91F25C73100756D70 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		2435B3561F25CBA4003A0913 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2435B3601F25D86D003A0913 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2435B3661F25E062003A0913 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2435B3681F25E077003A0913 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		24C47EB21F25C73100756D70 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C47EB51F25C73100756D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C47EB71F25C73100756D70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,7 @@
 			children = (
 				24C47EB71F25C73100756D70 /* ViewController.swift */,
 				2435B3601F25D86D003A0913 /* LoginViewController.swift */,
+				2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -68,6 +75,7 @@
 		2435B35A1F25CBE8003A0913 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2435B3681F25E077003A0913 /* UserService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -75,6 +83,7 @@
 		2435B35B1F25CBEF003A0913 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2435B3661F25E062003A0913 /* User.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -287,8 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2435B3611F25D86D003A0913 /* LoginViewController.swift in Sources */,
+				2435B3691F25E077003A0913 /* UserService.swift in Sources */,
 				24C47EB81F25C73100756D70 /* ViewController.swift in Sources */,
+				2435B3671F25E062003A0913 /* User.swift in Sources */,
 				24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */,
+				2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
