@@ -8,6 +8,7 @@
 
 import UIKit
 import AWSRekognition
+import AWSCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

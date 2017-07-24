@@ -14,6 +14,6 @@ target 'FacePass' do
   pod 'Firebase/Storage'
   pod 'Kingfisher'
   pod 'AWSRekognition'
-
+  pod 'AWSCore'
 
 end
