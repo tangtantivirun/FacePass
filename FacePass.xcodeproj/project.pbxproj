@@ -9,19 +9,18 @@
 /* Begin PBXBuildFile section */
 		2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B3561F25CBA4003A0913 /* Login.storyboard */; };
 		2435B3611F25D86D003A0913 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3601F25D86D003A0913 /* LoginViewController.swift */; };
-		2435B3631F25DCD4003A0913 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 2435B3621F25DCD4003A0913 /* GoogleService-Info (1).plist */; };
 		24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB51F25C73100756D70 /* AppDelegate.swift */; };
 		24C47EB81F25C73100756D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB71F25C73100756D70 /* ViewController.swift */; };
 		24C47EBB1F25C73100756D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EB91F25C73100756D70 /* Main.storyboard */; };
 		24C47EBD1F25C73100756D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EBC1F25C73100756D70 /* Assets.xcassets */; };
 		24C47EC01F25C73100756D70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EBE1F25C73100756D70 /* LaunchScreen.storyboard */; };
+		38B9D6D01F25DE5E007CAFD8 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = 38B9D6CF1F25DE5E007CAFD8 /* GoogleService-Info (1).plist */; };
 		C691405297C7C333D2526949 /* Pods_FacePass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A0E6DF1048B5C256EF0833B /* Pods_FacePass.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2435B3561F25CBA4003A0913 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2435B3601F25D86D003A0913 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2435B3621F25DCD4003A0913 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info (1).plist"; path = "../../GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		24C47EB21F25C73100756D70 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C47EB51F25C73100756D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C47EB71F25C73100756D70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +28,7 @@
 		24C47EBC1F25C73100756D70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C47EBF1F25C73100756D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24C47EC11F25C73100756D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38B9D6CF1F25DE5E007CAFD8 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 		4A0E6DF1048B5C256EF0833B /* Pods_FacePass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FacePass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B95B54CB5A5C4CBF2029D0 /* Pods-FacePass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePass.release.xcconfig"; path = "Pods/Target Support Files/Pods-FacePass/Pods-FacePass.release.xcconfig"; sourceTree = "<group>"; };
 		EAC0139462B21BA6C022F5A5 /* Pods-FacePass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacePass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FacePass/Pods-FacePass.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 		2435B3591F25CBE2003A0913 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				38B9D6CF1F25DE5E007CAFD8 /* GoogleService-Info (1).plist */,
 				24C47EBC1F25C73100756D70 /* Assets.xcassets */,
-				2435B3621F25DCD4003A0913 /* GoogleService-Info (1).plist */,
 				24C47EC11F25C73100756D70 /* Info.plist */,
 			);
 			name = Supporting;
@@ -225,7 +225,7 @@
 			files = (
 				2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */,
 				24C47EC01F25C73100756D70 /* LaunchScreen.storyboard in Resources */,
-				2435B3631F25DCD4003A0913 /* GoogleService-Info (1).plist in Resources */,
+				38B9D6D01F25DE5E007CAFD8 /* GoogleService-Info (1).plist in Resources */,
 				24C47EBD1F25C73100756D70 /* Assets.xcassets in Resources */,
 				24C47EBB1F25C73100756D70 /* Main.storyboard in Resources */,
 			);
