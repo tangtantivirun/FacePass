@@ -17,13 +17,16 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let rekognitionClient = AWSRekognition.default()
+  //  let rekognitionClient = AWSRekognition.default()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        print("true")
+//        
+//        let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "YourIdentityPoolId")
+//        let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialProvider)
+//        AWSServiceManager.default().defaultServiceConfiguration = configuration
+//        print("true")
         return true
     }
 

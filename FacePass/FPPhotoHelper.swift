@@ -37,14 +37,7 @@ class FPPhotoHelper: NSObject {
             
             alertController.addAction(capturePhotoAction)
         }
-        
-        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-            let uploadAction = UIAlertAction(title: "Upload from Library", style: .default, handler: { [unowned self] action in
-                self.presentImagePickerController(with: .photoLibrary, from: viewController)
-            })
-            
-            alertController.addAction(uploadAction)
-        }
+        //Deleted the choice to choose from photo library
         // 6
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         alertController.addAction(cancelAction)

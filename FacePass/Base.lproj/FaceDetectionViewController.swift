@@ -13,11 +13,13 @@ import AWSCore
 
 class FaceDetectionViewController
 {
-    var rekognitionClient:AWSRekognition!
+   // var rekognitionClient:AWSRekognition!
+    //var photoHelper = FPPhotohelper()
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        rekognitionClient = AWSRekognition.default()
+       // rekognitionClient = AWSRekognition.default()
+        //photoHelper.presentImagePickerController(from: self)
     }
 }
