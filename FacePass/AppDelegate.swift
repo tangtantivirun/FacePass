@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AWSRekognition
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
