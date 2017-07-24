@@ -17,5 +17,114 @@
             endingLineNumber = "9">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FacePass/LoginViewController.swift"
+            timestampString = "522598831.087402"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "LoginViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FacePass/LoginViewController.swift"
+            timestampString = "522602018.993042"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "LoginViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FacePass.LoginViewController.__deallocating_deinit"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
+                  timestampString = "522602674.458713"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FacePass.LoginViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FacePass.LoginViewController"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
+                  timestampString = "522602674.461365"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FacePass.LoginViewController.__allocating_init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; FacePass.LoginViewController"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
+                  timestampString = "522602674.4641"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FacePass.LoginViewController.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;FacePass.LoginViewController&gt;"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
+                  timestampString = "522602674.466892"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FacePass.LoginViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;FacePass.LoginViewController&gt;"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
+                  timestampString = "522602674.469551"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
