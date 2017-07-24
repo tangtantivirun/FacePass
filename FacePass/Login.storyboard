@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="GJZ-VK-whq">
             <objects>
-                <viewController id="DeX-Yn-Dnr" sceneMemberID="viewController">
+                <viewController id="DeX-Yn-Dnr" customClass="LoginViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pIa-QN-hrV"/>
                         <viewControllerLayoutGuide type="bottom" id="rmB-JA-6ML"/>
@@ -74,11 +74,14 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="2UJ-rG-LTr"/>
                                                         </constraints>
-                                                        <state key="normal" title="not a member yet? "/>
+                                                        <state key="normal" title="Not a member yet? "/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GY6-L9-tpX">
                                                         <rect key="frame" x="52" y="217" width="271" height="30"/>
-                                                        <state key="normal" title="Go "/>
+                                                        <state key="normal" title="Go! "/>
+                                                        <connections>
+                                                            <action selector="loginButtonTapped:" destination="DeX-Yn-Dnr" eventType="touchUpInside" id="Z9v-fn-xJU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -107,10 +110,32 @@
                             <constraint firstItem="ZLf-ir-TFP" firstAttribute="leading" secondItem="zRX-HS-Q1i" secondAttribute="leading" id="XBR-7r-vzx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="GY6-L9-tpX" id="KJL-rW-qHi"/>
+                        <segue destination="r7G-ZV-UB5" kind="show" id="gx8-Ix-VgK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfA-LK-PQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15.199999999999999" y="150.67466266866569"/>
+            <point key="canvasLocation" x="-10" y="151"/>
+        </scene>
+        <!--Create User View Controller-->
+        <scene sceneID="UbJ-OW-0PV">
+            <objects>
+                <viewController id="r7G-ZV-UB5" customClass="CreateUserViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AAI-2M-474"/>
+                        <viewControllerLayoutGuide type="bottom" id="JAs-fd-4n8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3fN-Y9-9BZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2x5-Ko-WPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="151"/>
         </scene>
     </scenes>
 </document>
