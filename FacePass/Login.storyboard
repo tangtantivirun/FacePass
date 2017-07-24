@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DeX-Yn-Dnr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Sej-ib-xUq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -35,7 +35,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="268" height="56.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FacePass " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uyu-nz-PW3">
-                                                                <rect key="frame" x="69" y="0.0" width="129.5" height="36"/>
+                                                                <rect key="frame" x="69.5" y="0.0" width="129.5" height="36"/>
                                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="30"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -63,6 +63,9 @@
                                         <state key="normal" title="Register or Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonTapped:" destination="DeX-Yn-Dnr" eventType="touchUpInside" id="vS0-VT-MwL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -79,13 +82,15 @@
                             <constraint firstItem="AQE-Vs-aw8" firstAttribute="top" secondItem="537-Hn-aRJ" secondAttribute="top" id="qIL-5I-mq6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aek-lm-vC4"/>
                     <connections>
+                        <outlet property="loginButton" destination="l7r-il-ViX" id="8gM-1X-0rT"/>
                         <segue destination="r7G-ZV-UB5" kind="show" id="gx8-Ix-VgK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfA-LK-PQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10.4" y="150.67466266866569"/>
+            <point key="canvasLocation" x="928.79999999999995" y="150.67466266866569"/>
         </scene>
         <!--Create User View Controller-->
         <scene sceneID="UbJ-OW-0PV">
@@ -100,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-nE-lee">
-                                <rect key="frame" x="16" y="40" width="343" height="158.5"/>
+                                <rect key="frame" x="16" y="84" width="343" height="158.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeu-nz-eU1">
                                         <rect key="frame" x="82" y="0.0" width="179" height="26.5"/>
@@ -129,6 +134,9 @@
                                                 <state key="normal" title="Next">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="nextButtonTapped:" destination="r7G-ZV-UB5" eventType="touchUpInside" id="TMs-09-PdY"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -152,10 +160,33 @@
                             <constraint firstItem="nFM-nE-lee" firstAttribute="leading" secondItem="3fN-Y9-9BZ" secondAttribute="leadingMargin" id="xoH-3l-8Ur"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accountTextField" destination="mRl-1c-OFm" id="8UK-lK-4dr"/>
+                        <outlet property="createAccountTextField" destination="mRl-1c-OFm" id="Vbt-d2-OIT"/>
+                        <outlet property="nextButton" destination="iqo-xj-FXa" id="qlj-ux-8Dd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2x5-Ko-WPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="708" y="150.67466266866569"/>
+            <point key="canvasLocation" x="1647.2" y="150.67466266866569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wCI-bo-mid">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sej-ib-xUq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2NJ-sk-6k2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DeX-Yn-Dnr" kind="relationship" relationship="rootViewController" id="Bjf-gw-c7K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2g-2B-nnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.4" y="150.67466266866569"/>
         </scene>
     </scenes>
 </document>

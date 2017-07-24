@@ -27,7 +27,7 @@
 		<key>AWSCore.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>7</integer>
 		</dict>
 		<key>AWSDynamoDB.xcscheme</key>
 		<dict>
@@ -204,6 +204,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3BCBD602769880A0C5D9D760B559C299</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4459E80A7C135DB7869FB36E0482A1DF</key>
 		<dict>
 			<key>primary</key>
@@ -295,6 +300,11 @@
 			<true/>
 		</dict>
 		<key>D78D152BDACDFE093F652F4D2FF74D2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD1DBCC1DF68514CF23AA06E1AB43A68</key>
 		<dict>
 			<key>primary</key>
 			<true/>

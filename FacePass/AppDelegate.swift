@@ -9,6 +9,9 @@
 import UIKit
 import AWSRekognition
 import AWSCore
+import FirebaseAuth
+import FirebaseAuthUI
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
