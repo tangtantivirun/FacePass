@@ -1,0 +1,63 @@
+{
+    "FaceRecords": [
+                    {
+                    "FaceDetail": {
+                    "BoundingBox": {
+                    "Width": 0.6154,
+                    "Top": 0.2442,
+                    "Left": 0.1765,
+                    "Height": 0.4692
+                    },
+                    "Landmarks": [
+                                  {
+                                  "Y": 0.41730427742004395,
+                                  "X": 0.36835095286369324,
+                                  "Type": "eyeLeft"
+                                  },
+                                  {
+                                  "Y": 0.4281611740589142,
+                                  "X": 0.5960656404495239,
+                                  "Type": "eyeRight"
+                                  },
+                                  {
+                                  "Y": 0.5349795818328857,
+                                  "X": 0.47817257046699524,
+                                  "Type": "nose"
+                                  },
+                                  {
+                                  "Y": 0.5721957683563232,
+                                  "X": 0.352621465921402,
+                                  "Type": "mouthLeft"
+                                  },
+                                  {
+                                  "Y": 0.5792245864868164,
+                                  "X": 0.5936088562011719,
+                                  "Type": "mouthRight"
+                                  }
+                                  ],
+                    "Pose": {
+                    "Yaw": 1.8526556491851807,
+                    "Roll": 3.623055934906006,
+                    "Pitch": -10.605680465698242
+                    },
+                    "Quality": {
+                    "Sharpness": 130.0,
+                    "Brightness": 49.129302978515625
+                    },
+                    "Confidence": 99.99968719482422
+                    },
+                    "Face": {
+                    "BoundingBox": {
+                    "Width": 0.6154,
+                    "Top": 0.2442,
+                    "Left": 0.1765,
+                    "Height": 0.4692
+                    },
+                    "FaceId": "84de1c86-5059-53f2-a432-34ebb704615d",
+                    "Confidence": 99.9997,
+                    "ImageId": "d38ebf91-1a11-58fc-ba42-f978b3f32f60"
+                    }
+                    }
+                    ],
+    "OrientationCorrection": "ROTATE_0"
+}

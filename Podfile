@@ -17,4 +17,5 @@ target 'FacePass' do
   pod 'AWSCore'
   pod 'AWSS3'
   pod 'AWSCognito'
+  pod 'SwiftyJSON'
 end
