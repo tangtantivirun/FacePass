@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import AVKit
 
 class AddNewMemberViewController : UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -41,8 +42,8 @@ class AddNewMemberViewController : UIViewController, UIImagePickerControllerDele
         if error == nil && (captureSession?.canAddInput(input))!{
             
             captureSession?.addInput(input)
+            
             photoOutput = AVCapturePhotoOutput()
-            photoOutput?.outputSettings = [AVVideoCodecKey : AVVideoCodecJPEG]
             
             if (captureSession?.canAddOutput(photoOutput))!{
                 captureSession?.addOutput(photoOutput)
