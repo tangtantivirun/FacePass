@@ -85,7 +85,7 @@
                     <navigationItem key="navigationItem" id="aek-lm-vC4"/>
                     <connections>
                         <outlet property="loginButton" destination="l7r-il-ViX" id="8gM-1X-0rT"/>
-                        <segue destination="r7G-ZV-UB5" kind="show" id="hQM-Xs-Hmk"/>
+                        <segue destination="r7G-ZV-UB5" kind="show" identifier="toCreateAccount" id="hQM-Xs-Hmk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfA-LK-PQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -95,7 +95,7 @@
         <!--Create User View Controller-->
         <scene sceneID="UbJ-OW-0PV">
             <objects>
-                <viewController id="r7G-ZV-UB5" customClass="CreateUserViewController" sceneMemberID="viewController">
+                <viewController id="r7G-ZV-UB5" customClass="CreateUserViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AAI-2M-474"/>
                         <viewControllerLayoutGuide type="bottom" id="JAs-fd-4n8"/>
@@ -161,8 +161,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="accountTextField" destination="mRl-1c-OFm" id="8UK-lK-4dr"/>
-                        <outlet property="createAccountTextField" destination="mRl-1c-OFm" id="Vbt-d2-OIT"/>
+                        <outlet property="accountTextField" destination="mRl-1c-OFm" id="1Gd-E0-YyH"/>
                         <outlet property="nextButton" destination="iqo-xj-FXa" id="qlj-ux-8Dd"/>
                     </connections>
                 </viewController>
