@@ -18,7 +18,7 @@ class FaceDetectionViewController: UIViewController, UIImagePickerControllerDele
     //var photoHelper = FPPhotohelper()
     
    
-    let photoHelper = FPPhotoHelper()
+    //let photoHelper = FPPhotoHelper()
     override func viewDidLoad() {
         super.viewDidLoad()
         photoHelper.completionHandler = { image in
