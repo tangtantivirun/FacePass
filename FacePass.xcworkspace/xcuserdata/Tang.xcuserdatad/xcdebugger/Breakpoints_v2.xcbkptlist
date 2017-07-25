@@ -56,7 +56,7 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
-                  timestampString = "522603802.94862"
+                  timestampString = "522640950.037279"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -71,7 +71,7 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
-                  timestampString = "522603802.951498"
+                  timestampString = "522640950.039242"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -86,7 +86,7 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
-                  timestampString = "522603802.953896"
+                  timestampString = "522640950.041299"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -101,7 +101,7 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
-                  timestampString = "522603802.956461"
+                  timestampString = "522640950.044191"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -116,7 +116,7 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/LoginViewController.swift"
-                  timestampString = "522603802.959035"
+                  timestampString = "522640950.04698"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "17"
@@ -124,6 +124,22 @@
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FacePass/LoginViewController.swift"
+            timestampString = "522639764.987711"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "loginButtonTapped(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

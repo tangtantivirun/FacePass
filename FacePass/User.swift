@@ -49,7 +49,7 @@ class User: NSObject {
     class func setCurrent(_ user: User, writeToUserDefaults: Bool = false) {
         if writeToUserDefaults {
             let data = NSKeyedArchiver.archivedData(withRootObject: user.self)
-            UserDefaults.standard.set(data, forKey: Constants.UserDefaults.currentAccount)
+            UserDefaults.standard.set(data, forKey: Constants.UserDefaults.currentUser)
         }
         _current = user
     }

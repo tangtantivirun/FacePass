@@ -85,7 +85,7 @@
                     <navigationItem key="navigationItem" id="aek-lm-vC4"/>
                     <connections>
                         <outlet property="loginButton" destination="l7r-il-ViX" id="8gM-1X-0rT"/>
-                        <segue destination="r7G-ZV-UB5" kind="show" id="gx8-Ix-VgK"/>
+                        <segue destination="r7G-ZV-UB5" kind="show" id="hQM-Xs-Hmk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfA-LK-PQk" userLabel="First Responder" sceneMemberID="firstResponder"/>

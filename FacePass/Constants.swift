@@ -13,7 +13,7 @@ struct Constants {
         static let toCreateAccount = "toCreateAccount"
     }
     struct UserDefaults {
-        static let currentAccount = "currentAccount"
+        static let currentUser = "currentUser"
         static let uid = "uid"
         static let account = "account"
     }
