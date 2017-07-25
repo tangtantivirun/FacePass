@@ -12,12 +12,12 @@
 		2435B3671F25E062003A0913 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3661F25E062003A0913 /* User.swift */; };
 		2435B3691F25E077003A0913 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3681F25E077003A0913 /* UserService.swift */; };
 		2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */; };
-		2435B36D1F25EA1A003A0913 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B36C1F25EA1A003A0913 /* Home.storyboard */; };
+		2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B36C1F25EA1A003A0913 /* Main.storyboard */; };
 		24754D8C1F26DBC300E79490 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */; };
 		24754D8E1F26E5D700E79490 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8D1F26E5D700E79490 /* StorageService.swift */; };
 		24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB51F25C73100756D70 /* AppDelegate.swift */; };
 		24C47EB81F25C73100756D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB71F25C73100756D70 /* ViewController.swift */; };
-		24C47EBB1F25C73100756D70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EB91F25C73100756D70 /* Main.storyboard */; };
+		24C47EBB1F25C73100756D70 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EB91F25C73100756D70 /* Home.storyboard */; };
 		24C47EBD1F25C73100756D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EBC1F25C73100756D70 /* Assets.xcassets */; };
 		24F82E361F263D8700EBB6C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F82E351F263D8700EBB6C9 /* Constants.swift */; };
 		38B9D6D01F25DE5E007CAFD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38B9D6CF1F25DE5E007CAFD8 /* GoogleService-Info.plist */; };
@@ -33,13 +33,13 @@
 		2435B3661F25E062003A0913 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2435B3681F25E077003A0913 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
-		2435B36C1F25EA1A003A0913 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		2435B36C1F25EA1A003A0913 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		24754D8D1F26E5D700E79490 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		24C47EB21F25C73100756D70 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C47EB51F25C73100756D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C47EB71F25C73100756D70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		24C47EBA1F25C73100756D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24C47EBA1F25C73100756D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		24C47EBC1F25C73100756D70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C47EC11F25C73100756D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24F82E351F263D8700EBB6C9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -132,8 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				2435B3561F25CBA4003A0913 /* Login.storyboard */,
-				24C47EB91F25C73100756D70 /* Main.storyboard */,
-				2435B36C1F25EA1A003A0913 /* Home.storyboard */,
+				24C47EB91F25C73100756D70 /* Home.storyboard */,
+				2435B36C1F25EA1A003A0913 /* Main.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -255,10 +255,10 @@
 			files = (
 				2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */,
 				38B9D6D01F25DE5E007CAFD8 /* GoogleService-Info.plist in Resources */,
-				2435B36D1F25EA1A003A0913 /* Home.storyboard in Resources */,
+				2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */,
 				38F51DD41F26F6BC003C36E0 /* jsonFile.json in Resources */,
 				24C47EBD1F25C73100756D70 /* Assets.xcassets in Resources */,
-				24C47EBB1F25C73100756D70 /* Main.storyboard in Resources */,
+				24C47EBB1F25C73100756D70 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,12 +333,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		24C47EB91F25C73100756D70 /* Main.storyboard */ = {
+		24C47EB91F25C73100756D70 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				24C47EBA1F25C73100756D70 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		38F51DCD1F263927003C36E0 /* FaceDetectionViewController.swift */ = {
