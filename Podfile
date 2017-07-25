@@ -15,5 +15,6 @@ target 'FacePass' do
   pod 'Kingfisher'
   pod 'AWSRekognition'
   pod 'AWSCore'
+  pod 'AWSS3'
 
 end

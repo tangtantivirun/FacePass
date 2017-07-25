@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AWSS3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FirebaseUI-FirebaseAuthUI.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,12 +67,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BCBD602769880A0C5D9D760B559C299</key>
+		<key>45BBEE212AB13E1F215C8E4FBC81D663</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>8C9A2B99EFF5B52E41C07A9A3DB4FA0F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F7098779713B711F6C591B62A41F242</key>
 		<dict>
 			<key>primary</key>
 			<true/>

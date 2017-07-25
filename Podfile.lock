@@ -2,6 +2,8 @@ PODS:
   - AWSCore (2.5.9)
   - AWSRekognition (2.5.9):
     - AWSCore (= 2.5.9)
+  - AWSS3 (2.5.9):
+    - AWSCore (= 2.5.9)
   - Firebase/Auth (4.0.4):
     - Firebase/Core
     - FirebaseAuth (= 4.0.0)
@@ -56,6 +58,7 @@ PODS:
 DEPENDENCIES:
   - AWSCore
   - AWSRekognition
+  - AWSS3
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -66,6 +69,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AWSCore: c71840dd51f271dc0af8de8fd6f352767ebde8b4
   AWSRekognition: 3d3e9e0b69c75fd33eda36fa6c9d9e317e69eb4d
+  AWSS3: c36b91edb50ccd676be4a92836bb72f0c2ac312b
   Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
   FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
   FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
@@ -79,6 +83,6 @@ SPEC CHECKSUMS:
   Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
   nanopb: 22bc080fa3955e2116b6ff3ee6c2cb3c15ab97cb
 
-PODFILE CHECKSUM: fb0bb503fdf384855799562d0950a5c01ab6555b
+PODFILE CHECKSUM: 6fedcb95d283ae36802da6493d9b7f79ced29ec1
 
 COCOAPODS: 1.2.1
