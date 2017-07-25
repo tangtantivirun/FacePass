@@ -11,15 +11,26 @@ import UIKit
 import AWSRekognition
 import AWSCore
 
-class FaceDetectionViewController
+class FaceDetectionViewController: UIViewController
 {
    // var rekognitionClient:AWSRekognition!
     //var photoHelper = FPPhotohelper()
     
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
+   
+        let photoHelper = FPPhotoHelper()
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            photoHelper.completionHandler = { image in
+                UploadService.create(for:image)
+            }
+            
+            delegate = self
+            tabBar.unselectedItemTintColor = .black
+        }
+    }
+
        // rekognitionClient = AWSRekognition.default()
         //photoHelper.presentImagePickerController(from: self)
-    }
-}
+
+
+

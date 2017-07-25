@@ -13,7 +13,6 @@
 		2435B3691F25E077003A0913 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3681F25E077003A0913 /* UserService.swift */; };
 		2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */; };
 		2435B36D1F25EA1A003A0913 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B36C1F25EA1A003A0913 /* Home.storyboard */; };
-		2435B36F1F25EA2C003A0913 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B36E1F25EA2C003A0913 /* HomeViewController.swift */; };
 		24754D8C1F26DBC300E79490 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */; };
 		24754D8E1F26E5D700E79490 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8D1F26E5D700E79490 /* StorageService.swift */; };
 		24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB51F25C73100756D70 /* AppDelegate.swift */; };
@@ -33,7 +32,6 @@
 		2435B3681F25E077003A0913 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		2435B36C1F25EA1A003A0913 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		2435B36E1F25EA2C003A0913 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		24754D8D1F26E5D700E79490 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		24C47EB21F25C73100756D70 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +67,6 @@
 				24C47EB71F25C73100756D70 /* ViewController.swift */,
 				2435B3601F25D86D003A0913 /* LoginViewController.swift */,
 				2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */,
-				2435B36E1F25EA2C003A0913 /* HomeViewController.swift */,
 				38F51DCD1F263927003C36E0 /* FaceDetectionViewController.swift */,
 			);
 			name = Controllers;
@@ -317,7 +314,6 @@
 				24C47EB81F25C73100756D70 /* ViewController.swift in Sources */,
 				2435B3671F25E062003A0913 /* User.swift in Sources */,
 				24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */,
-				2435B36F1F25EA2C003A0913 /* HomeViewController.swift in Sources */,
 				38F51DD01F2649E2003C36E0 /* FPPhotoHelper.swift in Sources */,
 				2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */,
 				24F82E361F263D8700EBB6C9 /* Constants.swift in Sources */,
