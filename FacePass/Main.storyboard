@@ -31,6 +31,9 @@
                                         <state key="normal" title="Verify member">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="fTC-fJ-Fj2" kind="show" id="zZ6-FS-hGV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvO-py-qay">
                                         <rect key="frame" x="0.0" y="50" width="263" height="30"/>
@@ -38,6 +41,9 @@
                                         <state key="normal" title="Add new member ">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Moc-Uj-Yoi" kind="show" id="TGO-uH-6ZZ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -63,6 +69,24 @@
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="-887.40629685157433"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Xuu-d2-f5F">
+            <objects>
+                <viewController id="fTC-fJ-Fj2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LQF-Nr-PI1"/>
+                        <viewControllerLayoutGuide type="bottom" id="uNM-wy-p06"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F59-d1-J0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rh3-yF-EGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="-1238"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="pFx-i6-C3x">
             <objects>
@@ -80,6 +104,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qw-6s-y5R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-882.39999999999998" y="-887.40629685157433"/>
+        </scene>
+        <!--AddNewMember-->
+        <scene sceneID="EVX-vb-bWo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddNewMember" id="Moc-Uj-Yoi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tkl-yv-B6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="-783"/>
         </scene>
     </scenes>
 </document>

@@ -16,6 +16,8 @@
 		24754D8C1F26DBC300E79490 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */; };
 		24754D8E1F26E5D700E79490 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8D1F26E5D700E79490 /* StorageService.swift */; };
 		24754D901F27194A00E79490 /* test-image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 24754D8F1F27194A00E79490 /* test-image.jpeg */; };
+		24754D921F27296E00E79490 /* AddNewMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D911F27296E00E79490 /* AddNewMemberViewController.swift */; };
+		24754D941F272BC400E79490 /* AddNewMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24754D931F272BC400E79490 /* AddNewMember.storyboard */; };
 		24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB51F25C73100756D70 /* AppDelegate.swift */; };
 		24C47EB81F25C73100756D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB71F25C73100756D70 /* ViewController.swift */; };
 		24C47EBB1F25C73100756D70 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EB91F25C73100756D70 /* Home.storyboard */; };
@@ -39,6 +41,8 @@
 		24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		24754D8D1F26E5D700E79490 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		24754D8F1F27194A00E79490 /* test-image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "test-image.jpeg"; sourceTree = SOURCE_ROOT; };
+		24754D911F27296E00E79490 /* AddNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMemberViewController.swift; sourceTree = "<group>"; };
+		24754D931F272BC400E79490 /* AddNewMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddNewMember.storyboard; sourceTree = "<group>"; };
 		24C47EB21F25C73100756D70 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C47EB51F25C73100756D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C47EB71F25C73100756D70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 				2435B3601F25D86D003A0913 /* LoginViewController.swift */,
 				2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */,
 				389264191F2725E700BE0EFE /* SaveImageViewController.swift */,
+				24754D911F27296E00E79490 /* AddNewMemberViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				2435B3561F25CBA4003A0913 /* Login.storyboard */,
 				24C47EB91F25C73100756D70 /* Home.storyboard */,
 				2435B36C1F25EA1A003A0913 /* Main.storyboard */,
+				24754D931F272BC400E79490 /* AddNewMember.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -258,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */,
+				24754D941F272BC400E79490 /* AddNewMember.storyboard in Resources */,
 				24754D901F27194A00E79490 /* test-image.jpeg in Resources */,
 				38B9D6D01F25DE5E007CAFD8 /* GoogleService-Info.plist in Resources */,
 				2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */,
@@ -324,6 +331,7 @@
 			files = (
 				2435B3611F25D86D003A0913 /* LoginViewController.swift in Sources */,
 				2435B3691F25E077003A0913 /* UserService.swift in Sources */,
+				24754D921F27296E00E79490 /* AddNewMemberViewController.swift in Sources */,
 				3892641A1F2725E700BE0EFE /* SaveImageViewController.swift in Sources */,
 				24C47EB81F25C73100756D70 /* ViewController.swift in Sources */,
 				2435B3671F25E062003A0913 /* User.swift in Sources */,
