@@ -9,6 +9,7 @@
 import UIKit
 import AWSRekognition
 import AWSCore
+import AWSCognito
 import FirebaseAuth
 import FirebaseAuthUI
 import Firebase
@@ -24,11 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         configureInitialRootViewController(for: window)
         // Override point for customization after application launch.
-//        
-//        let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "YourIdentityPoolId")
-//        let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialProvider)
-//        AWSServiceManager.default().defaultServiceConfiguration = configuration
-//        print("true")
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USWest2,
+                                                                identityPoolId:"us-west-2:793194f6-6dd2-4fcb-ace9-b7f636836540")
+        
+        let configuration = AWSServiceConfiguration(region:.USWest2, credentialsProvider:credentialsProvider)
+        
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
         return true
     }
 
