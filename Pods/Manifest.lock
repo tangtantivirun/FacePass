@@ -1,4 +1,6 @@
 PODS:
+  - AWSCognito (2.5.9):
+    - AWSCore (= 2.5.9)
   - AWSCore (2.5.9)
   - AWSRekognition (2.5.9):
     - AWSCore (= 2.5.9)
@@ -56,6 +58,7 @@ PODS:
   - nanopb/encode (0.3.8)
 
 DEPENDENCIES:
+  - AWSCognito
   - AWSCore
   - AWSRekognition
   - AWSS3
@@ -67,6 +70,7 @@ DEPENDENCIES:
   - Kingfisher
 
 SPEC CHECKSUMS:
+  AWSCognito: 5dfe4120e7f77b2e77396b4532e4aacacc4ae08d
   AWSCore: c71840dd51f271dc0af8de8fd6f352767ebde8b4
   AWSRekognition: 3d3e9e0b69c75fd33eda36fa6c9d9e317e69eb4d
   AWSS3: c36b91edb50ccd676be4a92836bb72f0c2ac312b
@@ -83,6 +87,6 @@ SPEC CHECKSUMS:
   Kingfisher: a0ac82dc5bcf0388dd74b294cf2cc13730c63436
   nanopb: 22bc080fa3955e2116b6ff3ee6c2cb3c15ab97cb
 
-PODFILE CHECKSUM: 6fedcb95d283ae36802da6493d9b7f79ced29ec1
+PODFILE CHECKSUM: b0a5dc89944f9a3ca87d7e0168955eb723c0387c
 
 COCOAPODS: 1.2.1

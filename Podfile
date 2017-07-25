@@ -16,5 +16,5 @@ target 'FacePass' do
   pod 'AWSRekognition'
   pod 'AWSCore'
   pod 'AWSS3'
-
+  pod 'AWSCognito'
 end
