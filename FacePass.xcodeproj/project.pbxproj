@@ -15,6 +15,7 @@
 		2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B36C1F25EA1A003A0913 /* Main.storyboard */; };
 		24754D8C1F26DBC300E79490 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */; };
 		24754D8E1F26E5D700E79490 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8D1F26E5D700E79490 /* StorageService.swift */; };
+		24754D901F27194A00E79490 /* test-image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 24754D8F1F27194A00E79490 /* test-image.jpeg */; };
 		24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB51F25C73100756D70 /* AppDelegate.swift */; };
 		24C47EB81F25C73100756D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB71F25C73100756D70 /* ViewController.swift */; };
 		24C47EBB1F25C73100756D70 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EB91F25C73100756D70 /* Home.storyboard */; };
@@ -36,6 +37,7 @@
 		2435B36C1F25EA1A003A0913 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		24754D8D1F26E5D700E79490 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		24754D8F1F27194A00E79490 /* test-image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "test-image.jpeg"; sourceTree = SOURCE_ROOT; };
 		24C47EB21F25C73100756D70 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C47EB51F25C73100756D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C47EB71F25C73100756D70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +46,6 @@
 		24C47EC11F25C73100756D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24F82E351F263D8700EBB6C9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		38B9D6CF1F25DE5E007CAFD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		38F51DCE1F263927003C36E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/FaceDetectionViewController.swift; sourceTree = "<group>"; };
 		38F51DCF1F2649E2003C36E0 /* FPPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPPhotoHelper.swift; sourceTree = "<group>"; };
 		38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/FacePass-gaozhzxtleecivfdioiecruhyasv/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		38F51DD31F26F6BC003C36E0 /* jsonFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonFile.json; sourceTree = "<group>"; };
@@ -72,7 +73,6 @@
 				24C47EB71F25C73100756D70 /* ViewController.swift */,
 				2435B3601F25D86D003A0913 /* LoginViewController.swift */,
 				2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */,
-				38F51DCD1F263927003C36E0 /* FaceDetectionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +159,7 @@
 		24C47EB41F25C73100756D70 /* FacePass */ = {
 			isa = PBXGroup;
 			children = (
+				24754D8F1F27194A00E79490 /* test-image.jpeg */,
 				38F51DD31F26F6BC003C36E0 /* jsonFile.json */,
 				24C47EB51F25C73100756D70 /* AppDelegate.swift */,
 				2435B3581F25CBC2003A0913 /* Controllers */,
@@ -254,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */,
+				24754D901F27194A00E79490 /* test-image.jpeg in Resources */,
 				38B9D6D01F25DE5E007CAFD8 /* GoogleService-Info.plist in Resources */,
 				2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */,
 				38F51DD41F26F6BC003C36E0 /* jsonFile.json in Resources */,
@@ -339,14 +341,6 @@
 				24C47EBA1F25C73100756D70 /* Base */,
 			);
 			name = Home.storyboard;
-			sourceTree = "<group>";
-		};
-		38F51DCD1F263927003C36E0 /* FaceDetectionViewController.swift */ = {
-			isa = PBXVariantGroup;
-			children = (
-				38F51DCE1F263927003C36E0 /* Base */,
-			);
-			name = FaceDetectionViewController.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
