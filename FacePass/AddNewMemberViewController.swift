@@ -31,7 +31,7 @@ class AddNewMemberViewController : UIViewController, AVCapturePhotoCaptureDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         sessionQueue.async { [unowned self] in
             self.configureSession()
         }
@@ -95,7 +95,7 @@ class AddNewMemberViewController : UIViewController, AVCapturePhotoCaptureDelega
         
         super.viewWillDisappear(animated)
     }
-
+    
     
     private func configureSession() {
         if setupResult != .success {
@@ -165,25 +165,26 @@ class AddNewMemberViewController : UIViewController, AVCapturePhotoCaptureDelega
         if self.videoDeviceInput.device.isFlashAvailable {
             photoSettings.flashMode = .auto
         }
-                if !photoSettings.availablePreviewPhotoPixelFormatTypes.isEmpty {
+        if !photoSettings.availablePreviewPhotoPixelFormatTypes.isEmpty {
             photoSettings.previewPhotoFormat = [kCVPixelBufferPixelFormatTypeKey as String: photoSettings.availablePreviewPhotoPixelFormatTypes.first!]
         }
         photoOutput.capturePhoto(with: photoSettings, delegate: self)
     }
-
-    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?, previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
     
+    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?, previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
+        
         if let error = error {
-        print("Error capturing photo: \(error)")
+            print("Error capturing photo: \(error)")
         } else {
             if let sampleBuffer = photoSampleBuffer, let previewBuffer = previewPhotoSampleBuffer, let dataImage = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: sampleBuffer, previewPhotoSampleBuffer: previewBuffer) {
-            
+                
                 if let image = UIImage(data: dataImage) {
                     self.capturedImage.image = image
+                    // Perform segue to new member vc
                     FPUploadImageHelper.uploadToS3(url: FPUploadImageHelper.saveImageToLibrary(img: image))
                     
+                }
             }
         }
-    }
     }
 }

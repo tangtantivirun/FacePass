@@ -12,7 +12,7 @@ import AWSCognito
 import AWSS3
 class FPUploadImageHelper: NSObject
 {
-    static func uploadToS3(url: String){
+    static func uploadToS3(url: URL){
 //        var img: UIImage
 //        var jpeg: Data = UIImageJPEGRepresentation(img, 0.8)!
 //        do {
@@ -25,7 +25,7 @@ class FPUploadImageHelper: NSObject
         uploadRequest?.acl = .publicRead
         uploadRequest?.key = "image.jpeg"   //name of the file when uploaded
         uploadRequest?.contentType = "image/jpeg"
-        uploadRequest?.body = URL(fileURLWithPath: url as String)   //create url
+        uploadRequest?.body = url
         print("we made it half way")
         
         
@@ -45,12 +45,15 @@ class FPUploadImageHelper: NSObject
         })
     }
     
-    static func saveImageToLibrary(img: UIImage) -> String
+    static func saveImageToLibrary(img: UIImage) -> URL
     {
-        let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
-        let destinationPath = documentsPath.appendingPathComponent("filename.jpeg")
-        let image =  UIImageJPEGRepresentation(img,0.8) as NSData!
-        image?.write(toFile: destinationPath, atomically: true)
-        return destinationPath
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        let destinationURL = documentsDirectory.appendingPathComponent("image.jpeg")
+        guard let imageData =  UIImageJPEGRepresentation(img,0.8) else {
+            fatalError("Image to data conversion failure")
+        }
+        try? imageData.write(to: destinationURL)
+        return destinationURL
     }
 }
