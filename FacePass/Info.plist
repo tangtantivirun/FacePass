@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To store stuff </string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Photo can be stored</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Camera can be opened</string>
 	<key>CFBundleDevelopmentRegion</key>

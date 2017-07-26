@@ -12,7 +12,7 @@ import AVFoundation
 class AddNewMemberViewController : UIViewController, AVCapturePhotoCaptureDelegate {
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var photoButton: UIButton!
-    @IBOutlet weak var capturedImage: UIView!
+    @IBOutlet weak var capturedImage: UIImageView!
     
     
     let session = AVCaptureSession()
@@ -123,7 +123,7 @@ class AddNewMemberViewController : UIViewController, AVCapturePhotoCaptureDelega
                 defaultVideoDevice = frontCameraDevice
             }
             
-            let videoDeviceInput = try AVCaptureDeviceInput(device: defaultVideoDevice!)
+            let videoDeviceInput = try AVCaptureDeviceInput(device: defaultVideoDevice)
             
             if session.canAddInput(videoDeviceInput) {
                 session.addInput(videoDeviceInput)
@@ -165,7 +165,7 @@ class AddNewMemberViewController : UIViewController, AVCapturePhotoCaptureDelega
         if self.videoDeviceInput.device.isFlashAvailable {
             photoSettings.flashMode = .auto
         }
-        if !photoSettings.availablePreviewPhotoPixelFormatTypes.isEmpty {
+                if !photoSettings.availablePreviewPhotoPixelFormatTypes.isEmpty {
             photoSettings.previewPhotoFormat = [kCVPixelBufferPixelFormatTypeKey as String: photoSettings.availablePreviewPhotoPixelFormatTypes.first!]
         }
         photoOutput.capturePhoto(with: photoSettings, delegate: self)
@@ -180,6 +180,7 @@ class AddNewMemberViewController : UIViewController, AVCapturePhotoCaptureDelega
             
                 if let image = UIImage(data: dataImage) {
                     self.capturedImage.image = image
+                    FPUploadImageHelper.saveImageToLibrary(img: image)
             }
         }
     }
