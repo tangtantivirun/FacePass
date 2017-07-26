@@ -7,19 +7,4 @@
 //
 
 import Foundation
-import FirebaseDatabase.FIRDataSnapshot
 
-class Member: NSObject {
-    
-    func retrieveUserEmail(userName : String, completionBlock : ((_ userEmail : String) -> Void)){
-    var userEmail : String!
-    
-    Database.database().reference().child("usernameEmailLink (userName)").observeSingleEvent(of: .value, with: {(snap) in
-        
-        
-        userEmail = snap.value!
-    })
-        
-    print(userEmail)
-}
-}

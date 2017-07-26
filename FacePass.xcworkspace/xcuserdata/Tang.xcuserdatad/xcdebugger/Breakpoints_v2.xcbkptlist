@@ -199,9 +199,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "168"
-            endingLineNumber = "168"
-            landmarkName = "captureImage(_:)"
-            landmarkType = "7">
+            endingLineNumber = "168">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -215,9 +213,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "captureImage(_:)"
-            landmarkType = "7">
+            endingLineNumber = "161">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -242,13 +238,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FacePass/Member.swift"
-            timestampString = "522740352.256064"
+            filePath = "FacePass/MemberService.swift"
+            timestampString = "522746023.515192"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "retrieveUserEmail(userName:completionBlock:)"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "create(_:photoInfo:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
