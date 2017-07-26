@@ -184,6 +184,7 @@ class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDele
                             // do stuff
                             // TODO
                         }
+                        self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
                         
                     }
                     

@@ -30,6 +30,9 @@ struct MemberService {
         // Save image to documents on disk and get url
         let diskImageURL = MemberService.save(image, toMember: memberID)
         MemberService.uploadToS3(localImageURL: diskImageURL)
+        
+        // Do completion
+        completion(nil)
     }
     
     // Parameters: Image of new member's face
@@ -41,7 +44,11 @@ struct MemberService {
         guard let imageData =  UIImageJPEGRepresentation(image,0.8) else {
             fatalError("Image to data conversion failure")
         }
-        try? imageData.write(to: destinationURL)
+        do {
+            try imageData.write(to: destinationURL)
+        } catch let error {
+            print(error.localizedDescription)
+        }
         return destinationURL
     }
     

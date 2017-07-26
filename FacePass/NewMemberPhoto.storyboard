@@ -31,7 +31,6 @@
                                 <state key="normal" image="focus"/>
                                 <connections>
                                     <action selector="captureImage:" destination="X3n-w1-eHd" eventType="touchUpInside" id="3Ux-PL-OcX"/>
-                                    <segue destination="s89-qw-sf0" kind="show" identifier="addMemberInfo" id="QUl-c4-8qX"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,16 +49,17 @@
                     <connections>
                         <outlet property="cameraView" destination="bbP-dA-sI5" id="2Ze-W6-gLC"/>
                         <outlet property="photoButton" destination="4BK-jS-OPT" id="etT-aL-DEi"/>
+                        <segue destination="s89-qw-sf0" kind="show" identifier="addMemberInfo" id="BSC-hI-1n1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yom-t9-ku5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2842.4000000000001" y="-552.77361319340332"/>
         </scene>
-        <!--New Member Photo View Controller-->
+        <!--Add New Member View Controller-->
         <scene sceneID="6Ba-WZ-ixe">
             <objects>
-                <viewController id="s89-qw-sf0" customClass="NewMemberPhotoViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="s89-qw-sf0" customClass="AddNewMemberViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vby-00-hDe"/>
                         <viewControllerLayoutGuide type="bottom" id="KmA-zo-p7i"/>
@@ -185,7 +185,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Add member"/>
                                         <connections>
-                                            <action selector="AddMemberButtonTapped:" destination="s89-qw-sf0" eventType="touchUpInside" id="1Gw-Yi-2lG"/>
+                                            <action selector="AddMemberButtonTapped:" destination="s89-qw-sf0" eventType="touchUpInside" id="OcA-Es-jHG"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -209,14 +209,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addMemberButton" destination="kYv-ME-wfS" id="a4V-CV-mqD"/>
-                        <outlet property="birthdayTextField" destination="Rfd-jR-EuA" id="DuJ-JE-krN"/>
-                        <outlet property="emailTextField" destination="Q5W-pe-VY7" id="IAF-P4-ajT"/>
-                        <outlet property="genderSelector" destination="nAw-gA-w2R" id="JRo-Bd-xV8"/>
-                        <outlet property="idTextField" destination="tgT-ew-uPd" id="vC1-BC-Vf3"/>
-                        <outlet property="nameTextField" destination="uyS-eY-6Oa" id="Umd-ZV-7Rc"/>
-                        <outlet property="phoneTextField" destination="5Ke-mO-1CC" id="YiX-EJ-cNV"/>
-                        <outlet property="profileImageView" destination="tj2-bt-4CV" id="0Dt-kk-EJC"/>
+                        <outlet property="addMemberButton" destination="kYv-ME-wfS" id="OTU-2R-m23"/>
+                        <outlet property="birthdayTextField" destination="Rfd-jR-EuA" id="mER-n6-KOr"/>
+                        <outlet property="emailTextField" destination="Q5W-pe-VY7" id="siE-mb-z9f"/>
+                        <outlet property="genderSelector" destination="nAw-gA-w2R" id="bX5-DC-gaR"/>
+                        <outlet property="idTextField" destination="tgT-ew-uPd" id="UKX-7Q-7jn"/>
+                        <outlet property="nameTextField" destination="uyS-eY-6Oa" id="otq-9E-Kn5"/>
+                        <outlet property="phoneTextField" destination="tgT-ew-uPd" id="40n-ku-kti"/>
+                        <outlet property="profileImageView" destination="tj2-bt-4CV" id="npl-X6-7DD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doR-VN-7of" userLabel="First Responder" sceneMemberID="firstResponder"/>
