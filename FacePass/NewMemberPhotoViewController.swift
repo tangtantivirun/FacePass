@@ -179,7 +179,13 @@ class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDele
                 
                 if let image = UIImage(data: dataImage) {
                     NewMemberPhotoViewController.savedImage = image
-                    FPUploadImageHelper.uploadToS3(url: FPUploadImageHelper.saveImageToLibrary(img: image))
+                    MemberService.create(image: image) { newMember in
+                        if let member = newMember {
+                            // do stuff
+                            // TODO
+                        }
+                        
+                    }
                     
                 }
             }
