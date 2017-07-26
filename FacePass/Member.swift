@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import FirebaseDatabase.FIRDataSnapshot
+
+class Member: NSObject {
+    
+}

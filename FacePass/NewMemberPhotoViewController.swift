@@ -1,5 +1,5 @@
 //
-//  AddNewMemberViewController.swift
+//  NewMemberPhotoViewController.swift
 //  FacePass
 //
 //  Created by Tang Tantivirun on 7/25/17.
@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class AddNewMemberViewController : UIViewController, AVCapturePhotoCaptureDelegate {
+class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDelegate {
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var photoButton: UIButton!
     @IBOutlet weak var capturedImage: UIImageView!
