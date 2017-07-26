@@ -24,20 +24,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbP-dA-sI5" userLabel="Camera View ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7XD-V0-JNi">
-                                        <rect key="frame" x="18" y="590" width="61" height="57"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="61" id="Bza-E8-eV1"/>
-                                            <constraint firstAttribute="height" constant="57" id="TAQ-Tu-XZ2"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <constraints>
-                                    <constraint firstItem="7XD-V0-JNi" firstAttribute="leading" secondItem="bbP-dA-sI5" secondAttribute="leading" constant="18" id="IIt-Py-MKg"/>
-                                    <constraint firstAttribute="bottom" secondItem="7XD-V0-JNi" secondAttribute="bottom" constant="20" id="h96-e5-n96"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BK-jS-OPT" userLabel="Focus">
                                 <rect key="frame" x="138" y="605" width="99" height="42"/>
@@ -62,7 +49,6 @@
                     <navigationItem key="navigationItem" id="62N-cw-Oqr"/>
                     <connections>
                         <outlet property="cameraView" destination="bbP-dA-sI5" id="2Ze-W6-gLC"/>
-                        <outlet property="capturedImage" destination="7XD-V0-JNi" id="IRN-G7-6V6"/>
                         <outlet property="photoButton" destination="4BK-jS-OPT" id="etT-aL-DEi"/>
                     </connections>
                 </viewController>
@@ -83,7 +69,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5zc-Dt-hsX" userLabel="Super Stack View">
-                                <rect key="frame" x="66" y="164" width="243" height="308"/>
+                                <rect key="frame" x="66" y="84" width="243" height="549"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yvr-9a-rUp">
                                         <rect key="frame" x="0.0" y="0.0" width="243" height="30"/>
@@ -188,9 +174,15 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tj2-bt-4CV">
+                                        <rect key="frame" x="0.0" y="274" width="243" height="220"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="220" id="yiH-xI-zX2"/>
+                                        </constraints>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYv-ME-wfS">
-                                        <rect key="frame" x="0.0" y="274" width="243" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <rect key="frame" x="0.0" y="510" width="243" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <state key="normal" title="Add member"/>
                                         <connections>
                                             <action selector="AddMemberButtonTapped:" destination="s89-qw-sf0" eventType="touchUpInside" id="1Gw-Yi-2lG"/>
@@ -201,9 +193,10 @@
                                     <constraint firstItem="xPN-bd-lLT" firstAttribute="width" secondItem="5zc-Dt-hsX" secondAttribute="width" id="3p3-Zb-s6I"/>
                                     <constraint firstItem="lKm-Nk-2CP" firstAttribute="width" secondItem="5zc-Dt-hsX" secondAttribute="width" id="X23-JV-jwp"/>
                                     <constraint firstItem="YsZ-Hx-ePK" firstAttribute="width" secondItem="5zc-Dt-hsX" secondAttribute="width" id="Yc1-RK-eNv"/>
-                                    <constraint firstItem="kYv-ME-wfS" firstAttribute="width" secondItem="5zc-Dt-hsX" secondAttribute="width" id="knW-K5-sIx"/>
                                     <constraint firstItem="y04-yr-OuN" firstAttribute="width" secondItem="5zc-Dt-hsX" secondAttribute="width" id="ljs-Hj-x9e"/>
                                     <constraint firstItem="dUG-OG-1T1" firstAttribute="width" secondItem="5zc-Dt-hsX" secondAttribute="width" id="pO2-ck-KLP"/>
+                                    <constraint firstItem="kYv-ME-wfS" firstAttribute="width" secondItem="5zc-Dt-hsX" secondAttribute="width" id="qP1-CM-fW1"/>
+                                    <constraint firstItem="tj2-bt-4CV" firstAttribute="width" secondItem="5zc-Dt-hsX" secondAttribute="width" id="yd2-aP-aIq"/>
                                     <constraint firstItem="yvr-9a-rUp" firstAttribute="width" secondItem="5zc-Dt-hsX" secondAttribute="width" id="zz1-QP-Qn1"/>
                                 </constraints>
                             </stackView>
@@ -211,18 +204,19 @@
                         <color key="backgroundColor" red="0.90196078431372551" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5zc-Dt-hsX" firstAttribute="leading" secondItem="uUR-TY-eKQ" secondAttribute="leadingMargin" constant="50" id="KCK-Sp-YUe"/>
-                            <constraint firstItem="5zc-Dt-hsX" firstAttribute="top" secondItem="vby-00-hDe" secondAttribute="bottom" constant="100" id="Mpl-Zb-OMA"/>
+                            <constraint firstItem="5zc-Dt-hsX" firstAttribute="top" secondItem="vby-00-hDe" secondAttribute="bottom" constant="20" id="Mpl-Zb-OMA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5zc-Dt-hsX" secondAttribute="trailing" constant="50" id="yVx-IJ-KYH"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addMemberButton" destination="kYv-ME-wfS" id="a4V-CV-mqD"/>
-                        <outlet property="ageTextField" destination="Rfd-jR-EuA" id="mWG-hH-P4g"/>
+                        <outlet property="birthdayTextField" destination="Rfd-jR-EuA" id="DuJ-JE-krN"/>
                         <outlet property="emailTextField" destination="Q5W-pe-VY7" id="IAF-P4-ajT"/>
                         <outlet property="genderSelector" destination="nAw-gA-w2R" id="JRo-Bd-xV8"/>
                         <outlet property="idTextField" destination="tgT-ew-uPd" id="vC1-BC-Vf3"/>
                         <outlet property="nameTextField" destination="uyS-eY-6Oa" id="Umd-ZV-7Rc"/>
                         <outlet property="phoneTextField" destination="5Ke-mO-1CC" id="YiX-EJ-cNV"/>
+                        <outlet property="profileImageView" destination="tj2-bt-4CV" id="0Dt-kk-EJC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doR-VN-7of" userLabel="First Responder" sceneMemberID="firstResponder"/>

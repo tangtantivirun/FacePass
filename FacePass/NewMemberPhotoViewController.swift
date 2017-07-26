@@ -12,8 +12,7 @@ import AVFoundation
 class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDelegate {
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var photoButton: UIButton!
-    @IBOutlet weak var capturedImage: UIImageView!
-    
+    static var savedImage: UIImage?
     
     let session = AVCaptureSession()
     let photoOutput = AVCapturePhotoOutput()
@@ -179,7 +178,7 @@ class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDele
             if let sampleBuffer = photoSampleBuffer, let previewBuffer = previewPhotoSampleBuffer, let dataImage = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: sampleBuffer, previewPhotoSampleBuffer: previewBuffer) {
                 
                 if let image = UIImage(data: dataImage) {
-                    self.capturedImage.image = image
+                    NewMemberPhotoViewController.savedImage = image
                     // Perform segue to new member vc
                     FPUploadImageHelper.uploadToS3(url: FPUploadImageHelper.saveImageToLibrary(img: image))
                     
