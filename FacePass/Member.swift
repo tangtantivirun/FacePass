@@ -11,40 +11,15 @@ import FirebaseDatabase.FIRDataSnapshot
 
 class Member: NSObject {
     
-    let uid: String
-    let memberName: String
-    required init?(coder aDecoder: NSCoder) {
-        guard let uid = aDecoder.decodeObject(forKey: Constants.MemberDefaults.uid) as? String,
-            let memberName = aDecoder.decodeObject(forKey: Constants.MemberDefaults.memberName) as? String
-            else { return nil }
-        self.uid = uid
-        self.memberName = memberName
+    func retrieveUserEmail(userName : String, completionBlock : ((_ userEmail : String) -> Void)){
+    var userEmail : String!
     
-        super.init()
-    }
-    
-    
-    init?(snapshot: DataSnapshot) {
-        guard let dict = snapshot.value as? [String: Any],
-            let memberName = dict ["memberName"] as? String
-            else { return nil }
+    Database.database().reference().child("usernameEmailLink (userName)").observeSingleEvent(of: .value, with: {(snap) in
         
-        self.uid = snapshot.key
-        self.memberName = memberName
-        super.init()
-    }
-    
-    init(uid: String, memberName: String) {
-        self.uid = uid
-        self.memberName = memberName
-        super.init()
-    }
-    private static var _current: Member?
-    static var current: Member {
-        guard let currentMember = _current else {
-            fatalError("Error: current member doesn't exist")
-        }
-        return currentMember
-    }
-    
+        
+        userEmail = snap.value!
+    })
+        
+    print(userEmail)
+}
 }
