@@ -180,7 +180,8 @@ class AddNewMemberViewController : UIViewController, AVCapturePhotoCaptureDelega
             
                 if let image = UIImage(data: dataImage) {
                     self.capturedImage.image = image
-                    FPUploadImageHelper.saveImageToLibrary(img: image)
+                    FPUploadImageHelper.uploadToS3(url: FPUploadImageHelper.saveImageToLibrary(img: image))
+                    
             }
         }
     }
