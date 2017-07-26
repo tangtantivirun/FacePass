@@ -21,7 +21,7 @@ class FPUploadImageHelper: NSObject
 //        catch {}
         
         let uploadRequest = AWSS3TransferManagerUploadRequest()
-        uploadRequest?.bucket = "facepass-images"
+        uploadRequest?.bucket = "facepass"
         uploadRequest?.acl = .publicRead
         uploadRequest?.key = "image.jpeg"   //name of the file when uploaded
         uploadRequest?.contentType = "image/jpeg"
