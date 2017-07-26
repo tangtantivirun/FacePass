@@ -12,7 +12,7 @@ import AWSCognito
 import AWSS3
 class FPUploadImageHelper: NSObject
 {
-    static func uploadToS3(url: NSString){
+    static func uploadToS3(url: String){
 //        var img: UIImage
 //        var jpeg: Data = UIImageJPEGRepresentation(img, 0.8)!
 //        do {
@@ -26,6 +26,8 @@ class FPUploadImageHelper: NSObject
         uploadRequest?.key = "image.jpeg"   //name of the file when uploaded
         uploadRequest?.contentType = "image/jpeg"
         uploadRequest?.body = URL(fileURLWithPath: url as String)   //create url
+        print("we made it half way")
+        
         
         let transferManager = AWSS3TransferManager.default()
         transferManager.upload(uploadRequest!).continueWith(block: { (task: AWSTask<AnyObject>) -> Any? in
