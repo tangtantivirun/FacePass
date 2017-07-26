@@ -13,19 +13,19 @@ import AWSS3
 class FPUploadImageHelper: NSObject
 {
     static func uploadToS3(url: NSString){
-        var img: UIImage
-        var jpeg: Data = UIImageJPEGRepresentation(img, 0.8)!
-        do {
-            try jpeg?.write(to: url)
-        }
-        catch {}
+//        var img: UIImage
+//        var jpeg: Data = UIImageJPEGRepresentation(img, 0.8)!
+//        do {
+//            try jpeg?.write(to: url)
+//        }
+//        catch {}
         
         let uploadRequest = AWSS3TransferManagerUploadRequest()
         uploadRequest?.bucket = "facepass-images"
         uploadRequest?.acl = .publicRead
         uploadRequest?.key = "image.jpeg"   //name of the file when uploaded
         uploadRequest?.contentType = "image/jpeg"
-        uploadRequest?.body = URL(fileURLWithPath: url)   //create url
+        uploadRequest?.body = URL(fileURLWithPath: url as String)   //create url
         
         let transferManager = AWSS3TransferManager.default()
         transferManager.upload(uploadRequest!).continueWith(block: { (task: AWSTask<AnyObject>) -> Any? in
@@ -34,15 +34,16 @@ class FPUploadImageHelper: NSObject
             }
             
             if task.result != nil {
-                let url = AWSS3.default().configuration.endpoint.url
-                let publicURL = url?.appendingPathComponent((uploadRequest?.bucket!)!).appendingPathComponent((uploadRequest?.key!)!)
-                print("Uploaded to:\(publicURL)")
+                print("we did it!")
+//                let url = AWSS3.default().configuration.endpoint.url
+//                let publicURL = url?.appendingPathComponent((uploadRequest?.bucket!)!).appendingPathComponent((uploadRequest?.key!)!)
+               // print("Uploaded to:\(publicURL ?? <#default value#>)")
             }
             return nil
         })
     }
     
-    static func saveImageToLibrary(img: UIImage) -> NSString
+    static func saveImageToLibrary(img: UIImage) -> String
     {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
         let destinationPath = documentsPath.appendingPathComponent("filename.jpg")
