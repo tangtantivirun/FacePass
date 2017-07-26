@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="-882.39999999999998" y="-887.40629685157433"/>
         </scene>
-        <!--AddNewMember-->
+        <!--NewMemberPhoto-->
         <scene sceneID="EVX-vb-bWo">
             <objects>
-                <viewControllerPlaceholder storyboardName="AddNewMember" id="Moc-Uj-Yoi" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="NewMemberPhoto" id="Moc-Uj-Yoi" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkl-yv-B6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847" y="-783"/>

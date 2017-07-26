@@ -47,18 +47,4 @@ class Member: NSObject {
         return currentMember
     }
     
-    class func setCurrent(_ member: Member, writeToMemberDefaults: Bool = false) {
-        if writeToMemberDefaults {
-            let data = NSKeyedArchiver.archivedData(withRootObject: member.self)
-            MemberDefaults.standard.set(data, forKey: Constants.MemberDefaults.currentMember)
-        }
-        _current = Member
-    }
-}
-extension Member: NSCoding {
-    func encode(with aCoder: NSCoder) {
-        aCoder.encode(uid, forKey: Constants.MemberDefaults.uid)
-        aCoder.encode(memberName, forKey: Constants.MemberDefaults.memberName)
-    
-}
 }
