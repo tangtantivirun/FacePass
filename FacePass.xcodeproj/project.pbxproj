@@ -13,6 +13,8 @@
 		2435B3691F25E077003A0913 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3681F25E077003A0913 /* UserService.swift */; };
 		2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */; };
 		2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B36C1F25EA1A003A0913 /* Main.storyboard */; };
+		247434581F283FDB002CEA42 /* MemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247434571F283FDB002CEA42 /* MemberService.swift */; };
+		2474345A1F284024002CEA42 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247434591F284024002CEA42 /* Member.swift */; };
 		24754D8C1F26DBC300E79490 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */; };
 		24754D8E1F26E5D700E79490 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8D1F26E5D700E79490 /* StorageService.swift */; };
 		24754D901F27194A00E79490 /* test-image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 24754D8F1F27194A00E79490 /* test-image.jpeg */; };
@@ -38,6 +40,8 @@
 		2435B3681F25E077003A0913 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		2435B36C1F25EA1A003A0913 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		247434571F283FDB002CEA42 /* MemberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberService.swift; sourceTree = "<group>"; };
+		247434591F284024002CEA42 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		24754D8D1F26E5D700E79490 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		24754D8F1F27194A00E79490 /* test-image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "test-image.jpeg"; sourceTree = SOURCE_ROOT; };
@@ -100,6 +104,7 @@
 			children = (
 				2435B3681F25E077003A0913 /* UserService.swift */,
 				24754D8D1F26E5D700E79490 /* StorageService.swift */,
+				247434571F283FDB002CEA42 /* MemberService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				2435B3661F25E062003A0913 /* User.swift */,
+				247434591F284024002CEA42 /* Member.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -334,6 +340,8 @@
 				2435B3691F25E077003A0913 /* UserService.swift in Sources */,
 				24754D921F27296E00E79490 /* AddNewMemberViewController.swift in Sources */,
 				24C47EB81F25C73100756D70 /* ViewController.swift in Sources */,
+				247434581F283FDB002CEA42 /* MemberService.swift in Sources */,
+				2474345A1F284024002CEA42 /* Member.swift in Sources */,
 				2435B3671F25E062003A0913 /* User.swift in Sources */,
 				24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */,
 				3892641C1F2728DC00BE0EFE /* FPUploadImageHelper.swift in Sources */,
