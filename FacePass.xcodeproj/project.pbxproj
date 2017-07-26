@@ -27,6 +27,7 @@
 		24F82E361F263D8700EBB6C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F82E351F263D8700EBB6C9 /* Constants.swift */; };
 		3892641C1F2728DC00BE0EFE /* FPUploadImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892641B1F2728DC00BE0EFE /* FPUploadImageHelper.swift */; };
 		38B9D6D01F25DE5E007CAFD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38B9D6CF1F25DE5E007CAFD8 /* GoogleService-Info.plist */; };
+		38C11BAE1F284A3B0019FB65 /* AddNewMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */; };
 		38F51DD01F2649E2003C36E0 /* FPPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F51DCF1F2649E2003C36E0 /* FPPhotoHelper.swift */; };
 		38F51DD21F26F5E8003C36E0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */; };
 		38F51DD41F26F6BC003C36E0 /* jsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 38F51DD31F26F6BC003C36E0 /* jsonFile.json */; };
@@ -56,6 +57,7 @@
 		24F82E351F263D8700EBB6C9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3892641B1F2728DC00BE0EFE /* FPUploadImageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPUploadImageHelper.swift; sourceTree = "<group>"; };
 		38B9D6CF1F25DE5E007CAFD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMemberViewController.swift; sourceTree = "<group>"; };
 		38F51DCF1F2649E2003C36E0 /* FPPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPPhotoHelper.swift; sourceTree = "<group>"; };
 		38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/FacePass-gaozhzxtleecivfdioiecruhyasv/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		38F51DD31F26F6BC003C36E0 /* jsonFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonFile.json; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				2435B3601F25D86D003A0913 /* LoginViewController.swift */,
 				2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */,
 				24754D911F27296E00E79490 /* NewMemberPhotoViewController.swift */,
+				38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				2474345A1F284024002CEA42 /* Member.swift in Sources */,
 				2435B3671F25E062003A0913 /* User.swift in Sources */,
 				24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */,
+				38C11BAE1F284A3B0019FB65 /* AddNewMemberViewController.swift in Sources */,
 				3892641C1F2728DC00BE0EFE /* FPUploadImageHelper.swift in Sources */,
 				38F51DD01F2649E2003C36E0 /* FPPhotoHelper.swift in Sources */,
 				2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */,
