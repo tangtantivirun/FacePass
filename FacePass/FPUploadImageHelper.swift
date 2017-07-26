@@ -48,7 +48,7 @@ class FPUploadImageHelper: NSObject
     static func saveImageToLibrary(img: UIImage) -> String
     {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
-        let destinationPath = documentsPath.appendingPathComponent("filename.jpg")
+        let destinationPath = documentsPath.appendingPathComponent("filename.jpeg")
         let image =  UIImageJPEGRepresentation(img,0.8) as NSData!
         image?.write(toFile: destinationPath, atomically: true)
         return destinationPath
