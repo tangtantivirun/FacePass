@@ -41,11 +41,12 @@ struct MemberService {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentsDirectory = paths[0]
         let destinationURL = documentsDirectory.appendingPathComponent(memberID).appendingPathComponent("image.jpeg")
+        let destinationURLString = documentsDirectory.appendingPathComponent(memberID).appendingPathComponent("image.jpeg").absoluteString
         guard let imageData =  UIImageJPEGRepresentation(image,0.8) else {
             fatalError("Image to data conversion failure")
         }
         do {
-            try imageData.write(to: destinationURL)
+            try FileManager.default.createFile(atPath: destinationURLString, contents: imageData)
         } catch let error {
             print(error.localizedDescription)
         }
