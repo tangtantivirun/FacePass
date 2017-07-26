@@ -31,7 +31,7 @@
                                 <state key="normal" image="focus"/>
                                 <connections>
                                     <action selector="captureImage:" destination="X3n-w1-eHd" eventType="touchUpInside" id="3Ux-PL-OcX"/>
-                                    <segue destination="s89-qw-sf0" kind="show" id="QUl-c4-8qX"/>
+                                    <segue destination="s89-qw-sf0" kind="show" identifier="addMemberInfo" id="QUl-c4-8qX"/>
                                 </connections>
                             </button>
                         </subviews>
