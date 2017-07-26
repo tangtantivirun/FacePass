@@ -13,7 +13,7 @@
         <!--Main View Controller-->
         <scene sceneID="NbI-ZD-t0G">
             <objects>
-                <viewController id="peZ-82-vRF" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="peZ-82-vRF" customClass="MainViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RVs-xg-I9T"/>
                         <viewControllerLayoutGuide type="bottom" id="Prh-Wf-ZSr"/>
@@ -42,7 +42,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Moc-Uj-Yoi" kind="show" id="TGO-uH-6ZZ"/>
+                                            <segue destination="Moc-Uj-Yoi" kind="show" id="kbp-fr-ARN"/>
                                         </connections>
                                     </button>
                                 </subviews>
