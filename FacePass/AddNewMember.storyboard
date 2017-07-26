@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,26 +25,22 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbP-dA-sI5" userLabel="Camera View ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wg-yS-6jQ">
-                                        <rect key="frame" x="321" y="93" width="30" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="flipCamera"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4h-0B-VKP">
-                                        <rect key="frame" x="0.0" y="86" width="84" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="cancel"/>
-                                    </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7XD-V0-JNi">
-                                        <rect key="frame" x="18" y="577" width="66" height="63"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7XD-V0-JNi">
+                                        <rect key="frame" x="18" y="590" width="61" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="61" id="Bza-E8-eV1"/>
+                                            <constraint firstAttribute="height" constant="57" id="TAQ-Tu-XZ2"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="7XD-V0-JNi" firstAttribute="leading" secondItem="bbP-dA-sI5" secondAttribute="leading" constant="18" id="IIt-Py-MKg"/>
+                                    <constraint firstAttribute="bottom" secondItem="7XD-V0-JNi" secondAttribute="bottom" constant="20" id="h96-e5-n96"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BK-jS-OPT" userLabel="Focus">
-                                <rect key="frame" x="139" y="584" width="96" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BK-jS-OPT" userLabel="Focus">
+                                <rect key="frame" x="138" y="605" width="99" height="42"/>
                                 <state key="normal" image="focus"/>
                                 <connections>
                                     <action selector="captureImage:" destination="X3n-w1-eHd" eventType="touchUpInside" id="3Ux-PL-OcX"/>
@@ -54,8 +51,11 @@
                         <constraints>
                             <constraint firstItem="bbP-dA-sI5" firstAttribute="centerX" secondItem="1Ux-Es-Ii3" secondAttribute="centerX" id="9g0-ug-JCr"/>
                             <constraint firstItem="bbP-dA-sI5" firstAttribute="centerY" secondItem="1Ux-Es-Ii3" secondAttribute="centerY" id="Wyi-1F-J7F"/>
+                            <constraint firstItem="4BK-jS-OPT" firstAttribute="leading" secondItem="1Ux-Es-Ii3" secondAttribute="leadingMargin" constant="122" id="XAp-yE-029"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4BK-jS-OPT" secondAttribute="trailing" constant="122" id="YLw-Id-S7o"/>
                             <constraint firstItem="bbP-dA-sI5" firstAttribute="leading" secondItem="1Ux-Es-Ii3" secondAttribute="leading" id="a8A-mF-r5U"/>
                             <constraint firstItem="bbP-dA-sI5" firstAttribute="bottom" secondItem="5jW-gV-cZx" secondAttribute="top" id="abV-iY-EIk"/>
+                            <constraint firstItem="5jW-gV-cZx" firstAttribute="top" secondItem="4BK-jS-OPT" secondAttribute="bottom" constant="20" id="xT3-5W-Fgg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="62N-cw-Oqr"/>
@@ -89,8 +89,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cancel" width="30" height="30"/>
-        <image name="flipCamera" width="30" height="23"/>
         <image name="focus" width="42" height="42"/>
     </resources>
 </document>
