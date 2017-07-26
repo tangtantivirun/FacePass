@@ -6,25 +6,19 @@
 //  Copyright © 2017 JT. All rights reserved.
 //
 
+import UIKit
 import Foundation
-//import FirebaseAuth.FIRUser
-//import FirebaseDatabase
-//
-//struct MemberService {
-//    
-//    static func create(_ firUser: FIRUser, memberName: String, completion: @escaping (Member?) ->Void){
-//        let memberAttrs = ["memberName": memberName]
-//        
-//        let ref = Database.database().reference().child("members").child(firUser.uid)
-//        ref.setValue(memberAttrs) { (error, ref) in
-//            if let error = error {
-//                assertionFailure(error.localizedDescription)
-//                return completion(nil)
-//            }
-//            ref.observeSingleEvent(of: .value, with: { (snapshot) in
-//                let member = Member(snapshot: snapshot)
-//                completion(member)
-//            })
-//        }
-//    }
-//}
+import FirebaseAuth.FIRUser
+import FirebaseDatabase
+
+struct MemberService {
+    
+   static func create(_ firUser: FIRUser, memberName: String, completion: @escaping (User?) ->Void){
+   
+    let photoInfo = ["name": memberName]
+    let reference  = Database.database().reference().child("Posts").childByAutoId()
+    reference.setValue(photoInfo)
+    let childautoID = reference.key
+    print(childautoID)
+}
+}
