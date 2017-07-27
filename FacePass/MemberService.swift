@@ -18,17 +18,24 @@ struct MemberService {
     
     // Parameters: All properties required to create a member instance
     // TODO add params for member name, occupation, age, etc.
-    static func create(image: UIImage, completion: @escaping (Member?) ->Void){
+    static func create(image: UIImage, name: String, birthday: String, gender: Bool, email: String, phone: String, id: String, completion: @escaping (Member?) ->Void){
         
         // get unique memberID
-        let reference  = Database.database().reference().child("members").child(User.current.uid).childByAutoId()
-        let memberID = reference.key
-        
+        //let reference  = Database.database().reference().child("members").child(User.current.uid).childByAutoId()
+        //let memberID = reference.key
+       
         // Eventually implement upload member.dictValue
+        let userAttrs: [String: Any] = ["name": name,
+                                        "birthday": birthday,
+                                        "gender" : gender,
+                                        "email" : email,
+                                        "phone" : phone,
+                                        "id" : id]
+        
             //TODO
         
         // Save image to documents on disk and get url
-        let diskImageURL = MemberService.save(image, toMember: memberID)
+        let diskImageURL = MemberService.save(image, toMember: id)
         MemberService.uploadToS3(localImageURL: diskImageURL)
         
         // Do completion
@@ -39,14 +46,16 @@ struct MemberService {
     // Return value: URL of image saved on disk
     private static func save(_ image: UIImage, toMember memberID: String) -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        //let dir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         let documentsDirectory = paths[0]
         let destinationURL = documentsDirectory.appendingPathComponent(memberID).appendingPathComponent("image.jpeg")
-        let destinationURLString = documentsDirectory.appendingPathComponent(memberID).appendingPathComponent("image.jpeg").absoluteString
+        //let destinationURLString = documentsDirectory.appendingPathComponent(memberID).appendingPathComponent("image.jpeg").absoluteString
         guard let imageData =  UIImageJPEGRepresentation(image,0.8) else {
             fatalError("Image to data conversion failure")
         }
         do {
-            try FileManager.default.createFile(atPath: destinationURLString, contents: imageData)
+            try FileManager.default.createDirectory(at: destinationURL, withIntermediateDirectories: true)
+            try imageData.write(to: destinationURL)
         } catch let error {
             print(error.localizedDescription)
         }
@@ -54,13 +63,6 @@ struct MemberService {
 }
 
     private static func uploadToS3(localImageURL url: URL) {
-        //        var img: UIImage
-        //        var jpeg: Data = UIImageJPEGRepresentation(img, 0.8)!
-        //        do {
-        //            try jpeg?.write(to: url)
-        //        }
-        //        catch {}
-        
         let uploadRequest = AWSS3TransferManagerUploadRequest()
         uploadRequest?.bucket = "facepass"
         uploadRequest?.acl = .publicRead

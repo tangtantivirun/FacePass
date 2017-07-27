@@ -22,13 +22,29 @@ class AddNewMemberViewController: UIViewController
     @IBOutlet weak var idTextField: UITextField!
     @IBOutlet weak var profileImageView: UIImageView!
     
+    var image: UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.profileImageView.image = NewMemberPhotoViewController.savedImage!
+        
+        self.profileImageView.image = image
     }
     
     @IBAction func AddMemberButtonTapped(_ sender: Any) {
-    
+        guard let id = idTextField.text,
+        !id.isEmpty else {
+            return
+        }
+        
+        MemberService.create(image: image, name: "", birthday: "", gender: false, email: "", phone: "", id: id) { newMember in
+            if let member = newMember {
+                // do stuff
+                // TODO
+            }
+            self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
+            
+        }
+
     
     }
     

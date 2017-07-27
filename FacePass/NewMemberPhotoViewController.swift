@@ -12,7 +12,7 @@ import AVFoundation
 class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDelegate {
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var photoButton: UIButton!
-    static var savedImage: UIImage?
+    var savedImage: UIImage?
     
     let session = AVCaptureSession()
     let photoOutput = AVCapturePhotoOutput()
@@ -178,20 +178,18 @@ class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDele
             if let sampleBuffer = photoSampleBuffer, let previewBuffer = previewPhotoSampleBuffer, let dataImage = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: sampleBuffer, previewPhotoSampleBuffer: previewBuffer) {
                 
                 if let image = UIImage(data: dataImage) {
-                    NewMemberPhotoViewController.savedImage = image
-                    MemberService.create(image: image) { newMember in
-                        if let member = newMember {
-                            // do stuff
-                            // TODO
-                        }
-                        self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
-                        
-                    }
-                    
+                    self.savedImage = image
+                    self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
                 }
             }
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addMemberInfo" {
+            let newMemberVC = segue.destination as! AddNewMemberViewController
+            newMemberVC.image = savedImage
+        }
+    }
    
 }
