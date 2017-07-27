@@ -184,6 +184,10 @@ class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDele
             }
         }
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addMemberInfo" {

@@ -50,7 +50,7 @@ struct MemberService {
         transferUtility.uploadData(
             imageData,
             bucket: "facepass-lasthope",
-            key: "\(id)/image.jpeg",
+            key: "\(User.current.uid)/\(id).jpeg",
             contentType: "image/jpeg",
             expression: expression).continueWith(block: { task in
                 if let error = task.error {

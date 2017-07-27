@@ -9,6 +9,7 @@
 import UIKit
 import AWSRekognition
 import AWSCore
+import AWSS3
 import AWSCognito
 import FirebaseAuth
 import FirebaseAuthUI
@@ -31,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                                                                 identityPoolId:"ap-northeast-1:949586fc-225a-4feb-93fc-b329725ebccf")
         
         let configuration = AWSServiceConfiguration(region:.APNortheast1, credentialsProvider:credentialsProvider)
-        
+        AWSS3.register(with: configuration!, forKey: "JT")
         AWSServiceManager.default().defaultServiceConfiguration = configuration
         return true
     }

@@ -189,11 +189,24 @@ func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSamp
                 let awsImage = AWSRekognitionImage()
                 let imageData = UIImageJPEGRepresentation(image, 0.7)
                 awsImage?.bytes = imageData
-                let johnnyDepp = #imageLiteral(resourceName: "test-image.jpeg")
-                let imageData1 = UIImageJPEGRepresentation(johnnyDepp, 0.7)
+                //let johnnyDepp = #imageLiteral(resourceName: "test-image.jpeg")
+                //let imageData1 = UIImageJPEGRepresentation(johnnyDepp, 0.7)
                 let awsImage1 = AWSRekognitionImage()
-                awsImage1?.bytes = imageData1
+                let s3 = AWSS3.s3(forKey: "JT" )
 
+                let listRequest: AWSS3ListObjectsRequest = AWSS3ListObjectsRequest()
+                listRequest.bucket = "facepass-lasthope"
+                s3.listObjects(listRequest).continueWith { (task) -> AnyObject? in
+                    print("call returned")
+                    let listObjectsOutput = task.result;
+                    for object in (listObjectsOutput?.contents)! {
+                        awsImage1?.s3Object = object
+                    }
+                    
+                    return nil
+                }
+
+                
                 let rekognitionClient = AWSRekognition.default()
                 
                 
