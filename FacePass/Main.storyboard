@@ -32,7 +32,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="fTC-fJ-Fj2" kind="show" id="zZ6-FS-hGV"/>
+                                            <segue destination="ODF-69-LVb" kind="show" id="zZ6-FS-hGV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvO-py-qay">
@@ -80,24 +80,6 @@
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="-887.40629685157433"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Xuu-d2-f5F">
-            <objects>
-                <viewController id="fTC-fJ-Fj2" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LQF-Nr-PI1"/>
-                        <viewControllerLayoutGuide type="bottom" id="uNM-wy-p06"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="F59-d1-J0Q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rh3-yF-EGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="964" y="-1238"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="pFx-i6-C3x">
             <objects>
@@ -141,6 +123,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gxt-DD-6Wz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="964" y="-404"/>
+        </scene>
+        <!--VerifyMember-->
+        <scene sceneID="LCW-G1-V5k">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VerifyMember" id="ODF-69-LVb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hsY-7s-fmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="-1238.2308845577213"/>
         </scene>
     </scenes>
 </document>
