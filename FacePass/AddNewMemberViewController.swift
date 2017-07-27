@@ -29,19 +29,19 @@ class AddNewMemberViewController: UIViewController
         
         self.profileImageView.image = image
     }
-//    @IBAction func genderSelected(_ sender: UISegmentedControl) {
-//        switch genderSelector.selectedSegmentIndex {
-//        case 0:
-//            gender = Gender.Male
-//        case 1:
-//            gender = Gender.Female
-//        case 2:
-//            gender = Gender.Other
-//        default:
-//            break
-//            
-//        }
-//    }
+    @IBAction func genderSelected(_ sender: UISegmentedControl) {
+        switch genderSelector.selectedSegmentIndex {
+        case 0:
+            gender = Gender.Male
+        case 1:
+            gender = Gender.Female
+        case 2:
+            gender = Gender.Other
+        default:
+            break
+            
+        }
+    }
 
     @IBAction func AddMemberButtonTapped(_ sender: Any) {
         guard let id = idTextField.text,
@@ -49,7 +49,7 @@ class AddNewMemberViewController: UIViewController
             return
         }
         
-        MemberService.create(image: image, name:nameTextField.text! , birthday: birthdayTextField.text!, gender: Gender.Male, email: emailTextField.text!, phone: phoneTextField.text!, id: id) { (newMember) in
+        MemberService.create(image: image, name:nameTextField.text! , birthday: birthdayTextField.text!, gender: gender!, email: emailTextField.text!, phone: phoneTextField.text!, id: id) { (newMember) in
                     guard let newMember = newMember else {
                     return
             }
