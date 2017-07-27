@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New Member Photo View Controller-->
+        <!--Take Picture of New Member-->
         <scene sceneID="Yjg-YO-Sso">
             <objects>
                 <viewController id="X3n-w1-eHd" customClass="NewMemberPhotoViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
@@ -45,7 +45,13 @@
                             <constraint firstItem="5jW-gV-cZx" firstAttribute="top" secondItem="4BK-jS-OPT" secondAttribute="bottom" constant="20" id="xT3-5W-Fgg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="62N-cw-Oqr"/>
+                    <navigationItem key="navigationItem" title="Take Picture of New Member" id="KHc-FV-v7y">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eFQ-7z-nRY">
+                            <connections>
+                                <action selector="unwindToMainVC:" destination="X3n-w1-eHd" id="GQO-8N-6kW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cameraView" destination="bbP-dA-sI5" id="2Ze-W6-gLC"/>
                         <outlet property="photoButton" destination="4BK-jS-OPT" id="etT-aL-DEi"/>
