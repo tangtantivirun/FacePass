@@ -53,32 +53,54 @@ struct MemberService {
         guard let imageData =  UIImageJPEGRepresentation(image,0.8) else {
             fatalError("Image to data conversion failure")
         }
-        do {
-            try FileManager.default.createDirectory(at: destinationURL, withIntermediateDirectories: true)
-            try imageData.write(to: destinationURL)
-        } catch let error {
-            print(error.localizedDescription)
-        }
+//        do {
+//            try FileManager.default.createDirectory(at: destinationURL, withIntermediateDirectories: true)
+//            try imageData.write(to: destinationURL)
+//        } catch let error {
+//            print(error.localizedDescription)
+//        }
         print (destinationURL)
+        let transferUtility = AWSS3TransferUtility.default()
+        let expression = AWSS3TransferUtilityUploadExpression()
+        
+        transferUtility.uploadData(
+            imageData,
+            bucket: "facepass-lasthope",
+            key: "image.jpeg",
+            contentType: "image/jpeg",
+            expression: expression).continueOnSuccessWith(block: { task in
+                print("Success")
+            })
         return destinationURL
 }
 
     private static func uploadToS3(localImageURL url: URL) {
-        let uploadRequest = AWSS3TransferManagerUploadRequest()
-        uploadRequest?.bucket = "facepass"
-        uploadRequest?.acl = .publicRead
-        uploadRequest?.key = "image.jpeg"   //name of the file when uploaded
-        uploadRequest?.contentType = "image/jpeg"
-        uploadRequest?.body = url
-        print("we made it half way")
         
+//        let uploadRequest = AWSS3TransferManagerUploadRequest()
+//        uploadRequest?.bucket = "facepass-ios"
+//        //uploadRequest?.acl = .publicRead
+//        uploadRequest?.key = "image.jpeg"   //name of the file when uploaded
+//        //uploadRequest?.contentType = "image/jpeg"
+//        uploadRequest?.body = url
+//        print("we made it half way")
+//        
+//        if let test = try? uploadRequest?.validate() {
+//            
+//        } else {
+//            print("Invalid request")
+//        }
+//        
+//        let transferManager = AWSS3TransferManager.default()
+//        transferManager.upload(uploadRequest!).continueOnSuccessWith(block: { task in
+//            print("Success")
+//        })
         
-        let transferManager = AWSS3TransferManager.default()
+        /*
         transferManager.upload(uploadRequest!).continueWith(block: { (task: AWSTask<AnyObject>) -> Any? in
             if let error = task.error {
                 print("Upload failed with error: (\(error.localizedDescription))")
             }
-            
+
             if task.result != nil {
                 print("we did it!")
                 //                let url = AWSS3.default().configuration.endpoint.url
@@ -87,6 +109,7 @@ struct MemberService {
             }
             return nil
         })
+        */
     }
 
 
