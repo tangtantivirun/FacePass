@@ -93,38 +93,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
             endingLineNumber = "78">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static FacePass.MemberService.((uploadToS3 in _269ABCE7BF33FB5AC0DF413FF67DBC1F) (localImageURL : Foundation.URL) -&gt; ()).(closure #1)"
-                  moduleName = "FacePass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/air/Rise/Make%20School%20Project/FacePass/FacePass/MemberService.swift"
-                  timestampString = "522816690.254015"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static FacePass.MemberService.((uploadToS3 in _269ABCE7BF33FB5AC0DF413FF67DBC1F) (localImageURL : Foundation.URL) -&gt; ()).(closure #1)"
-                  moduleName = "FacePass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/air/Rise/Make%20School%20Project/FacePass/FacePass/MemberService.swift"
-                  timestampString = "522816690.258069"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "78"
-                  endingLineNumber = "78"
-                  offsetFromSymbolStart = "127">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
