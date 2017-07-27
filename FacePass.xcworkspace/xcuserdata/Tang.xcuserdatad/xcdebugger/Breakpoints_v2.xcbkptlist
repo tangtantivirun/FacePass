@@ -303,11 +303,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "522752578.061339"
+            timestampString = "522813206.084855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
             landmarkName = "uploadToS3(localImageURL:)"
             landmarkType = "7">
             <Locations>
@@ -319,11 +319,11 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/MemberService.swift"
-                  timestampString = "522772890.224587"
+                  timestampString = "522813351.613089"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
                   offsetFromSymbolStart = "1052">
                </Location>
                <Location
@@ -334,11 +334,11 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/MemberService.swift"
-                  timestampString = "522772890.225986"
+                  timestampString = "522813351.614427"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "75"
-                  endingLineNumber = "75"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
@@ -347,7 +347,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
@@ -367,7 +367,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "522772941.944885"
+            timestampString = "522813206.084855"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "uploadToS3(localImageURL:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FacePass/MemberService.swift"
+            timestampString = "522813206.084855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
@@ -383,7 +399,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "522772942.672055"
+            timestampString = "522813206.084855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "72"
@@ -395,16 +411,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "522772943.535286"
+            timestampString = "522813206.084855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "uploadToS3(localImageURL:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "save(_:toMember:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -415,13 +431,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "522773356.696366"
+            timestampString = "522813387.409814"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "save(_:toMember:)"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "uploadToS3(localImageURL:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static FacePass.MemberService.((uploadToS3 in _269ABCE7BF33FB5AC0DF413FF67DBC1F) (localImageURL : Foundation.URL) -&gt; ()).(closure #1)"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/MemberService.swift"
+                  timestampString = "522813401.380319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static FacePass.MemberService.((uploadToS3 in _269ABCE7BF33FB5AC0DF413FF67DBC1F) (localImageURL : Foundation.URL) -&gt; ()).(closure #1)"
+                  moduleName = "FacePass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/MemberService.swift"
+                  timestampString = "522813401.381658"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

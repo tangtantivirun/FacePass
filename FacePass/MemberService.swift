@@ -50,6 +50,7 @@ struct MemberService {
         } catch let error {
             print(error.localizedDescription)
         }
+        print (destinationURL)
         return destinationURL
 }
 
