@@ -39,7 +39,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Take Returning Member's Face" id="z0V-xv-pIs">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="9a4-Zq-oj4"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="9a4-Zq-oj4">
+                            <connections>
+                                <action selector="unwindToMainVC:" destination="yJm-NF-JEs" id="jcl-nk-m2V"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>

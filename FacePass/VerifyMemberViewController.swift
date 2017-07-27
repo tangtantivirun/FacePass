@@ -209,13 +209,17 @@ func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSamp
                 rekognitionClient.compareFaces(request)
 
                 
-
-            
-            
                 self.performSegue(withIdentifier: "checkMember", sender: nil)
             }
         }
     }
     }
+    
+    @IBAction func unwindToMainVC(_ sender: Any) {
+        let mainVC = UIStoryboard.initialViewController(for: .main)
+        self.view.window?.rootViewController = mainVC
+        self.view.window?.makeKeyAndVisible()
+    }
+
 }
 
