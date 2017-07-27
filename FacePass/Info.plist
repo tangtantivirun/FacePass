@@ -40,5 +40,29 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>AWS</key>
+	<dict>
+		<key>CredentialsProvider</key>
+		<dict>
+			<key>CognitoIdentity</key>
+			<dict>
+				<key>Default</key>
+				<dict>
+					<key>PoolId</key>
+					<string>ap-northeast-1:949586fc-225a-4feb-93fc-b329725ebccf</string>
+					<key>Region</key>
+					<string>Asia Pacific (Tokyo)</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>S3TransferUtility</key>
+		<dict>
+			<key>Default</key>
+			<dict>
+				<key>Region</key>
+				<string>Asia Pacific (Singapore)</string>
+			</dict>
+		</dict>
+	</dict>
 </dict>
 </plist>
