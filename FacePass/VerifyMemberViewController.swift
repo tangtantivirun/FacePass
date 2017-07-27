@@ -6,8 +6,15 @@
 //  Copyright © 2017 JT. All rights reserved.
 //
 
-import AVFoundation
+import Foundation
 import UIKit
+import AWSRekognition
+import AWSRekognition.AWSRekognition
+import AWSRekognition.AWSRekognitionModel
+import AWSRekognition.AWSRekognitionResources
+import AWSRekognition.AWSRekognitionService
+import AWSS3
+import AVFoundation
 
 class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegate  {
     
@@ -179,9 +186,27 @@ func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSamp
             
             if let image = UIImage(data: dataImage) {
                 self.verifySavedImage = image
+                let awsImage = AWSRekognitionImage()
+                let imageData = UIImageJPEGRepresentation(image, 0.7)
+                awsImage?.bytes = imageData
+                
+                let rekognitionClient = AWSRekognition.default()
+                
+                
+                guard let request = AWSRekognitionCompareFacesRequest.init() else {
+                    puts("Unable to initialize AWSRekognitionDetectLabelsRequest.")
+                    return
+                }
+                
+                rekognitionClient.compareFaces(request)
+                request.targetImage = awsImage
+                request.sourceImage = AWSRekognitionImage()
+                request.similarityThreshold = 90 as NSNumber!
+
                 self.performSegue(withIdentifier: "checkMember", sender: nil)
             }
         }
     }
+    }
 }
-}
+

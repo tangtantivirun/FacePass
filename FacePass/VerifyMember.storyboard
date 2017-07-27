@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Verify Member View Controller-->
+        <!--Take Returning Member's Face-->
         <scene sceneID="YRj-Kl-QVr">
             <objects>
                 <viewController id="yJm-NF-JEs" customClass="VerifyMemberViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,7 @@
                                 <state key="normal" image="focus"/>
                                 <connections>
                                     <action selector="verifyCapturePhoto:" destination="yJm-NF-JEs" eventType="touchUpInside" id="yaW-TI-xjm"/>
-                                    <segue destination="yDx-JB-sdI" kind="show" id="QBM-Dq-UI4"/>
+                                    <segue destination="yDx-JB-sdI" kind="show" identifier="checkMember" id="QBM-Dq-UI4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -38,7 +38,9 @@
                             <constraint firstItem="iqm-fn-o17" firstAttribute="centerX" secondItem="ogk-xB-CM1" secondAttribute="centerXWithinMargins" id="uMK-GF-IS1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VKQ-Cb-0GM"/>
+                    <navigationItem key="navigationItem" title="Take Returning Member's Face" id="z0V-xv-pIs">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="9a4-Zq-oj4"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="verifyCameraView" destination="ogk-xB-CM1" id="zcg-l6-taU"/>
