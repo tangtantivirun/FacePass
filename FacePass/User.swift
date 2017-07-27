@@ -12,6 +12,7 @@ class User: NSObject {
     
     let uid: String
     let account: String
+    var memberIDs = [String]()
     required init?(coder aDecoder: NSCoder) {
         guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
             let account = aDecoder.decodeObject(forKey: Constants.UserDefaults.account) as? String

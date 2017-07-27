@@ -27,17 +27,6 @@ struct MemberService {
         // get unique memberID
         //let reference  = Database.database().reference().child("members").child(User.current.uid).childByAutoId()
         //let memberID = reference.key
-       
-        // Eventually implement upload member.dictValue
-        let userAttrs: [String: Any] = ["name": name,
-                                        "birthday": birthday,
-                                        "gender" : gender,
-                                        "email" : email,
-                                        "phone" : phone,
-                                        "id" : id]
-        
-            //TODO
-        
         
         let transferUtility = AWSS3TransferUtility.default()
         let expression = AWSS3TransferUtilityUploadExpression()
@@ -52,7 +41,9 @@ struct MemberService {
                     print(error.localizedDescription)
                     return completion(nil)
                 }
+                
                 // Create new member and send back through completion handler
+            
                 return nil
             })
     }

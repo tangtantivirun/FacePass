@@ -9,18 +9,27 @@
 import Foundation
 
 struct Constants {
+    
     struct Segue {
         static let toCreateAccount = "toCreateAccount"
         static let toCreateMember = "toCreateMember"
     }
+    
     struct UserDefaults {
         static let currentUser = "currentUser"
         static let uid = "uid"
         static let account = "account"
     }
+    
     struct MemberDefaults {
         static let currentMember = "currentMember"
-        static let uid = "uid"
-        static let memberName = "memberName"
-}
+        static let key = "key"
+        static let name = "name"
+        static let id = "id"
+        static let phone = "phone"
+        static let email = "email"
+        static let gender = "gender"
+        static let birthday = "birthday"
+    }
+    
 }
