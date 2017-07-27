@@ -25,7 +25,7 @@ struct MemberService {
         }
         let userAttrs: [String: Any] = ["name": name,
                                         "birthday": birthday,
-                                        "gender" : gender,
+                                        "gender" : gender.rawValue,
                                         "email" : email,
                                         "phone" : phone,
                                         "id" : id]

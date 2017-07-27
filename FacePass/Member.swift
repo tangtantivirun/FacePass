@@ -31,11 +31,11 @@ class Member:NSObject {
     }
     var dictValue: [String: String] {
         let memberAttrs = ["name": name,
-                                        "birthday": birthday,
-                                        "gender" : gender.rawValue,
-                                        "email" : email,
-                                        "phone" : phone,
-                                        "id" : id]
+                            "birthday": birthday,
+                            "gender" : gender.rawValue,
+                            "email" : email,
+                            "phone" : phone,
+                            Constants.MemberDefaults.id : id]
         return memberAttrs
     }
     

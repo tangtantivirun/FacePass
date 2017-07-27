@@ -121,9 +121,6 @@
                                                     <segment title="Female"/>
                                                     <segment title="Others"/>
                                                 </segments>
-                                                <connections>
-                                                    <action selector="genderSelected:" destination="s89-qw-sf0" eventType="valueChanged" id="Ys7-zP-ubC"/>
-                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -216,7 +213,6 @@
                         <outlet property="addMemberButton" destination="kYv-ME-wfS" id="OTU-2R-m23"/>
                         <outlet property="birthdayTextField" destination="Rfd-jR-EuA" id="mER-n6-KOr"/>
                         <outlet property="emailTextField" destination="Q5W-pe-VY7" id="siE-mb-z9f"/>
-                        <outlet property="genderSelected" destination="nAw-gA-w2R" id="WC5-4n-NKt"/>
                         <outlet property="genderSelector" destination="nAw-gA-w2R" id="bX5-DC-gaR"/>
                         <outlet property="idTextField" destination="tgT-ew-uPd" id="UKX-7Q-7jn"/>
                         <outlet property="nameTextField" destination="uyS-eY-6Oa" id="otq-9E-Kn5"/>
