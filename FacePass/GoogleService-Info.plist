@@ -2,12 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Executable file</key>
-	<string>$(EXECUTABLE_NAME)</string>
-	<key>Privacy - Photo Library Usage Discription</key>
-	<string>Uses your library to upload photos</string>
-	<key>Privacy - Camera Usage Description</key>
-	<string>Uses the camera to take picture </string>
 	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
 	<string>ca-app-pub-3940256099942544/2934735716</string>
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
