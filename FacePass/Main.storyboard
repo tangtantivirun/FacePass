@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a5M-NG-UgT">
-                                <rect key="frame" x="56" y="293.5" width="263" height="80"/>
+                                <rect key="frame" x="56" y="268.5" width="263" height="130"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRm-pX-uUX">
                                         <rect key="frame" x="0.0" y="0.0" width="263" height="30"/>
@@ -43,6 +43,16 @@
                                         </state>
                                         <connections>
                                             <segue destination="Moc-Uj-Yoi" kind="show" id="kbp-fr-ARN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgr-Ia-y55">
+                                        <rect key="frame" x="0.0" y="100" width="263" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Look up registered member">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="HVh-iZ-5hS" kind="show" id="2Yj-uC-tA4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -102,6 +112,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mY-qd-oAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="846" y="-966"/>
+        </scene>
+        <!--ListCurrentMember-->
+        <scene sceneID="jan-uH-yVd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ListCurrentMember" id="HVh-iZ-5hS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAD-tB-oLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.79999999999995" y="-428.63568215892059"/>
         </scene>
     </scenes>
 </document>

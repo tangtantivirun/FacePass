@@ -14,6 +14,8 @@
 		2435B3691F25E077003A0913 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3681F25E077003A0913 /* UserService.swift */; };
 		2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */; };
 		2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B36C1F25EA1A003A0913 /* Main.storyboard */; };
+		24624E221F2A360C00BB0961 /* ListCurrentMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24624E211F2A360C00BB0961 /* ListCurrentMember.storyboard */; };
+		24624E241F2A362F00BB0961 /* ListCurrentMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */; };
 		247434581F283FDB002CEA42 /* MemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247434571F283FDB002CEA42 /* MemberService.swift */; };
 		2474345A1F284024002CEA42 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247434591F284024002CEA42 /* Member.swift */; };
 		24754D8C1F26DBC300E79490 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */; };
@@ -43,6 +45,8 @@
 		2435B3681F25E077003A0913 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		2435B36C1F25EA1A003A0913 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		24624E211F2A360C00BB0961 /* ListCurrentMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListCurrentMember.storyboard; sourceTree = "<group>"; };
+		24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCurrentMemberViewController.swift; sourceTree = "<group>"; };
 		247434571F283FDB002CEA42 /* MemberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberService.swift; sourceTree = "<group>"; };
 		247434591F284024002CEA42 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 				38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */,
 				24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */,
 				24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */,
+				24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 				2435B3561F25CBA4003A0913 /* Login.storyboard */,
 				24C47EB91F25C73100756D70 /* Home.storyboard */,
 				2435B36C1F25EA1A003A0913 /* Main.storyboard */,
+				24624E211F2A360C00BB0961 /* ListCurrentMember.storyboard */,
 				24FF7EBC1F29CFF800D9835A /* VerifyMember.storyboard */,
 				24754D931F272BC400E79490 /* NewMemberPhoto.storyboard */,
 			);
@@ -268,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24624E221F2A360C00BB0961 /* ListCurrentMember.storyboard in Resources */,
 				2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */,
 				2429853E1F298CED00FD765F /* GoogleService-Info.plist in Resources */,
 				24754D941F272BC400E79490 /* NewMemberPhoto.storyboard in Resources */,
@@ -341,6 +348,7 @@
 				24754D921F27296E00E79490 /* NewMemberPhotoViewController.swift in Sources */,
 				24C47EB81F25C73100756D70 /* ViewController.swift in Sources */,
 				247434581F283FDB002CEA42 /* MemberService.swift in Sources */,
+				24624E241F2A362F00BB0961 /* ListCurrentMemberViewController.swift in Sources */,
 				2474345A1F284024002CEA42 /* Member.swift in Sources */,
 				2435B3671F25E062003A0913 /* User.swift in Sources */,
 				24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */,
