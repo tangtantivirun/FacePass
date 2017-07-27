@@ -189,7 +189,11 @@ func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSamp
                 let awsImage = AWSRekognitionImage()
                 let imageData = UIImageJPEGRepresentation(image, 0.7)
                 awsImage?.bytes = imageData
-                
+                let johnnyDepp = #imageLiteral(resourceName: "test-image.jpeg")
+                let imageData1 = UIImageJPEGRepresentation(johnnyDepp, 0.7)
+                let awsImage1 = AWSRekognitionImage()
+                awsImage1?.bytes = imageData1
+
                 let rekognitionClient = AWSRekognition.default()
                 
                 
@@ -198,11 +202,16 @@ func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSamp
                     return
                 }
                 
-                rekognitionClient.compareFaces(request)
                 request.targetImage = awsImage
-                request.sourceImage = AWSRekognitionImage()
+                request.sourceImage = awsImage1
                 request.similarityThreshold = 90 as NSNumber!
+                
+                rekognitionClient.compareFaces(request)
 
+                
+
+            
+            
                 self.performSegue(withIdentifier: "checkMember", sender: nil)
             }
         }
