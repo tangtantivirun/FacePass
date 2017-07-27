@@ -48,7 +48,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgr-Ia-y55">
                                         <rect key="frame" x="0.0" y="100" width="263" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Look up registered member">
+                                        <state key="normal" title="List of registered member">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -64,8 +64,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacePassLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="urk-sO-SBA">
+                                <rect key="frame" x="82" y="91" width="220" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196078431372551" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="a5M-NG-UgT" secondAttribute="trailing" constant="40" id="0Ix-hN-gXl"/>
                             <constraint firstItem="a5M-NG-UgT" firstAttribute="leading" secondItem="Wrx-hy-hrI" secondAttribute="leadingMargin" constant="40" id="JxR-66-kPt"/>
@@ -122,4 +126,7 @@
             <point key="canvasLocation" x="896.79999999999995" y="-428.63568215892059"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FacePassLogo.png" width="986" height="660"/>
+    </resources>
 </document>

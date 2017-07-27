@@ -26,10 +26,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="309"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzQ-Cp-edq">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="229"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="192"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yMc-5t-i5H">
-                                                <rect key="frame" x="53" y="86.5" width="268" height="56.5"/>
+                                                <rect key="frame" x="53" y="68" width="268" height="56.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xFM-fp-Vm6">
                                                         <rect key="frame" x="0.0" y="0.0" width="268" height="56.5"/>
@@ -58,7 +58,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7r-il-ViX">
-                                        <rect key="frame" x="35" y="279" width="305" height="30"/>
+                                        <rect key="frame" x="35" y="242" width="305" height="67"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Register or Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,7 +74,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90365668399999999" green="0.97026909719999999" blue="0.97819032269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nKu-kl-pNu" firstAttribute="top" secondItem="AQE-Vs-aw8" secondAttribute="bottom" constant="358" id="2XJ-GW-Sgx"/>
                             <constraint firstItem="AQE-Vs-aw8" firstAttribute="leading" secondItem="537-Hn-aRJ" secondAttribute="leading" id="Zim-FV-djx"/>
@@ -105,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="nFM-nE-lee">
-                                <rect key="frame" x="16" y="269" width="343" height="128.5"/>
+                                <rect key="frame" x="16" y="269.5" width="343" height="128.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter company name to sign up " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeu-nz-eU1">
                                         <rect key="frame" x="13.5" y="0.0" width="316" height="26.5"/>
@@ -145,8 +145,12 @@
                                     <constraint firstAttribute="trailing" secondItem="tyf-AA-lyS" secondAttribute="trailing" id="DaL-UQ-0r8"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacePassLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="eku-5d-ShN">
+                                <rect key="frame" x="74" y="90" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90365668402777777" green="0.97026909722222221" blue="0.97819032268333339" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.90365668399999999" green="0.97026909719999999" blue="0.97819032269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nFM-nE-lee" firstAttribute="centerX" secondItem="3fN-Y9-9BZ" secondAttribute="centerX" id="LmL-Dg-WBv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nFM-nE-lee" secondAttribute="trailing" id="MKH-kF-n9c"/>
@@ -166,7 +170,6 @@
         <!--Navigation Controller-->
         <scene sceneID="wCI-bo-mid">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a2g-2B-nnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Sej-ib-xUq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2NJ-sk-6k2">
@@ -178,8 +181,12 @@
                         <segue destination="DeX-Yn-Dnr" kind="relationship" relationship="rootViewController" id="Bjf-gw-c7K"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2g-2B-nnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10.4" y="150.67466266866569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FacePassLogo.png" width="986" height="660"/>
+    </resources>
 </document>
