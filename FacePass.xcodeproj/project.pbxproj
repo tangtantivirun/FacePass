@@ -28,6 +28,7 @@
 		24F82E361F263D8700EBB6C9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F82E351F263D8700EBB6C9 /* Constants.swift */; };
 		24FF7EBB1F29CFD400D9835A /* VerifyMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */; };
 		24FF7EBD1F29CFF800D9835A /* VerifyMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF7EBC1F29CFF800D9835A /* VerifyMember.storyboard */; };
+		24FF7EC11F29DB5100D9835A /* CheckMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */; };
 		38C11BAE1F284A3B0019FB65 /* AddNewMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */; };
 		38F51DD21F26F5E8003C36E0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */; };
 		38F51DD41F26F6BC003C36E0 /* jsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 38F51DD31F26F6BC003C36E0 /* jsonFile.json */; };
@@ -58,6 +59,7 @@
 		24F82E351F263D8700EBB6C9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyMemberViewController.swift; sourceTree = "<group>"; };
 		24FF7EBC1F29CFF800D9835A /* VerifyMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VerifyMember.storyboard; sourceTree = "<group>"; };
+		24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMemberViewController.swift; sourceTree = "<group>"; };
 		38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMemberViewController.swift; sourceTree = "<group>"; };
 		38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/FacePass-gaozhzxtleecivfdioiecruhyasv/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		38F51DD31F26F6BC003C36E0 /* jsonFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonFile.json; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				24754D911F27296E00E79490 /* NewMemberPhotoViewController.swift */,
 				38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */,
 				24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */,
+				24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				38C11BAE1F284A3B0019FB65 /* AddNewMemberViewController.swift in Sources */,
 				2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */,
 				24F82E361F263D8700EBB6C9 /* Constants.swift in Sources */,
+				24FF7EC11F29DB5100D9835A /* CheckMemberViewController.swift in Sources */,
 				24754D8E1F26E5D700E79490 /* StorageService.swift in Sources */,
 				24754D8C1F26DBC300E79490 /* Storyboard+Utility.swift in Sources */,
 			);

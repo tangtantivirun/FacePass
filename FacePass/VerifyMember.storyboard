@@ -26,6 +26,10 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqm-fn-o17">
                                 <rect key="frame" x="166" y="585" width="42" height="42"/>
                                 <state key="normal" image="focus"/>
+                                <connections>
+                                    <action selector="verifyCapturePhoto:" destination="yJm-NF-JEs" eventType="touchUpInside" id="yaW-TI-xjm"/>
+                                    <segue destination="yDx-JB-sdI" kind="show" id="QBM-Dq-UI4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -36,10 +40,32 @@
                     </view>
                     <navigationItem key="navigationItem" id="VKQ-Cb-0GM"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="verifyCameraView" destination="ogk-xB-CM1" id="zcg-l6-taU"/>
+                        <outlet property="verifyPhotoButton" destination="iqm-fn-o17" id="iQe-DZ-N49"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yfv-xg-4Sx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1944.8" y="-1162.6686656671666"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mcr-Dr-qNm">
+            <objects>
+                <viewController id="yDx-JB-sdI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kJy-9y-ds2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pky-b8-mhS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tJG-gs-oMG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ku3-aR-lPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2724" y="-1163"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OCy-WN-qF0">
