@@ -7,3 +7,21 @@
 //
 
 import Foundation
+import UIKit
+import AWSRekognition
+
+class CheckMemberViewController {
+   
+    let rekognitionClient = AWSRekognition.default()
+    let sourceImage = UIImage(named: "Image.jpg")
+    let image = AWSRekognitionImage()
+    image!.bytes = UIImageJPEGRepresentation(sourceImage!, 0.7)
+    
+    guard let request = AWSRekognitionDetectLabelsRequest() else {
+        puts("Unable to initialize AWSRekognitionDectLabelsRequest.")
+        return
+    }
+    request.image = image
+    request.maxLabels = 3
+    request.minConfidence = 90
+}
