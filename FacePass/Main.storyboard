@@ -32,7 +32,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="yJm-NF-JEs" kind="show" id="7Zg-za-t2R"/>
+                                            <segue destination="m8z-kg-eXq" kind="show" id="7Zg-za-t2R"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvO-py-qay">
@@ -87,24 +87,6 @@
             </objects>
             <point key="canvasLocation" x="-882.39999999999998" y="-887.40629685157433"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="YRj-Kl-QVr">
-            <objects>
-                <viewController id="yJm-NF-JEs" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wHA-tV-qDi"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mfi-3C-lO5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ogk-xB-CM1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yfv-xg-4Sx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1006" y="-1162"/>
-        </scene>
         <!--NewMemberPhoto-->
         <scene sceneID="EVX-vb-bWo">
             <objects>
@@ -112,6 +94,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkl-yv-B6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="847" y="-783"/>
+        </scene>
+        <!--VerifyMember-->
+        <scene sceneID="e1C-HG-KS5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VerifyMember" id="m8z-kg-eXq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1mY-qd-oAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="-1162"/>
         </scene>
     </scenes>
 </document>

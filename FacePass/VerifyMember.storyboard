@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="XIG-TV-bcq">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Verify Member View Controller-->
+        <scene sceneID="YRj-Kl-QVr">
+            <objects>
+                <viewController id="yJm-NF-JEs" customClass="VerifyMemberViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wHA-tV-qDi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mfi-3C-lO5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ogk-xB-CM1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqm-fn-o17">
+                                <rect key="frame" x="166" y="585" width="42" height="42"/>
+                                <state key="normal" image="focus"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Mfi-3C-lO5" firstAttribute="top" secondItem="iqm-fn-o17" secondAttribute="bottom" constant="40" id="FhU-wf-Nbm"/>
+                            <constraint firstItem="iqm-fn-o17" firstAttribute="centerX" secondItem="ogk-xB-CM1" secondAttribute="centerXWithinMargins" id="uMK-GF-IS1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VKQ-Cb-0GM"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfv-xg-4Sx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1944.8" y="-1162.6686656671666"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OCy-WN-qF0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XIG-TV-bcq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="djY-9D-XQa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yJm-NF-JEs" kind="relationship" relationship="rootViewController" id="cbw-gI-p9q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HaR-4Y-bLw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.6" y="-1162.6686656671666"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="focus" width="42" height="42"/>
+    </resources>
+</document>
