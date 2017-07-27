@@ -51,8 +51,8 @@ struct MemberService {
             print(error.localizedDescription)
         }
         return destinationURL
-    }
-    
+}
+
     private static func uploadToS3(localImageURL url: URL) {
         //        var img: UIImage
         //        var jpeg: Data = UIImageJPEGRepresentation(img, 0.8)!
