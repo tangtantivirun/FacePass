@@ -19,7 +19,16 @@ class Member:NSObject {
     var phone: String
     let id: String
     let key: String
-    
+    private static var _current: Member?
+    static var current: Member {
+        // 3
+        guard let currentMember = _current else {
+            fatalError("Error: current user doesn't exist")
+        }
+        
+        // 4
+        return currentMember
+    }
     var dictValue: [String: String] {
         let memberAttrs = ["name": name,
                                         "birthday": birthday,
@@ -63,6 +72,20 @@ class Member:NSObject {
         self.id = id
         key = ""
     }
+    
+    class func setCurrent(_ member: Member, writeToMemberDefaults: Bool = false) {
+        // 2
+        if writeToMemberDefaults {
+            // 3
+            let data = NSKeyedArchiver.archivedData(withRootObject: member)
+            
+            // 4
+            UserDefaults.standard.set(data, forKey: Constants.MemberDefaults.currentMember)
+        }
+        
+        _current = member
+    }
+    
 }
 
 enum Gender: String {

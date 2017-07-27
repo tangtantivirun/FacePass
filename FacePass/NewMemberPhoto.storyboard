@@ -108,18 +108,22 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPN-bd-lLT">
                                         <rect key="frame" x="0.0" y="92" width="243" height="28"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faR-Bd-dwg">
-                                                <rect key="frame" x="0.0" y="0.0" width="83.5" height="28"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gender:     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faR-Bd-dwg">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="28"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nAw-gA-w2R">
-                                                <rect key="frame" x="83.5" y="0.0" width="159.5" height="29"/>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nAw-gA-w2R">
+                                                <rect key="frame" x="67" y="0.0" width="176" height="29"/>
                                                 <segments>
                                                     <segment title="Male"/>
                                                     <segment title="Female"/>
+                                                    <segment title="Others"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="genderSelected:" destination="s89-qw-sf0" eventType="valueChanged" id="Ys7-zP-ubC"/>
+                                                </connections>
                                             </segmentedControl>
                                         </subviews>
                                     </stackView>
@@ -212,6 +216,7 @@
                         <outlet property="addMemberButton" destination="kYv-ME-wfS" id="OTU-2R-m23"/>
                         <outlet property="birthdayTextField" destination="Rfd-jR-EuA" id="mER-n6-KOr"/>
                         <outlet property="emailTextField" destination="Q5W-pe-VY7" id="siE-mb-z9f"/>
+                        <outlet property="genderSelected" destination="nAw-gA-w2R" id="WC5-4n-NKt"/>
                         <outlet property="genderSelector" destination="nAw-gA-w2R" id="bX5-DC-gaR"/>
                         <outlet property="idTextField" destination="tgT-ew-uPd" id="UKX-7Q-7jn"/>
                         <outlet property="nameTextField" destination="uyS-eY-6Oa" id="otq-9E-Kn5"/>

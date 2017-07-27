@@ -23,23 +23,38 @@ class AddNewMemberViewController: UIViewController
     @IBOutlet weak var profileImageView: UIImageView!
     
     var image: UIImage!
-    
+    var gender: Gender?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.profileImageView.image = image
     }
-    
+    @IBAction func genderSelected(_ sender: UISegmentedControl) {
+        switch genderSelector.selectedSegmentIndex {
+        case 0:
+            gender = Gender.Male
+        case 1:
+            gender = Gender.Female
+        case 2:
+            gender = Gender.Other
+        default:
+            break
+            
+        }
+    }
+
     @IBAction func AddMemberButtonTapped(_ sender: Any) {
         guard let id = idTextField.text,
         !id.isEmpty else {
             return
         }
         
-        MemberService.create(image: image, name: "", birthday: "", gender: false, email: "", phone: "", id: id) { newMember in
-            if let member = newMember {
-                // do stuff
-                // TODO
+        MemberService.create(image: image, name:nameTextField.text! , birthday: birthdayTextField.text!, gender: gender!, email: emailTextField.text!, phone: phoneTextField.text!, id: id) { (newMember) in
+                    guard let newMember = newMember else {
+                    return
+            }
+                Member.setCurrent(newMember, writeToMemberDefaults: true)
+
             }
            // self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
             
@@ -48,4 +63,4 @@ class AddNewMemberViewController: UIViewController
     
     }
     
-}
+
