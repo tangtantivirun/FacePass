@@ -14,10 +14,7 @@
 		2435B3691F25E077003A0913 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3681F25E077003A0913 /* UserService.swift */; };
 		2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */; };
 		2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B36C1F25EA1A003A0913 /* Main.storyboard */; };
-<<<<<<< HEAD
 		246A3D931F29824B007A5873 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 246A3D921F29824B007A5873 /* GoogleService-Info.plist */; };
-=======
->>>>>>> f2ed3260697ab0924ac1cc501dbdc7e75cd558a5
 		247434581F283FDB002CEA42 /* MemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247434571F283FDB002CEA42 /* MemberService.swift */; };
 		2474345A1F284024002CEA42 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247434591F284024002CEA42 /* Member.swift */; };
 		24754D8C1F26DBC300E79490 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */; };
@@ -44,10 +41,7 @@
 		2435B3681F25E077003A0913 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		2435B36C1F25EA1A003A0913 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		246A3D921F29824B007A5873 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-=======
->>>>>>> f2ed3260697ab0924ac1cc501dbdc7e75cd558a5
 		247434571F283FDB002CEA42 /* MemberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberService.swift; sourceTree = "<group>"; };
 		247434591F284024002CEA42 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
