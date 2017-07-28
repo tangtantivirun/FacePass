@@ -30,6 +30,7 @@ class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         
         sessionQueue.async { [unowned self] in
             self.configureSession()
@@ -184,11 +185,7 @@ class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDele
             }
         }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
-    }
-    
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addMemberInfo" {
             let newMemberVC = segue.destination as! AddNewMemberViewController
