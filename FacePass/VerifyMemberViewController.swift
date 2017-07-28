@@ -18,9 +18,10 @@ import AVFoundation
 
 class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegate  {
     
+    @IBOutlet weak var resultImage: UIImageView!
     @IBOutlet var verifyCameraView: UIView!
     @IBOutlet weak var verifyPhotoButton: UIButton!
-     var verifySavedImage: UIImage?
+    var verifySavedImage: UIImage?
     
     let session = AVCaptureSession()
     let photoOutput = AVCapturePhotoOutput()
@@ -176,56 +177,63 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
             photoSettings.previewPhotoFormat = [kCVPixelBufferPixelFormatTypeKey as String: photoSettings.availablePreviewPhotoPixelFormatTypes.first!]
         }
         photoOutput.capturePhoto(with: photoSettings, delegate: self)
-}
-func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?, previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
-    
-    if let error = error {
-        print("Error capturing photo: \(error)")
-    } else {
-        if let sampleBuffer = photoSampleBuffer, let previewBuffer = previewPhotoSampleBuffer, let dataImage = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: sampleBuffer, previewPhotoSampleBuffer: previewBuffer) {
-            
-            if let image = UIImage(data: dataImage) {
-                self.verifySavedImage = image
-                let awsImage = AWSRekognitionImage()
-                let imageData = UIImageJPEGRepresentation(image, 0.7)
-                awsImage?.bytes = imageData
-                //let johnnyDepp = #imageLiteral(resourceName: "test-image.jpeg")
-                //let imageData1 = UIImageJPEGRepresentation(johnnyDepp, 0.7)
-                let awsImage1 = AWSRekognitionImage()
-                let s3 = AWSS3.s3(forKey: "JT" )
-
-                let listRequest: AWSS3ListObjectsRequest = AWSS3ListObjectsRequest()
-                listRequest.bucket = "facepass-lasthope"
-                s3.listObjects(listRequest).continueWith { (task) -> AnyObject? in
-                    print("call returned")
-                    let listObjectsOutput = task.result;
-                    for object in (listObjectsOutput?.contents)! {
-                        awsImage1?.s3Object = object
-                    }
+    }
+    func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSampleBuffer photoSampleBuffer: CMSampleBuffer?, previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
+        
+        if let error = error {
+            print("Error capturing photo: \(error)")
+        } else {
+            if let sampleBuffer = photoSampleBuffer, let previewBuffer = previewPhotoSampleBuffer, let dataImage = AVCapturePhotoOutput.jpegPhotoDataRepresentation(forJPEGSampleBuffer: sampleBuffer, previewPhotoSampleBuffer: previewBuffer) {
+                
+                if let image = UIImage(data: dataImage) {
+                    self.verifySavedImage = image
+                    let awsImage = AWSRekognitionImage()
+                    let imageData = UIImageJPEGRepresentation(image, 0.7)
+                    awsImage?.bytes = imageData
                     
-                    return nil
+                    
+                    let rekognitionClient = AWSRekognition.default()
+                    
+                    
+                    guard let request = AWSRekognitionSearchFacesByImageRequest() else {
+                        puts("Unable to initialize AWSRekognitionDetectLabelsRequest.")
+                        return
+                    }
+                    request.collectionId = User.current.account
+                    request.faceMatchThreshold = 90
+                    request.image = awsImage
+                    request.maxFaces = 1
+                    
+                    rekognitionClient.searchFaces(byImage: request)
+                    
+                    var response = AWSRekognitionSearchFacesByImageResponse()
+                    let matches = response?.faceMatches
+                    self.checkMatched(matches)
                 }
-
-                
-                let rekognitionClient = AWSRekognition.default()
-                
-                
-                guard let request = AWSRekognitionCompareFacesRequest.init() else {
-                    puts("Unable to initialize AWSRekognitionDetectLabelsRequest.")
-                    return
-                }
-                
-                request.targetImage = awsImage
-                request.sourceImage = awsImage1
-                request.similarityThreshold = 90 as NSNumber!
-                
-                rekognitionClient.compareFaces(request)
-
-                
-                self.performSegue(withIdentifier: "checkMember", sender: nil)
             }
         }
     }
+    
+    func checkMatched(_ matches: [AWSRekognitionFaceMatch]?) {
+        if let matches = matches,
+        matches.count > 0 {
+            // Face Matched!
+            UIView.animate(withDuration: 0.5) {
+                self.resultImage.image = UIImage(named: "successIcon")
+                self.resultImage.alpha = 1
+            }
+        } else {
+            // No Match
+            UIView.animate(withDuration: 0.5) {
+                self.resultImage.image = UIImage(named: "failureIcon")
+                self.resultImage.alpha = 1
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            UIView.animate(withDuration: 1) {
+                self.resultImage.alpha = 0
+            }
+        }
     }
     
     @IBAction func unwindToMainVC(_ sender: Any) {
@@ -233,6 +241,6 @@ func capture(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhotoSamp
         self.view.window?.rootViewController = mainVC
         self.view.window?.makeKeyAndVisible()
     }
-
+    
 }
 

@@ -10,6 +10,7 @@ import UIKit
 import Foundation
 import AWSCore
 import AWSCognito
+import AWSRekognition
 import AWSS3
 import FirebaseAuth.FIRUser
 import FirebaseDatabase
@@ -23,6 +24,17 @@ struct MemberService {
         guard let imageData =  UIImageJPEGRepresentation(image,0.8) else {
             fatalError("Image to data conversion failure")
         }
+        
+        let rekognitionClient = AWSRekognition.default()
+
+        let indexFacesRequest = AWSRekognitionIndexFacesRequest()
+        let awsImage = AWSRekognitionImage()
+        awsImage?.bytes = imageData
+        indexFacesRequest?.image = awsImage
+        indexFacesRequest?.externalImageId = "\(id)"
+        indexFacesRequest?.collectionId = User.current.account
+        rekognitionClient.indexFaces(indexFacesRequest!)
+        
         let userAttrs: [String: Any] = ["name": name,
                                         "birthday": birthday,
                                         "gender" : gender.rawValue,
