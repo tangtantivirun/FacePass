@@ -191,10 +191,6 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                     let imageData = UIImageJPEGRepresentation(image, 0.7)
                     awsImage?.bytes = imageData
                     
-                    
-                    let rekognitionClient = AWSRekognition.default()
-                    
-                    
                     guard let request = AWSRekognitionSearchFacesByImageRequest() else {
                         puts("Unable to initialize AWSRekognitionDetectLabelsRequest.")
                         return
@@ -204,7 +200,7 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                     request.image = awsImage
                     request.maxFaces = 1
                     
-                    rekognitionClient.searchFaces(byImage: request).continueOnSuccessWith(block: { response in
+                    AppDelegate.rekognitionClient.searchFaces(byImage: request).continueOnSuccessWith(block: { response in
                         let matches = response.result?.faceMatches
                         self.checkMatched(matches)
                         return nil
