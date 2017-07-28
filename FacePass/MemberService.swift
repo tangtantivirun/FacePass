@@ -33,6 +33,11 @@ struct MemberService {
         indexFacesRequest?.image = awsImage
         indexFacesRequest?.externalImageId = "\(id)"
         indexFacesRequest?.collectionId = User.current.account
+        rekognitionClient.indexFaces(indexFacesRequest!, completionHandler: { response, error in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        })
         rekognitionClient.indexFaces(indexFacesRequest!)
         let member = Member(name: name, birthday: birthday, gender: gender, email: email, phone: phone, id: id)
         let reference = Database.database().reference().child("members").child(User.current.uid).child(id)
