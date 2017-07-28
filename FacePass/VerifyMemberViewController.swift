@@ -204,11 +204,11 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                     request.image = awsImage
                     request.maxFaces = 1
                     
-                    rekognitionClient.searchFaces(byImage: request)
-                    
-                    var response = AWSRekognitionSearchFacesByImageResponse()
-                    let matches = response?.faceMatches
-                    self.checkMatched(matches)
+                    rekognitionClient.searchFaces(byImage: request).continueOnSuccessWith(block: { response in
+                        let matches = response.result?.faceMatches
+                        self.checkMatched(matches)
+                        return nil
+                    })
                 }
             }
         }
