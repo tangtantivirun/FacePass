@@ -189,7 +189,7 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                     self.verifySavedImage = image
                     let awsImage = AWSRekognitionImage()
                     let imageData = UIImageJPEGRepresentation(image, 0.7)
-                    awsImage?.bytes = imageData
+                    awsImage!.bytes = imageData
                     
                     
                     let rekognitionClient = AWSRekognition.default()
@@ -201,11 +201,11 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                     }
                     request.collectionId = User.current.account
                     request.faceMatchThreshold = 90
-                    request.image = awsImage
+                    request.image = awsImage!
                     request.maxFaces = 1
-                    
-                    rekognitionClient.searchFaces(byImage: request).continueOnSuccessWith(block: { response in
+                    rekognitionClient.searchFaces(byImage: request).continueWith(block: { response in
                         let matches = response.result?.faceMatches
+                        print(matches?.first?.similarity)
                         self.checkMatched(matches)
                         return nil
                     })

@@ -34,34 +34,17 @@ struct MemberService {
         indexFacesRequest?.externalImageId = "\(id)"
         indexFacesRequest?.collectionId = User.current.account
         rekognitionClient.indexFaces(indexFacesRequest!)
-        
-        let userAttrs: [String: Any] = ["name": name,
-                                        "birthday": birthday,
-                                        "gender" : gender.rawValue,
-                                        "email" : email,
-                                        "phone" : phone,
-                                        "id" : id]
-        // get unique memberID
-        let reference = Database.database().reference().child("members").child(User.current.uid)
+        let member = Member(name: name, birthday: birthday, gender: gender, email: email, phone: phone, id: id)
+        let reference = Database.database().reference().child("members").child(User.current.uid).child(id)
         //let memberID = reference.key
-        reference.setValue(userAttrs){ (error, ref) in
-            if let error = error {
-                assertionFailure(error.localizedDescription)
-                return completion(nil)
-            }
-            
-            ref.observeSingleEvent(of: .value, with: { (snapshot) in
-                let member = Member(from: snapshot)
-                completion(member)
-            })
-        }
+        reference.updateChildValues(member.dictValue)
 
         let transferUtility = AWSS3TransferUtility.default()
         let expression = AWSS3TransferUtilityUploadExpression()
         
         transferUtility.uploadData(
             imageData,
-            bucket: "facepass-lasthope",
+            bucket: "facepass-final",
             key: "\(User.current.uid)/\(id).jpeg",
             contentType: "image/jpeg",
             expression: expression).continueWith(block: { task in

@@ -49,9 +49,9 @@
 				<key>Default</key>
 				<dict>
 					<key>PoolId</key>
-					<string>ap-northeast-1:949586fc-225a-4feb-93fc-b329725ebccf</string>
+					<string>us-east-1:94e96356-2e40-4dea-95cd-3267c431be35</string>
 					<key>Region</key>
-					<string>Asia Pacific (Tokyo)</string>
+					<string>US East(N. Virginia)</string>
 				</dict>
 			</dict>
 		</dict>
@@ -60,7 +60,7 @@
 			<key>Default</key>
 			<dict>
 				<key>Region</key>
-				<string>Asia Pacific (Singapore)</string>
+				<string>US East(N. Virginia)</string>
 			</dict>
 		</dict>
 	</dict>

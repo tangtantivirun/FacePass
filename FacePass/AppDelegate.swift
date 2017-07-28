@@ -24,16 +24,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        configureInitialRootViewController(for: window)
         // Override point for customization after application launch.
         // Initialize the Amazon Cognito credentials provider
         
-        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.APNortheast1,
-                                                                identityPoolId:"ap-northeast-1:949586fc-225a-4feb-93fc-b329725ebccf")
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,
+                                                                identityPoolId:"us-east-1:94e96356-2e40-4dea-95cd-3267c431be35")
         
-        let configuration = AWSServiceConfiguration(region:.APNortheast1, credentialsProvider:credentialsProvider)
-        AWSS3.register(with: configuration!, forKey: "JT")
+        let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
+        
         AWSServiceManager.default().defaultServiceConfiguration = configuration
+        AWSRekognition.register(with: configuration!, forKey: "JT")
+        
+        configureInitialRootViewController(for: window)
         return true
     }
 

@@ -26,7 +26,7 @@ class AddNewMemberViewController: UIViewController
     var gender: Gender?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.gender = .Male
         self.profileImageView.image = image
     }
     @IBAction func genderSelected(_ sender: UISegmentedControl) {
@@ -50,11 +50,8 @@ class AddNewMemberViewController: UIViewController
         }
         
         MemberService.create(image: image, name:nameTextField.text! , birthday: birthdayTextField.text!, gender: gender!, email: emailTextField.text!, phone: phoneTextField.text!, id: id) { (newMember) in
-                    guard let newMember = newMember else {
-                    return
-            }
-                Member.setCurrent(newMember, writeToMemberDefaults: true)
-
+                guard let newMember = newMember else { return }
+                // Add member to User.current.members
             }
            // self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
             
