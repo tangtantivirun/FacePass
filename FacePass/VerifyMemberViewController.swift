@@ -199,12 +199,7 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                     request.faceMatchThreshold = 90
                     request.image = awsImage!
                     request.maxFaces = 1
-<<<<<<< HEAD
-                    rekognitionClient.searchFaces(byImage: request).continueWith(block: { response in
-=======
-                    
-                    AppDelegate.rekognitionClient.searchFaces(byImage: request).continueOnSuccessWith(block: { response in
->>>>>>> 61aa5da6e6b981af2621b2fbc1d7895366ae0589
+                    AppDelegate.rekognitionClient.searchFaces(byImage: request).continueWith(block: { response in
                         let matches = response.result?.faceMatches
                         print(matches?.first?.similarity)
                         self.checkMatched(matches)

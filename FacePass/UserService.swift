@@ -20,16 +20,11 @@ static func create(_ firUser: FIRUser, account: String, completion: @escaping (U
     let userAttrs = ["account": account]
     let createCollectionRequest = AWSRekognitionCreateCollectionRequest()
     createCollectionRequest?.collectionId = "\(account)"
-    
-<<<<<<< HEAD
-    rekognitionClient.createCollection(createCollectionRequest!, completionHandler: { response, error in
+    AppDelegate.rekognitionClient.createCollection(createCollectionRequest!, completionHandler: { response, error in
         if let _ = error {
             print(error!.localizedDescription)
         }
     })
-=======
-    AppDelegate.rekognitionClient.createCollection(createCollectionRequest!)
->>>>>>> 61aa5da6e6b981af2621b2fbc1d7895366ae0589
     
     let ref = Database.database().reference().child("users").child(firUser.uid)
     ref.setValue(userAttrs) { (error, ref) in

@@ -19,7 +19,7 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    static let rekognitionClient = AWSRekognition(forKey: "JT")
+    static var rekognitionClient: AWSRekognition!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
@@ -28,12 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,
                                                                 identityPoolId:"us-east-1:94e96356-2e40-4dea-95cd-3267c431be35")
-        
+     //   let ced = AWSCognitoCredentialsProvider(
         let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
         
         AWSServiceManager.default().defaultServiceConfiguration = configuration
-        AWSRekognition.register(with: configuration!, forKey: "JT")
-        
+        AppDelegate.rekognitionClient = AWSRekognition.default()
+        print(AppDelegate.rekognitionClient.configuration.regionType.rawValue)
         configureInitialRootViewController(for: window)
         return true
     }
