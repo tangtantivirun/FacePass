@@ -24,7 +24,6 @@
 		24754D921F27296E00E79490 /* NewMemberPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24754D911F27296E00E79490 /* NewMemberPhotoViewController.swift */; };
 		24754D941F272BC400E79490 /* NewMemberPhoto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24754D931F272BC400E79490 /* NewMemberPhoto.storyboard */; };
 		247B68811F2A67CF00F4B1B4 /* FacePassLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 247B68801F2A67CF00F4B1B4 /* FacePassLogo.png */; };
-		247B68851F2A687200F4B1B4 /* FacePassLogo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 247B68841F2A687200F4B1B4 /* FacePassLogo2.png */; };
 		247B68871F2A6C2700F4B1B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247B68861F2A6C2700F4B1B4 /* Assets.xcassets */; };
 		24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB51F25C73100756D70 /* AppDelegate.swift */; };
 		24C47EB81F25C73100756D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB71F25C73100756D70 /* ViewController.swift */; };
@@ -57,7 +56,6 @@
 		24754D911F27296E00E79490 /* NewMemberPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMemberPhotoViewController.swift; sourceTree = "<group>"; };
 		24754D931F272BC400E79490 /* NewMemberPhoto.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewMemberPhoto.storyboard; sourceTree = "<group>"; };
 		247B68801F2A67CF00F4B1B4 /* FacePassLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacePassLogo.png; sourceTree = SOURCE_ROOT; };
-		247B68841F2A687200F4B1B4 /* FacePassLogo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacePassLogo2.png; sourceTree = "<group>"; };
 		247B68861F2A6C2700F4B1B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24C47EB21F25C73100756D70 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C47EB51F25C73100756D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -183,7 +181,6 @@
 		24C47EB41F25C73100756D70 /* FacePass */ = {
 			isa = PBXGroup;
 			children = (
-				247B68841F2A687200F4B1B4 /* FacePassLogo2.png */,
 				24754D8F1F27194A00E79490 /* test-image.jpeg */,
 				247B68801F2A67CF00F4B1B4 /* FacePassLogo.png */,
 				38F51DD31F26F6BC003C36E0 /* jsonFile.json */,
@@ -285,7 +282,6 @@
 				2429853E1F298CED00FD765F /* GoogleService-Info.plist in Resources */,
 				24754D941F272BC400E79490 /* NewMemberPhoto.storyboard in Resources */,
 				24754D901F27194A00E79490 /* test-image.jpeg in Resources */,
-				247B68851F2A687200F4B1B4 /* FacePassLogo2.png in Resources */,
 				2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */,
 				38F51DD41F26F6BC003C36E0 /* jsonFile.json in Resources */,
 				24C47EBB1F25C73100756D70 /* Home.storyboard in Resources */,
