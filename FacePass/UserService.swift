@@ -19,7 +19,7 @@ struct UserService {
 static func create(_ firUser: FIRUser, account: String, completion: @escaping (User?) ->Void){
     let userAttrs = ["account": account]
     
-    let rekognitionClient = AWSRekognition.default()
+    let rekognitionClient = AWSRekognition(forKey: "JT")
     let createCollectionRequest = AWSRekognitionCreateCollectionRequest()
     createCollectionRequest?.collectionId = "\(account)"
     
