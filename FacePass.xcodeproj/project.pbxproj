@@ -100,6 +100,7 @@
 				24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */,
 				24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */,
 				24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */,
+				2435B35C1F25CBF5003A0913 /* Extensions */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -188,7 +189,6 @@
 				38F51DD31F26F6BC003C36E0 /* jsonFile.json */,
 				24C47EB51F25C73100756D70 /* AppDelegate.swift */,
 				2435B3581F25CBC2003A0913 /* Controllers */,
-				2435B35C1F25CBF5003A0913 /* Extensions */,
 				2435B35B1F25CBEF003A0913 /* Models */,
 				2435B35A1F25CBE8003A0913 /* Services */,
 				2435B35F1F25CCA9003A0913 /* Storyboards */,
