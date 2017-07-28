@@ -26,7 +26,6 @@ class AddNewMemberViewController: UIViewController
     var gender: Gender?
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.gender = .Male
         self.profileImageView.image = image
     }
     @IBAction func genderSelected(_ sender: UISegmentedControl) {
