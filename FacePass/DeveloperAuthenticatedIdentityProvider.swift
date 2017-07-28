@@ -8,6 +8,8 @@
 
 import Foundation
 import AWSCore
+import Firebase
+import FirebaseAuthUI
 
 class DeveloperAuthenticatedIdentityProvider : AWSCognitoCredentialsProviderHelper {
     override func token() -> AWSTask<NSString> {
@@ -18,8 +20,7 @@ class DeveloperAuthenticatedIdentityProvider : AWSCognitoCredentialsProviderHelp
         //You can use AWSTaskCompletionSource to do this asynchronously
         
         // Set the identity id and return the token
-        self.identityId = resultFromAbove.identityId
-        return AWSTask(result: resultFromAbove.token)
+        return AWSTask(result: "staticToken")
         
     }
     
