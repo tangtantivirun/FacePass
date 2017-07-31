@@ -150,7 +150,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.90365668399999999" green="0.97026909719999999" blue="0.97819032269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nFM-nE-lee" firstAttribute="centerX" secondItem="3fN-Y9-9BZ" secondAttribute="centerX" id="LmL-Dg-WBv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nFM-nE-lee" secondAttribute="trailing" id="MKH-kF-n9c"/>
