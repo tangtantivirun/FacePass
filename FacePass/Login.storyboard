@@ -51,7 +51,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.26713529229999999" green="0.91805013020833337" blue="0.95198589560000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.3803921569" green="0.6588235294" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="yMc-5t-i5H" firstAttribute="centerY" secondItem="vzQ-Cp-edq" secondAttribute="centerY" id="Kna-QC-6p5"/>
                                             <constraint firstItem="yMc-5t-i5H" firstAttribute="centerX" secondItem="vzQ-Cp-edq" secondAttribute="centerX" id="pk2-ab-tmu"/>
@@ -145,16 +145,17 @@
                                     <constraint firstAttribute="trailing" secondItem="tyf-AA-lyS" secondAttribute="trailing" id="DaL-UQ-0r8"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacePassLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="eku-5d-ShN">
-                                <rect key="frame" x="74" y="90" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="FacePassLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="eku-5d-ShN">
+                                <rect key="frame" x="71" y="90" width="240" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.90365668399999999" green="0.97026909719999999" blue="0.97819032269999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="nFM-nE-lee" firstAttribute="centerX" secondItem="3fN-Y9-9BZ" secondAttribute="centerX" id="LmL-Dg-WBv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nFM-nE-lee" secondAttribute="trailing" id="MKH-kF-n9c"/>
+                            <constraint firstItem="eku-5d-ShN" firstAttribute="leading" secondItem="3fN-Y9-9BZ" secondAttribute="leadingMargin" constant="55" id="WbD-yk-LlF"/>
                             <constraint firstItem="nFM-nE-lee" firstAttribute="centerY" secondItem="3fN-Y9-9BZ" secondAttribute="centerY" id="avt-py-AhR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eku-5d-ShN" secondAttribute="trailing" constant="48" id="hLH-Ul-S6u"/>
                             <constraint firstItem="nFM-nE-lee" firstAttribute="leading" secondItem="3fN-Y9-9BZ" secondAttribute="leadingMargin" id="xoH-3l-8Ur"/>
                         </constraints>
                     </view>
