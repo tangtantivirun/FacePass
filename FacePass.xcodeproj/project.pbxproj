@@ -104,8 +104,9 @@
 				24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */,
 				24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */,
 				24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */,
-				384232741F2EE4A10038DBE6 /* DisplayInfoViewController.swift */,
-				384232721F2EDC5F0038DBE6 /* MembershipInfoCell.swift */,
+                2435B35C1F25CBF5003A0913 /* Extensions */,
+                384232741F2EE4A10038DBE6 /* DisplayInfoViewController.swift */,
+                384232721F2EDC5F0038DBE6 /* MembershipInfoCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
