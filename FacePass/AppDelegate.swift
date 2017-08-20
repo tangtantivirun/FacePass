@@ -14,28 +14,24 @@ import AWSCognito
 import FirebaseAuth
 import FirebaseAuthUI
 import Firebase
+var rekognitionClient: AWSRekognition!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    static var rekognitionClient: AWSRekognition!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         // Override point for customization after application launch.
         // Initialize the Amazon Cognito credentials provider
-        let devAuth = DeveloperAuthenticatedIdentityProvider(regionType: .USEast1, identityPoolId: "us-east-1:94e96356-2e40-4dea-95cd-3267c431be35", useEnhancedFlow: true, identityProviderManager:nil)
-        let credentialsProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityProvider:devAuth)
-        let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider:credentialsProvider)
+        let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "us-east-1:94e96356-2e40-4dea-95cd-3267c431be35")
+        let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration
-//        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.USEast1,
-//                                                                identityPoolId:"us-east-1:94e96356-2e40-4dea-95cd-3267c431be35")
-     //   let ced = AWSCognitoCredentialsProvider(
-      //  let configuration = AWSServiceConfiguration(region:.USEast1, credentialsProvider:credentialsProvider)
+        let cognitoId = credentialProvider.identityId
     
-        AppDelegate.rekognitionClient = AWSRekognition.default()
-        print(AppDelegate.rekognitionClient.configuration.regionType.rawValue)
+        rekognitionClient = AWSRekognition.default()
+        print(rekognitionClient.configuration.regionType.rawValue)
         configureInitialRootViewController(for: window)
         return true
     }

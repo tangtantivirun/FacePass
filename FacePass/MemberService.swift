@@ -44,7 +44,6 @@ struct MemberService {
                 return nil
             })
         
-        let rekognitionClient = AppDelegate.rekognitionClient!
 
         let indexFacesRequest = AWSRekognitionIndexFacesRequest()
         let awsImage = AWSRekognitionImage()
