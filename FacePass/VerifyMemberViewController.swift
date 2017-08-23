@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import AVFoundation
+import Alamofire
 
 class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegate  {
     
@@ -185,8 +186,8 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
             }
         
             
-            let apiToContact = "https://itunes.apple.com/us/rss/topmovies/limit=25/json"
-            // This code will call the iTunes top 25 movies endpoint listed above
+            let apiToContact = "https://api-us.faceplusplus.com/facepp/v3/compare"
+            // This code will call the face plus plus face compare api
             Alamofire.request(apiToContact).validate().responseJSON() { response in
                 switch response.result {
                 case .success:
