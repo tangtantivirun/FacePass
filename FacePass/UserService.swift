@@ -14,6 +14,7 @@ struct UserService {
 
 static func create(_ firUser: FIRUser, account: String, completion: @escaping (User?) ->Void){
     let userAttrs = ["account": account]
+<<<<<<< HEAD
 //    let createCollectionRequest = AWSRekognitionCreateCollectionRequest()
 //    createCollectionRequest?.collectionId = "\(account)"
 //    AppDelegate.rekognitionClient.createCollection(createCollectionRequest!, completionHandler: { response, error in
@@ -21,6 +22,15 @@ static func create(_ firUser: FIRUser, account: String, completion: @escaping (U
 //            print(error!.localizedDescription)
 //        }
 //    })
+=======
+    let createCollectionRequest = AWSRekognitionCreateCollectionRequest()
+    createCollectionRequest?.collectionId = "\(account)"
+    rekognitionClient.createCollection(createCollectionRequest!, completionHandler: { response, error in
+        if let _ = error {
+            print(error!.localizedDescription)
+        }
+    })
+>>>>>>> a88c118c52209cbc6bbd3ae948b6f62a194ed5e1
     
     let ref = Database.database().reference().child("users").child(firUser.uid)
     ref.setValue(userAttrs) { (error, ref) in

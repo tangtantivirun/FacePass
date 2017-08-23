@@ -10,6 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseAuthUI
 import Firebase
+var rekognitionClient: AWSRekognition!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+<<<<<<< HEAD
 
+=======
+        // Override point for customization after application launch.
+        // Initialize the Amazon Cognito credentials provider
+        let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "us-east-1:94e96356-2e40-4dea-95cd-3267c431be35")
+        let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialProvider)
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        let cognitoId = credentialProvider.identityId
+    
+        rekognitionClient = AWSRekognition.default()
+        print(rekognitionClient.configuration.regionType.rawValue)
+        configureInitialRootViewController(for: window)
+>>>>>>> a88c118c52209cbc6bbd3ae948b6f62a194ed5e1
         return true
     }
 

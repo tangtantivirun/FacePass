@@ -32,6 +32,12 @@
 		24FF7EBB1F29CFD400D9835A /* VerifyMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */; };
 		24FF7EBD1F29CFF800D9835A /* VerifyMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF7EBC1F29CFF800D9835A /* VerifyMember.storyboard */; };
 		24FF7EC11F29DB5100D9835A /* CheckMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */; };
+<<<<<<< HEAD
+=======
+		384232731F2EDC5F0038DBE6 /* MembershipInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384232721F2EDC5F0038DBE6 /* MembershipInfoCell.swift */; };
+		384232751F2EE4A10038DBE6 /* DisplayInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384232741F2EE4A10038DBE6 /* DisplayInfoViewController.swift */; };
+		3878D0191F2B10000061B6E8 /* DeveloperAuthenticatedIdentityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3878D0181F2B10000061B6E8 /* DeveloperAuthenticatedIdentityProvider.swift */; };
+>>>>>>> a88c118c52209cbc6bbd3ae948b6f62a194ed5e1
 		38C11BAE1F284A3B0019FB65 /* AddNewMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */; };
 		38F51DD21F26F5E8003C36E0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */; };
 		38F51DD41F26F6BC003C36E0 /* jsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 38F51DD31F26F6BC003C36E0 /* jsonFile.json */; };
@@ -66,6 +72,12 @@
 		24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyMemberViewController.swift; sourceTree = "<group>"; };
 		24FF7EBC1F29CFF800D9835A /* VerifyMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VerifyMember.storyboard; sourceTree = "<group>"; };
 		24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMemberViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		384232721F2EDC5F0038DBE6 /* MembershipInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembershipInfoCell.swift; sourceTree = "<group>"; };
+		384232741F2EE4A10038DBE6 /* DisplayInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayInfoViewController.swift; sourceTree = "<group>"; };
+		3878D0181F2B10000061B6E8 /* DeveloperAuthenticatedIdentityProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperAuthenticatedIdentityProvider.swift; sourceTree = "<group>"; };
+>>>>>>> a88c118c52209cbc6bbd3ae948b6f62a194ed5e1
 		38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMemberViewController.swift; sourceTree = "<group>"; };
 		38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/FacePass-gaozhzxtleecivfdioiecruhyasv/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		38F51DD31F26F6BC003C36E0 /* jsonFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonFile.json; sourceTree = "<group>"; };
@@ -98,6 +110,9 @@
 				24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */,
 				24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */,
 				24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */,
+                2435B35C1F25CBF5003A0913 /* Extensions */,
+                384232741F2EE4A10038DBE6 /* DisplayInfoViewController.swift */,
+                384232721F2EDC5F0038DBE6 /* MembershipInfoCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -130,14 +145,6 @@
 				247434591F284024002CEA42 /* Member.swift */,
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		2435B35C1F25CBF5003A0913 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				24754D8B1F26DBC300E79490 /* Storyboard+Utility.swift */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 		2435B35E1F25CC2C003A0913 /* View */ = {
@@ -186,7 +193,6 @@
 				38F51DD31F26F6BC003C36E0 /* jsonFile.json */,
 				24C47EB51F25C73100756D70 /* AppDelegate.swift */,
 				2435B3581F25CBC2003A0913 /* Controllers */,
-				2435B35C1F25CBF5003A0913 /* Extensions */,
 				2435B35B1F25CBEF003A0913 /* Models */,
 				2435B35A1F25CBE8003A0913 /* Services */,
 				2435B35F1F25CCA9003A0913 /* Storyboards */,
@@ -249,7 +255,6 @@
 				TargetAttributes = {
 					24C47EB11F25C73100756D70 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 463ZNHD98J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -352,12 +357,18 @@
 				24754D921F27296E00E79490 /* NewMemberPhotoViewController.swift in Sources */,
 				24C47EB81F25C73100756D70 /* ViewController.swift in Sources */,
 				247434581F283FDB002CEA42 /* MemberService.swift in Sources */,
+<<<<<<< HEAD
+=======
+				3878D0191F2B10000061B6E8 /* DeveloperAuthenticatedIdentityProvider.swift in Sources */,
+				384232731F2EDC5F0038DBE6 /* MembershipInfoCell.swift in Sources */,
+>>>>>>> a88c118c52209cbc6bbd3ae948b6f62a194ed5e1
 				24624E241F2A362F00BB0961 /* ListCurrentMemberViewController.swift in Sources */,
 				2474345A1F284024002CEA42 /* Member.swift in Sources */,
 				2435B3671F25E062003A0913 /* User.swift in Sources */,
 				24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */,
 				38C11BAE1F284A3B0019FB65 /* AddNewMemberViewController.swift in Sources */,
 				2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */,
+				384232751F2EE4A10038DBE6 /* DisplayInfoViewController.swift in Sources */,
 				24F82E361F263D8700EBB6C9 /* Constants.swift in Sources */,
 				24FF7EC11F29DB5100D9835A /* CheckMemberViewController.swift in Sources */,
 				24754D8E1F26E5D700E79490 /* StorageService.swift in Sources */,
@@ -477,7 +488,7 @@
 			baseConfigurationReference = EAC0139462B21BA6C022F5A5 /* Pods-FacePass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 463ZNHD98J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.FacePass;
@@ -491,7 +502,7 @@
 			baseConfigurationReference = C6B95B54CB5A5C4CBF2029D0 /* Pods-FacePass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 463ZNHD98J;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.FacePass;

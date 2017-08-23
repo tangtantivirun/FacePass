@@ -198,8 +198,21 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                         
                         
                     }
+<<<<<<< HEAD
                 case .failure(let error):
                     print(error)
+=======
+                    request.collectionId = User.current.account
+                    request.faceMatchThreshold = 90
+                    request.image = awsImage!
+                    request.maxFaces = 1
+                    rekognitionClient.searchFaces(byImage: request).continueWith(block: { response in
+                        let matches = response.result?.faceMatches
+                        print(matches?.first?.similarity)
+                        self.checkMatched(matches)
+                        return nil
+                    })
+>>>>>>> a88c118c52209cbc6bbd3ae948b6f62a194ed5e1
                 }
             }
     
