@@ -13,9 +13,6 @@ target 'FacePass' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'Kingfisher'
-  pod 'AWSRekognition'
-  pod 'AWSCore'
-  pod 'AWSS3'
-  pod 'AWSCognito'
   pod 'SwiftyJSON'
+  pod 'Alamofire', '~> 4.5'
 end

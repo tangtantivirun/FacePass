@@ -7,10 +7,6 @@
 //
 
 import Foundation
-import AWSRekognition
-import AWSCognito
-import AWSCore
-import AWSS3
 import FirebaseAuth.FIRUser
 import FirebaseDatabase
 
@@ -18,13 +14,13 @@ struct UserService {
 
 static func create(_ firUser: FIRUser, account: String, completion: @escaping (User?) ->Void){
     let userAttrs = ["account": account]
-    let createCollectionRequest = AWSRekognitionCreateCollectionRequest()
-    createCollectionRequest?.collectionId = "\(account)"
-    AppDelegate.rekognitionClient.createCollection(createCollectionRequest!, completionHandler: { response, error in
-        if let _ = error {
-            print(error!.localizedDescription)
-        }
-    })
+//    let createCollectionRequest = AWSRekognitionCreateCollectionRequest()
+//    createCollectionRequest?.collectionId = "\(account)"
+//    AppDelegate.rekognitionClient.createCollection(createCollectionRequest!, completionHandler: { response, error in
+//        if let _ = error {
+//            print(error!.localizedDescription)
+//        }
+//    })
     
     let ref = Database.database().reference().child("users").child(firUser.uid)
     ref.setValue(userAttrs) { (error, ref) in

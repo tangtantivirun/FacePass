@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2429853E1F298CED00FD765F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2429853D1F298CED00FD765F /* GoogleService-Info.plist */; };
 		2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B3561F25CBA4003A0913 /* Login.storyboard */; };
 		2435B3611F25D86D003A0913 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3601F25D86D003A0913 /* LoginViewController.swift */; };
 		2435B3671F25E062003A0913 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3661F25E062003A0913 /* User.swift */; };
 		2435B3691F25E077003A0913 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B3681F25E077003A0913 /* UserService.swift */; };
 		2435B36B1F25E2D6003A0913 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */; };
 		2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2435B36C1F25EA1A003A0913 /* Main.storyboard */; };
+		244F4E111F4C33D700F77FB3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 244F4E101F4C33D700F77FB3 /* GoogleService-Info.plist */; };
 		24624E221F2A360C00BB0961 /* ListCurrentMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24624E211F2A360C00BB0961 /* ListCurrentMember.storyboard */; };
 		24624E241F2A362F00BB0961 /* ListCurrentMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */; };
 		247434581F283FDB002CEA42 /* MemberService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247434571F283FDB002CEA42 /* MemberService.swift */; };
@@ -32,7 +32,6 @@
 		24FF7EBB1F29CFD400D9835A /* VerifyMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */; };
 		24FF7EBD1F29CFF800D9835A /* VerifyMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF7EBC1F29CFF800D9835A /* VerifyMember.storyboard */; };
 		24FF7EC11F29DB5100D9835A /* CheckMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */; };
-		3878D0191F2B10000061B6E8 /* DeveloperAuthenticatedIdentityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3878D0181F2B10000061B6E8 /* DeveloperAuthenticatedIdentityProvider.swift */; };
 		38C11BAE1F284A3B0019FB65 /* AddNewMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */; };
 		38F51DD21F26F5E8003C36E0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */; };
 		38F51DD41F26F6BC003C36E0 /* jsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 38F51DD31F26F6BC003C36E0 /* jsonFile.json */; };
@@ -40,13 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2429853D1F298CED00FD765F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2435B3561F25CBA4003A0913 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		2435B3601F25D86D003A0913 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2435B3661F25E062003A0913 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2435B3681F25E077003A0913 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2435B36A1F25E2D6003A0913 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		2435B36C1F25EA1A003A0913 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		244F4E101F4C33D700F77FB3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		24624E211F2A360C00BB0961 /* ListCurrentMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ListCurrentMember.storyboard; sourceTree = "<group>"; };
 		24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCurrentMemberViewController.swift; sourceTree = "<group>"; };
 		247434571F283FDB002CEA42 /* MemberService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberService.swift; sourceTree = "<group>"; };
@@ -67,7 +66,6 @@
 		24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyMemberViewController.swift; sourceTree = "<group>"; };
 		24FF7EBC1F29CFF800D9835A /* VerifyMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VerifyMember.storyboard; sourceTree = "<group>"; };
 		24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMemberViewController.swift; sourceTree = "<group>"; };
-		3878D0181F2B10000061B6E8 /* DeveloperAuthenticatedIdentityProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveloperAuthenticatedIdentityProvider.swift; sourceTree = "<group>"; };
 		38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMemberViewController.swift; sourceTree = "<group>"; };
 		38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/FacePass-gaozhzxtleecivfdioiecruhyasv/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		38F51DD31F26F6BC003C36E0 /* jsonFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonFile.json; sourceTree = "<group>"; };
@@ -107,8 +105,8 @@
 		2435B3591F25CBE2003A0913 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				2429853D1F298CED00FD765F /* GoogleService-Info.plist */,
 				24C47EC11F25C73100756D70 /* Info.plist */,
+				244F4E101F4C33D700F77FB3 /* GoogleService-Info.plist */,
 				24F82E351F263D8700EBB6C9 /* Constants.swift */,
 				247B68861F2A6C2700F4B1B4 /* Assets.xcassets */,
 			);
@@ -194,7 +192,6 @@
 				2435B35F1F25CCA9003A0913 /* Storyboards */,
 				2435B3591F25CBE2003A0913 /* Supporting */,
 				2435B35E1F25CC2C003A0913 /* View */,
-				3878D0181F2B10000061B6E8 /* DeveloperAuthenticatedIdentityProvider.swift */,
 			);
 			path = FacePass;
 			sourceTree = "<group>";
@@ -282,13 +279,13 @@
 			files = (
 				24624E221F2A360C00BB0961 /* ListCurrentMember.storyboard in Resources */,
 				2435B3571F25CBA4003A0913 /* Login.storyboard in Resources */,
-				2429853E1F298CED00FD765F /* GoogleService-Info.plist in Resources */,
 				24754D941F272BC400E79490 /* NewMemberPhoto.storyboard in Resources */,
 				24754D901F27194A00E79490 /* test-image.jpeg in Resources */,
 				2435B36D1F25EA1A003A0913 /* Main.storyboard in Resources */,
 				38F51DD41F26F6BC003C36E0 /* jsonFile.json in Resources */,
 				24C47EBB1F25C73100756D70 /* Home.storyboard in Resources */,
 				247B68811F2A67CF00F4B1B4 /* FacePassLogo.png in Resources */,
+				244F4E111F4C33D700F77FB3 /* GoogleService-Info.plist in Resources */,
 				247B68871F2A6C2700F4B1B4 /* Assets.xcassets in Resources */,
 				24FF7EBD1F29CFF800D9835A /* VerifyMember.storyboard in Resources */,
 			);
@@ -355,7 +352,6 @@
 				24754D921F27296E00E79490 /* NewMemberPhotoViewController.swift in Sources */,
 				24C47EB81F25C73100756D70 /* ViewController.swift in Sources */,
 				247434581F283FDB002CEA42 /* MemberService.swift in Sources */,
-				3878D0191F2B10000061B6E8 /* DeveloperAuthenticatedIdentityProvider.swift in Sources */,
 				24624E241F2A362F00BB0961 /* ListCurrentMemberViewController.swift in Sources */,
 				2474345A1F284024002CEA42 /* Member.swift in Sources */,
 				2435B3671F25E062003A0913 /* User.swift in Sources */,

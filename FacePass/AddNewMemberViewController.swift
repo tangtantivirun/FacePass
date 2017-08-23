@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import FirebaseStorage
+import FirebaseAuth
+import Firebase
+import FirebaseDatabase
 
 
 class AddNewMemberViewController: UIViewController
@@ -24,6 +28,7 @@ class AddNewMemberViewController: UIViewController
     
     var image: UIImage!
     var gender: Gender?
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         self.profileImageView.image = image
@@ -51,6 +56,7 @@ class AddNewMemberViewController: UIViewController
         MemberService.create(image: image, name:nameTextField.text! , birthday: birthdayTextField.text!, gender: gender!, email: emailTextField.text!, phone: phoneTextField.text!, id: id) { (newMember) in
                 guard let newMember = newMember else { return }
                 // Add member to User.current.members
+            
             }
            // self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
             

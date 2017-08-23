@@ -8,10 +8,6 @@
 
 import Foundation
 import UIKit
-import AWSRekognition
-import AWSCore
-import AWSCognito
-import AWSS3
 import SwiftyJSON
 
 extension UIViewController {

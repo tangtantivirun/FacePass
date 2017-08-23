@@ -185,7 +185,6 @@ class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDele
             }
         }
     }
-   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "addMemberInfo" {
             let newMemberVC = segue.destination as! AddNewMemberViewController
