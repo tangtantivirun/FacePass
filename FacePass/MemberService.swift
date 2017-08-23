@@ -23,38 +23,6 @@ struct MemberService {
             fatalError("Image to data conversion failure")
         }
         
-        let transferUtility = AWSS3TransferUtility.default()
-        let expression = AWSS3TransferUtilityUploadExpression()
-        
-        transferUtility.uploadData(
-            imageData,
-            bucket: "facepass-final",
-            key: "\(User.current.uid)/\(id).jpeg",
-            contentType: "image/jpeg",
-            expression: expression).continueWith(block: { task in
-                if let error = task.error {
-                    print(error.localizedDescription)
-                    return completion(nil)
-                }
-                
-                // Create new member and send back through completion handler
-                completion(nil)
-                return nil
-            })
-        
-
-        let indexFacesRequest = AWSRekognitionIndexFacesRequest()
-        let awsImage = AWSRekognitionImage()
-        awsImage?.bytes = imageData
-        indexFacesRequest?.image = awsImage
-        indexFacesRequest?.externalImageId = "\(id)"
-        indexFacesRequest?.collectionId = User.current.account
-        rekognitionClient.indexFaces(indexFacesRequest!, completionHandler: { response, error in
-            if let error = error {
-                print(error.localizedDescription)
-            }
-        })
-        rekognitionClient.indexFaces(indexFacesRequest!)
         let member = Member(name: name, birthday: birthday, gender: gender, email: email, phone: phone, id: id)
         let reference = Database.database().reference().child("members").child(User.current.uid).child(id)
         let memberID = reference.key

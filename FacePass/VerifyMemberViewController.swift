@@ -198,10 +198,8 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                         
                         
                     }
-<<<<<<< HEAD
                 case .failure(let error):
                     print(error)
-=======
                     request.collectionId = User.current.account
                     request.faceMatchThreshold = 90
                     request.image = awsImage!
@@ -212,7 +210,6 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                         self.checkMatched(matches)
                         return nil
                     })
->>>>>>> a88c118c52209cbc6bbd3ae948b6f62a194ed5e1
                 }
             }
     
