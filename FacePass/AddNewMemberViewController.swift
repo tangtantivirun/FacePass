@@ -60,17 +60,10 @@ class AddNewMemberViewController: UIViewController
                 self.view.window?.makeKeyAndVisible()
                 guard let newMember = newMember else { return }
                 // Add member to User.current.members
-<<<<<<< HEAD
+
             
             }
-=======
-                            }
->>>>>>> a88c118c52209cbc6bbd3ae948b6f62a194ed5e1
+
            // self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
-            
-        }
-
-    
     }
-    
-
+}

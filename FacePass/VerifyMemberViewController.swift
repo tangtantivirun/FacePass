@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import AVFoundation
 import Alamofire
+import SwiftyJSON
 
 class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegate  {
     
