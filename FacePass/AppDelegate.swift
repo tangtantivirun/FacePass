@@ -10,7 +10,6 @@ import UIKit
 import FirebaseAuth
 import FirebaseAuthUI
 import Firebase
-var rekognitionClient: AWSRekognition!
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
