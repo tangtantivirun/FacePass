@@ -186,10 +186,14 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                 }
             }
         
-            
             let apiToContact = "https://api-us.faceplusplus.com/facepp/v3/compare"
+            let parameters = ["api-key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
+                              "api_secret": "P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
+                              "image_file1":  UIImageJPEGRepresentation(verifySavedImage!,0.8),
+                              "face_url2": "XXXXX"] as [String : Any]  //put in the url
+            
             // This code will call the face plus plus face compare api
-            Alamofire.request(apiToContact).validate().responseJSON() { response in
+            Alamofire.request(apiToContact, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
                 switch response.result {
                 case .success:
                     if let value = response.result.value {
@@ -202,46 +206,14 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                     }
                 case .failure(let error):
                     print(error)
-                    request.collectionId = User.current.account
-                    request.faceMatchThreshold = 90
-                    request.image = awsImage!
-                    request.maxFaces = 1
-                    rekognitionClient.searchFaces(byImage: request).continueWith(block: { response in
-                        let matches = response.result?.faceMatches
-                        print(matches?.first?.similarity)
-                        self.checkMatched(matches)
-                        return nil
-                    })
                 }
             }
     
-    func checkMatched(_ matches: [AWSRekognitionFaceMatch]?) {
-        if let matches = matches,
-        matches.count > 0 {
-            // Face Matched!
-            UIView.animate(withDuration: 0.5) {
-                self.resultImage.image = UIImage(named: "successIcon")
-                self.resultImage.alpha = 1
-            }
-        } else {
-            // No Match
-            UIView.animate(withDuration: 0.5) {
-                self.resultImage.image = UIImage(named: "failureIcon")
-                self.resultImage.alpha = 1
-            }
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            UIView.animate(withDuration: 1) {
-                self.resultImage.alpha = 0
-            }
-        }
     }
-    
-    @IBAction func unwindToMainVC(_ sender: Any) {
-        let mainVC = UIStoryboard.initialViewController(for: .main)
-        self.view.window?.rootViewController = mainVC
-        self.view.window?.makeKeyAndVisible()
-            }
+        @IBAction func unwindToMainVC(_ sender: Any) {
+            let mainVC = UIStoryboard.initialViewController(for: .main)
+            self.view.window?.rootViewController = mainVC
+            self.view.window?.makeKeyAndVisible()
         }
     }
 }
