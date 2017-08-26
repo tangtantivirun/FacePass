@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Sej-ib-xUq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Sej-ib-xUq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -145,17 +145,30 @@
                                     <constraint firstAttribute="trailing" secondItem="tyf-AA-lyS" secondAttribute="trailing" id="DaL-UQ-0r8"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="FacePassLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="eku-5d-ShN">
-                                <rect key="frame" x="71" y="90" width="240" height="128"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mdc-3G-QPo">
+                                <rect key="frame" x="44.5" y="89.5" width="286" height="160"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FacePassLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="eku-5d-ShN">
+                                        <rect key="frame" x="0.0" y="0.0" width="286" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="TId-6r-rq2"/>
+                                            <constraint firstAttribute="width" constant="286" id="Zl0-sd-hyi"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eku-5d-ShN" secondAttribute="trailing" id="VJi-cn-aLk"/>
+                                    <constraint firstItem="eku-5d-ShN" firstAttribute="leading" secondItem="mdc-3G-QPo" secondAttribute="leading" id="x1l-oP-0mf"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078431372551" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="eku-5d-ShN" firstAttribute="centerX" secondItem="3fN-Y9-9BZ" secondAttribute="centerX" id="HUc-cJ-A3y"/>
                             <constraint firstItem="nFM-nE-lee" firstAttribute="centerX" secondItem="3fN-Y9-9BZ" secondAttribute="centerX" id="LmL-Dg-WBv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nFM-nE-lee" secondAttribute="trailing" id="MKH-kF-n9c"/>
-                            <constraint firstItem="eku-5d-ShN" firstAttribute="leading" secondItem="3fN-Y9-9BZ" secondAttribute="leadingMargin" constant="55" id="WbD-yk-LlF"/>
                             <constraint firstItem="nFM-nE-lee" firstAttribute="centerY" secondItem="3fN-Y9-9BZ" secondAttribute="centerY" id="avt-py-AhR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="eku-5d-ShN" secondAttribute="trailing" constant="48" id="hLH-Ul-S6u"/>
+                            <constraint firstItem="nFM-nE-lee" firstAttribute="top" secondItem="mdc-3G-QPo" secondAttribute="bottom" constant="20" id="ihM-Te-UuX"/>
                             <constraint firstItem="nFM-nE-lee" firstAttribute="leading" secondItem="3fN-Y9-9BZ" secondAttribute="leadingMargin" id="xoH-3l-8Ur"/>
                         </constraints>
                     </view>
