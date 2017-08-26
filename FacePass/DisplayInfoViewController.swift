@@ -23,7 +23,7 @@ class DisplayInfoViewController: UIViewController
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var checkEnteringButtonTapped: UIButton!
     var member: Member?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
