@@ -23,7 +23,7 @@ static func create(_ firUser: FIRUser, account: String, completion: @escaping (U
         switch response.result {
         case .success:
             if let value = response.result.value {
-                let json = JSON(value)
+              
                 
                 // Do what you need to with JSON here!
                 // The rest is all boiler plate code you'll use for API requests
