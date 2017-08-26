@@ -183,32 +183,30 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                 
                 if let image = UIImage(data: dataImage) {
                     self.verifySavedImage = image
+                    let searchFaces = "https://api-us.faceplusplus.com/facepp/v3/search"
+                    let parameters =
+                        ["api-key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
+                         "api_secret": "P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
+                        "image_file1":  UIImageJPEGRepresentation(verifySavedImage!,0.8)!,
+                        "outer_id": Constants.UserDefaults.account] as [String : Any]  //put in the url
+                    
+                    
+                    // This code will call the face plus plus face compare api
+                    Alamofire.request(searchFaces, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
+                        switch response.result {
+                        case .success:
+                            if let value = response.result.value {
+                                let json = JSON(value)
+                                
+                            }
+                        case .failure(let error):
+                            print(error)
+                        }
+                    }
                 }
             }
         
-            let apiToContact = "https://api-us.faceplusplus.com/facepp/v3/compare"
-            let parameters = ["api-key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
-                              "api_secret": "P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
-                              "image_file1":  UIImageJPEGRepresentation(verifySavedImage!,0.8),
-                              "face_url2": "XXXXX"] as [String : Any]  //put in the url
             
-            // This code will call the face plus plus face compare api
-            Alamofire.request(apiToContact, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
-                switch response.result {
-                case .success:
-                    if let value = response.result.value {
-                        let json = JSON(value)
-                        
-                        // Do what you need to with JSON here!
-                        // The rest is all boiler plate code you'll use for API requests
-                        
-                        
-                    }
-                case .failure(let error):
-                    print(error)
-                }
-            }
-    
     }
         func unwindToMainVC(_ sender: Any) {
             let mainVC = UIStoryboard.initialViewController(for: .main)
