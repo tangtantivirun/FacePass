@@ -67,3 +67,5 @@ class AddNewMemberViewController: UIViewController
            // self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
     }
 }
+
+
