@@ -22,7 +22,7 @@ class ListCurrentMemberViewController: UITableViewController
         }
     }
     
-    override func viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
 //        notes = CoreDataHelper.retrieveNote()!
     }
@@ -43,5 +43,9 @@ class ListCurrentMemberViewController: UITableViewController
            
         }
     }
- 
+    @IBAction func unwindToMainVC(_ sender: Any) {
+            let mainVC = UIStoryboard.initialViewController(for: .main)
+            self.view.window?.rootViewController = mainVC
+            self.view.window?.makeKeyAndVisible()
+    }
 }
