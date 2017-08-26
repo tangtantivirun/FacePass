@@ -471,6 +471,8 @@
 				DEVELOPMENT_TEAM = 463ZNHD98J;
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
+				"PODS_CONFIGURATION_BUILD_DIR[sdk=iphonesimulator*]" = disable;
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.FacePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -485,6 +487,7 @@
 				DEVELOPMENT_TEAM = 463ZNHD98J;
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEW_SETTING = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.FacePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
