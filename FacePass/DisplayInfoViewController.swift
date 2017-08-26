@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 
 class DisplayInfoViewController: UIViewController
@@ -26,6 +28,16 @@ class DisplayInfoViewController: UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       let ref = Database.database().reference().child("members")
+        ref.observe(DataEventType.value, with: { (snapshot) in
+            self.nameLabel.text = (snapshot.value as? String?)!
+            self.birthdayLabel.text = (snapshot.value as? String?)!
+            self.genderLabel.text = (snapshot.value as? String?)!
+            self.emailLabel.text = (snapshot.value as? String?)!
+            self.phoneLabel.text = (snapshot.value as? String?)!
+            self.membershipIDLabel.text = (snapshot.value as? String?)!
+        })
     }
     
     override func viewDidAppear(_ animated: Bool) {
