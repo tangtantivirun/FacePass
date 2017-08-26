@@ -46,7 +46,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
-            endingLineNumber = "67">
+            endingLineNumber = "67"
+            landmarkName = "create(image:name:birthday:gender:email:phone:id:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -60,7 +62,9 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
-            endingLineNumber = "60">
+            endingLineNumber = "60"
+            landmarkName = "create(image:name:birthday:gender:email:phone:id:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
