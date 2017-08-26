@@ -9,6 +9,7 @@
 import Foundation
 import FirebaseAuth.FIRUser
 import FirebaseDatabase
+import Alamofire
 
 struct UserService {
 
@@ -17,7 +18,7 @@ static func create(_ firUser: FIRUser, account: String, completion: @escaping (U
     let parameters = ["api-key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
                       "api_secret": "P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
                       "display_name": account] as [String : Any]
-    
+    let apiToContact = "https://api-us.faceplusplus.com/facepp/v3/faceset/create"
     Alamofire.request(apiToContact, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
         switch response.result {
         case .success:
