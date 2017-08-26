@@ -210,10 +210,10 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
             }
     
     }
-//        @IBAction func unwindToMainVC(_ sender: Any) {
-//            let mainVC = UIStoryboard.initialViewController(for: .main)
-//            self.view.window?.rootViewController = mainVC
-//            self.view.window?.makeKeyAndVisible()
+        func unwindToMainVC(_ sender: Any) {
+            let mainVC = UIStoryboard.initialViewController(for: .main)
+            self.view.window?.rootViewController = mainVC
+            self.view.window?.makeKeyAndVisible()
         }
     }
-
+}
