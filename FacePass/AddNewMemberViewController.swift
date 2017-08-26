@@ -31,7 +31,6 @@ class AddNewMemberViewController: UIViewController
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        gender = .Male
         self.profileImageView.image = image
     }
     @IBAction func genderSelected(_ sender: UISegmentedControl) {
@@ -43,7 +42,7 @@ class AddNewMemberViewController: UIViewController
         case 2:
             gender = Gender.Other
         default:
-            break
+            gender = Gender.Male
             
         }
     }
