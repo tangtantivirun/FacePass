@@ -43,7 +43,7 @@ struct MemberService {
                      "api_secret":"P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
                      "faceset_token": Constants.UserDefaults.account,
                      "face_tokens": json["faces"][0]["face_token"].stringValue] as [String : Any]
-                    
+                  
                     Alamofire.request(addFaces, method:.post, parameters: addFaceParams, encoding: URLEncoding.default).responseJSON { response in
                         switch response.result {
                         case .success:
