@@ -29,7 +29,7 @@ static func create(_ firUser: FIRUser, account: String, completion: @escaping (U
         Alamofire.request(apiToContact, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
             switch response.result {
             case .success:
-                if let value = response.result.value {
+                if response.result.value != nil {
 
                 }
             case .failure(let error):
