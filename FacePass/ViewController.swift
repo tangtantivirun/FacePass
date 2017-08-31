@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import SwiftyJSON
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {

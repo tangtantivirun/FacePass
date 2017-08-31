@@ -10,6 +10,7 @@ import Foundation
 import FirebaseAuth.FIRUser
 import FirebaseDatabase
 import Alamofire
+import SwiftyJSON
 
 struct UserService {
 
