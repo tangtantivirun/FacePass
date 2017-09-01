@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 import AVFoundation
-import Alamofire
-import SwiftyJSON
+//import Alamofire
+//import SwiftyJSON
 
 class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegate  {
     
@@ -192,17 +192,17 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                     
                     
                     // This code will call the face plus plus face compare api
-                    Alamofire.request(searchFaces, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
-                        switch response.result {
-                        case .success:
-                            if let value = response.result.value {
-                                let json = JSON(value)
-                                
-                            }
-                        case .failure(let error):
-                            print(error)
-                        }
-                    }
+//                    Alamofire.request(searchFaces, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
+//                        switch response.result {
+//                        case .success:
+//                            if let value = response.result.value {
+//                                let json = JSON(value)
+//                                
+//                            }
+//                        case .failure(let error):
+//                            print(error)
+//                        }
+//                    }
                 }
             }
         

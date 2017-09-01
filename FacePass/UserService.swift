@@ -9,8 +9,8 @@
 import Foundation
 import FirebaseAuth.FIRUser
 import FirebaseDatabase
-import Alamofire
-import SwiftyJSON
+//import Alamofire
+//import SwiftyJSON
 
 struct UserService {
 
@@ -27,15 +27,15 @@ static func create(_ firUser: FIRUser, account: String, completion: @escaping (U
                           "api_secret":"P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
                           "display_name": account] as [String : Any]
         let apiToContact = "https://api-us.faceplusplus.com/facepp/v3/faceset/create"
-        Alamofire.request(apiToContact, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
-            switch response.result {
-            case .success:
-                if response.result.value != nil {
-
-                }
-            case .failure(let error):
-                print(error)
-            }
+//        Alamofire.request(apiToContact, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
+//            switch response.result {
+//            case .success:
+//                if response.result.value != nil {
+//
+//                }
+//            case .failure(let error):
+//                print(error)
+//            }
         }
         
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
@@ -48,4 +48,4 @@ static func create(_ firUser: FIRUser, account: String, completion: @escaping (U
     }
 }
   
-}
+

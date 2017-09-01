@@ -470,6 +470,7 @@
 			baseConfigurationReference = EAC0139462B21BA6C022F5A5 /* Pods-FacePass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                SSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				DEVELOPMENT_TEAM = YR5G82MK8H;
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -486,6 +487,7 @@
 			baseConfigurationReference = C6B95B54CB5A5C4CBF2029D0 /* Pods-FacePass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+                SSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				DEVELOPMENT_TEAM = YR5G82MK8H;
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
