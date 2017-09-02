@@ -23,6 +23,7 @@
 		24754D941F272BC400E79490 /* NewMemberPhoto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24754D931F272BC400E79490 /* NewMemberPhoto.storyboard */; };
 		247B68811F2A67CF00F4B1B4 /* FacePassLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 247B68801F2A67CF00F4B1B4 /* FacePassLogo.png */; };
 		247B68871F2A6C2700F4B1B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247B68861F2A6C2700F4B1B4 /* Assets.xcassets */; };
+		24B411E41F5A8E8D00FA4929 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B411E31F5A8E8D00FA4929 /* CustomTableViewCell.swift */; };
 		24C47EB61F25C73100756D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB51F25C73100756D70 /* AppDelegate.swift */; };
 		24C47EB81F25C73100756D70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C47EB71F25C73100756D70 /* ViewController.swift */; };
 		24C47EBB1F25C73100756D70 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C47EB91F25C73100756D70 /* Home.storyboard */; };
@@ -55,6 +56,7 @@
 		24754D931F272BC400E79490 /* NewMemberPhoto.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewMemberPhoto.storyboard; sourceTree = "<group>"; };
 		247B68801F2A67CF00F4B1B4 /* FacePassLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FacePassLogo.png; sourceTree = SOURCE_ROOT; };
 		247B68861F2A6C2700F4B1B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24B411E31F5A8E8D00FA4929 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		24C47EB21F25C73100756D70 /* FacePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C47EB51F25C73100756D70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24C47EB71F25C73100756D70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */,
 				24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */,
 				383BF78F1F511D72005771F5 /* DisplayInfoViewController.swift */,
+				24B411E31F5A8E8D00FA4929 /* CustomTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24B411E41F5A8E8D00FA4929 /* CustomTableViewCell.swift in Sources */,
 				24FF7EBB1F29CFD400D9835A /* VerifyMemberViewController.swift in Sources */,
 				2435B3611F25D86D003A0913 /* LoginViewController.swift in Sources */,
 				2435B3691F25E077003A0913 /* UserService.swift in Sources */,

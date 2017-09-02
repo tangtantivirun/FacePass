@@ -8,41 +8,53 @@
 
 import Foundation
 import UIKit
+import Firebase
+import FirebaseStorage
 
 
 class ListCurrentMemberViewController: UITableViewController
 {
-    var members = [Member]()
-    {
-        didSet
-        {
-            tableView.reloadData()    //what is tableView
-//            members.insert(notes[notes.count-1], at: 0)
-//            members.remove(at: notes.count-1)
-        }
-    }
+    var posts = [Member]()
+    var databaseRef: DatabaseReference!
+    var storageRef: StorageReference!
     
-   override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
-//        notes = CoreDataHelper.retrieveNote()!
+        databaseRef = Database.database().reference()
+        storageRef = Storage.storage().reference()
+        
     }
     
+     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any? )
-    {
-        if let identifier = segue.identifier
-        {
-            if identifier == "displayNote"
-            {
-                let indexPath = tableView.indexPathForSelectedRow!
-                let member = members[indexPath.row]
-                let displayInfoViewController = segue.destination as! DisplayInfoViewController
-                displayInfoViewController.member = member
-                print("Table view cell tapped")
+     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return posts.count
+        
+    }
+     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cellIdentifier = "postCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath as IndexPath)as! CustomTableViewCell
+        
+        let userPostRef = self.databaseRef.child("posts")
+        userPostRef.observe(.childAdded, with: {(snapshot) in
+            if let postAdd  = snapshot.value as? NSDictionary{
+                let myPost = Member(from: snapshot)
+                self.posts.insert(myPost!, at:0)
+                
+                //Dispatch the main thread here
+                DispatchQueue.main.async() {
+                    cell.nameLabel.text = self.posts[indexPath.row].name
+                    
+                }
             }
-           
-        }
-    }
+        })
+        return cell
+}
+
     @IBAction func unwindToMainVC(_ sender: Any) {
             let mainVC = UIStoryboard.initialViewController(for: .main)
             self.view.window?.rootViewController = mainVC

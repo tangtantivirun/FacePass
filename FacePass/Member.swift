@@ -44,6 +44,7 @@ class Member:NSObject {
             let id = dict[Constants.MemberDefaults.id]
             else {
                 return nil
+    
         }
         self.name = snapshotValue[name]!
         self.birthday = snapshotValue[birthday]!
@@ -63,7 +64,7 @@ class Member:NSObject {
         self.id = id
         key = ""
     }
-}
+   }
 
 enum Gender: String {
     case Male = "male"
