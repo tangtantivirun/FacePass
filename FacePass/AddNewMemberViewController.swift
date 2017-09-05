@@ -51,6 +51,11 @@ class AddNewMemberViewController: UIViewController
     @IBAction func AddMemberButtonTapped(_ sender: Any) {
         guard let id = idTextField.text,
         !id.isEmpty else {
+            let alert = UIAlertController(title:"Error" , message: "Please make sure you fill all the information", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { (action) in
+                    alert.dismiss(animated: true, completion: nil)
+            }))
+            self.present
             return
         }
         

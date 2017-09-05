@@ -188,7 +188,7 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                         ["api-key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
                          "api_secret": "P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
                         "image_file1":  UIImageJPEGRepresentation(verifySavedImage!,0.8)!,
-                        "outer_id": Constants.UserDefaults.account] as [String : Any]  //put in the url
+                        "faceset_token": Constants.UserDefaults.account] as [String : Any]  //put in the url
                     
                     
                     // This code will call the face plus plus face compare api
@@ -197,7 +197,14 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                         case .success:
                             if let value = response.result.value {
                                 let json = JSON(value)
-                                
+                                if json["results"][0]["confidence"] < json["threshold"]["1e-3"]{
+                                    print("The person is a member.")
+                                }
+                                else
+                                {
+                                    print("The person is not found in the database.")
+                                }
+                                //TO-DO: Show the result of the verification in storyboard
                             }
                         case .failure(let error):
                             print(error)
