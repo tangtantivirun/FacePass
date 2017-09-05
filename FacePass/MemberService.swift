@@ -38,20 +38,20 @@ struct MemberService {
             case .success:
                 if let value = response.result.value{
                     let json = JSON(value)
-                    let addFaceParams =
-                    ["api_key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
-                     "api_secret":"P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
-                     "faceset_token": Constants.UserDefaults.account,
-                     "face_tokens": json["faces"][0]["face_token"].stringValue] as [String : Any]
-                    
-                    Alamofire.request(addFaces, method:.post, parameters: addFaceParams, encoding: URLEncoding.default).responseJSON { response in
-                        switch response.result {
-                        case .success:
-                            print("upload to faceset")
-                        case .failure(let error):
-                            print(error)
-                        }
-                    }
+//                    let addFaceParams =
+//                    ["api_key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
+//                     "api_secret":"P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
+//                     "faceset_token": Constants.UserDefaults.account,
+//                     "face_tokens": json["faces"][0]["face_token"].stringValue] as [String : Any]
+//                    
+//                    Alamofire.request(addFaces, method:.post, parameters: addFaceParams, encoding: URLEncoding.default).responseJSON { response in
+//                        switch response.result {
+//                        case .success:
+//                            print("upload to faceset")
+//                        case .failure(let error):
+//                            print(error)
+//                        }
+//                    }
                 }
             case .failure(let error):
                 print(error)
