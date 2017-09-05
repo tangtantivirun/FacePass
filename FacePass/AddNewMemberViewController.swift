@@ -55,7 +55,7 @@ class AddNewMemberViewController: UIViewController
             alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: { (action) in
                     alert.dismiss(animated: true, completion: nil)
             }))
-            self.present
+            self.present(alert, animated: true, completion: nil)
             return
         }
         
