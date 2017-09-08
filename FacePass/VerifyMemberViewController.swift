@@ -199,10 +199,12 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                                 let json = JSON(value)
                                 if json["results"][0]["confidence"] < json["threshold"]["1e-3"]{
                                     print("The person is a member.")
+                                    performSegue(withIdentifier: "yes", sender: self)
                                 }
                                 else
                                 {
                                     print("The person is not found in the database.")
+                                    performSegue(withIdentifier: "no", sender: self)
                                 }
                                 //TO-DO: Show the result of the verification in storyboard
                             }
