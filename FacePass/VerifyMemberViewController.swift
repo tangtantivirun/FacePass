@@ -190,7 +190,6 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                         "image_file1":  UIImageJPEGRepresentation(verifySavedImage!,0.8)!,
                         "faceset_token": Constants.UserDefaults.account] as [String : Any]  //put in the url
                     
-                    
                     // This code will call the face plus plus face compare api
                     Alamofire.request(searchFaces, method:.post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
                         switch response.result {
@@ -199,12 +198,16 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                                 let json = JSON(value)
                                 if json["results"][0]["confidence"] < json["threshold"]["1e-3"]{
                                     print("The person is a member.")
-                                    performSegue(withIdentifier: "yes", sender: self)
+                                    DispatchQueue.main.async(){
+                                        self.performSegue(withIdentifier: "yes", sender:self)
+                                    }
                                 }
                                 else
                                 {
                                     print("The person is not found in the database.")
-                                    performSegue(withIdentifier: "no", sender: self)
+                                    DispatchQueue.main.async(){
+                                        self.performSegue(withIdentifier: "no", sender:self)
+                                    }
                                 }
                                 //TO-DO: Show the result of the verification in storyboard
                             }
@@ -212,15 +215,21 @@ class VerifyMemberViewController: UIViewController, AVCapturePhotoCaptureDelegat
                             print(error)
                         }
                     }
+                    
+                    
+                    }
+                    
                 }
             }
         
             
     }
-        func unwindToMainVC(_ sender: Any) {
-            let mainVC = UIStoryboard.initialViewController(for: .main)
-            self.view.window?.rootViewController = mainVC
-            self.view.window?.makeKeyAndVisible()
-        }
+    func unwindToMainVC(_ sender: Any) {
+        let mainVC = UIStoryboard.initialViewController(for: .main)
+        self.view.window?.rootViewController = mainVC
+        self.view.window?.makeKeyAndVisible()
     }
-}
+    
+    }
+
+
