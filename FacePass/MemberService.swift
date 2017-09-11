@@ -25,12 +25,12 @@ struct MemberService {
             fatalError("Image to data conversion failure")
         }
         
-        let detectParams = ["api_key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
-                          "api_secret":"P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
+        let detectParams = ["api_key":"6-B5r-ipEj2SOQtcJnPbYrvcJNOURhJ8",
+                          "api_secret":"rwVd7UqEBnl5Ff5KF3h9jI80cz32hXPX",
                           "image_file": imageData] as [String : Any]
-        let detectFaces = "https://api-us.faceplusplus.com/facepp/v3/detect"
+        let detectFaces = "https://api-cn.faceplusplus.com/facepp/v3/detect"
         
-        let addFaces = "https://api-us.faceplusplus.com/facepp/v3/faceset/addface"
+        //let addFaces = "https://api-us.faceplusplus.com/facepp/v3/faceset/addface"
         
         
         Alamofire.request(detectFaces, method:.post, parameters: detectParams, encoding: URLEncoding.default).responseJSON { response in
@@ -38,23 +38,13 @@ struct MemberService {
             case .success:
                 if let value = response.result.value{
                     let json = JSON(value)
-//                    let addFaceParams =
-//                    ["api_key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
-//                     "api_secret":"P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
-//                     "faceset_token": Constants.UserDefaults.account,
-//                     "face_tokens": json["faces"][0]["face_token"].stringValue] as [String : Any]
-//                    
-//                    Alamofire.request(addFaces, method:.post, parameters: addFaceParams, encoding: URLEncoding.default).responseJSON { response in
-//                        switch response.result {
-//                        case .success:
-//                            print("upload to faceset")
-//                        case .failure(let error):
-//                            print(error)
-//                        }
-//                    }
+
                 }
             case .failure(let error):
-                print(error)
+                if let value = response.result.value{
+                    let json = JSON(value)
+                    print(json["error-message"])
+                }
             }
         }
 

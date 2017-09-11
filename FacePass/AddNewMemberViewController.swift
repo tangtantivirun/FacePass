@@ -44,7 +44,7 @@ class AddNewMemberViewController: UIViewController
             gender = Gender.Other
         default:
             break
-            
+        //TO-DO fix the gender issue
         }
     }
 
