@@ -28,7 +28,7 @@ struct MemberService {
         print(base64)
         let detectParams = ["api_key":"6-B5r-ipEj2SOQtcJnPbYrvcJNOURhJ8",
                           "api_secret":"rwVd7UqEBnl5Ff5KF3h9jI80cz32hXPX",
-                          "image_base64": base64] as [String : Any]
+                          "image_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505841092&di=8e1816a09e2a35cad273733b89464c1b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.musicdu.com%2FUpload%2F2016New%2F12%2F9%2F20161209115103.jpg"] as [String : Any]
         let detectFaces = "https://api-cn.faceplusplus.com/facepp/v3/detect"
         
         //let addFaces = "https://api-us.faceplusplus.com/facepp/v3/faceset/addface"
