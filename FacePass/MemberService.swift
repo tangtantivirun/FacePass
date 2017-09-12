@@ -21,7 +21,7 @@ struct MemberService {
         
        
         
-        guard let imageData =  UIImageJPEGRepresentation(image,0.8) else {
+        guard let imageData = UIImagePNGRepresentation(image) else {
             fatalError("Image to data conversion failure")
         }
         
@@ -33,7 +33,7 @@ struct MemberService {
         //let addFaces = "https://api-us.faceplusplus.com/facepp/v3/faceset/addface"
         
         
-        Alamofire.request(detectFaces, method:.post, parameters: detectParams, encoding: URLEncoding.default).responseJSON { response in
+        Alamofire.request(detectFaces, method: .post, parameters: detectParams, encoding: JSONEncoding.default).responseJSON { response in
             switch response.result {
             case .success:
                 if let value = response.result.value{

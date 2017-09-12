@@ -30,7 +30,7 @@ class NewMemberPhotoViewController : UIViewController, AVCapturePhotoCaptureDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
+       // self.hideKeyboardWhenTappedAround()
         
         sessionQueue.async { [unowned self] in
             self.configureSession()

@@ -46,9 +46,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "create(image:name:birthday:gender:email:phone:id:completion:)"
-            landmarkType = "7">
+            endingLineNumber = "70">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,9 +60,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
-            endingLineNumber = "63"
-            landmarkName = "create(image:name:birthday:gender:email:phone:id:completion:)"
-            landmarkType = "7">
+            endingLineNumber = "63">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -132,7 +128,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
@@ -145,7 +141,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "static FacePass.MemberService.create (image : __ObjC.UIImage, name : Swift.String, birthday : Swift.String, gender : FacePass.Gender, email : Swift.String, phone : Swift.String, id : Swift.String, completion : (Swift.Optional&lt;FacePass.Member&gt;) -&gt; ()) -&gt; ()"
@@ -160,7 +156,7 @@
                   offsetFromSymbolStart = "784">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "static FacePass.MemberService.(create (image : __ObjC.UIImage, name : Swift.String, birthday : Swift.String, gender : FacePass.Gender, email : Swift.String, phone : Swift.String, id : Swift.String, completion : (Swift.Optional&lt;FacePass.Member&gt;) -&gt; ()) -&gt; ()).(closure #1)"
