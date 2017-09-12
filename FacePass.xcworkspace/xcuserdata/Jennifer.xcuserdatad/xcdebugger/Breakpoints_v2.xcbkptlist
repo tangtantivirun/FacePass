@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "526837982.041303"
+            timestampString = "526927942.008349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70">
+            startingLineNumber = "71"
+            endingLineNumber = "71">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -56,11 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "526837982.041303"
+            timestampString = "526927942.008349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63">
+            startingLineNumber = "64"
+            endingLineNumber = "64">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -70,11 +70,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "526837982.041303"
+            timestampString = "526927942.008349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81">
+            startingLineNumber = "82"
+            endingLineNumber = "82">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -132,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "526838064.291096"
+            timestampString = "526927942.008349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "create(image:name:birthday:gender:email:phone:id:completion:)"
             landmarkType = "7">
             <Locations>
@@ -148,12 +148,12 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/air/Rise/Make%20School%20Project/FacePass/FacePass/MemberService.swift"
-                  timestampString = "526838075.932931"
+                  timestampString = "526925379.948748"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
                   endingLineNumber = "36"
-                  offsetFromSymbolStart = "784">
+                  offsetFromSymbolStart = "712">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -163,7 +163,7 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/air/Rise/Make%20School%20Project/FacePass/FacePass/MemberService.swift"
-                  timestampString = "526838075.937469"
+                  timestampString = "526925379.953379"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -171,6 +171,38 @@
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FacePass/ListCurrentMemberViewController.swift"
+            timestampString = "526924892.055714"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "unwindToMainVC(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FacePass/MemberService.swift"
+            timestampString = "526927918.470914"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "create(image:name:birthday:gender:email:phone:id:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

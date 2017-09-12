@@ -24,26 +24,26 @@ struct MemberService {
         guard let imageData = UIImagePNGRepresentation(image) else {
             fatalError("Image to data conversion failure")
         }
-        
+        let base64 = imageData.base64EncodedData()
+        print(base64)
         let detectParams = ["api_key":"6-B5r-ipEj2SOQtcJnPbYrvcJNOURhJ8",
                           "api_secret":"rwVd7UqEBnl5Ff5KF3h9jI80cz32hXPX",
-                          "image_file": imageData] as [String : Any]
+                          "image_base64": base64] as [String : Any]
         let detectFaces = "https://api-cn.faceplusplus.com/facepp/v3/detect"
         
         //let addFaces = "https://api-us.faceplusplus.com/facepp/v3/faceset/addface"
         
-        
-        Alamofire.request(detectFaces, method: .post, parameters: detectParams, encoding: JSONEncoding.default).responseJSON { response in
+        Alamofire.request(detectFaces, method: .post, parameters: detectParams, encoding: URLEncoding.default).responseJSON { response in
             switch response.result {
             case .success:
                 if let value = response.result.value{
-                    let json = JSON(value)
-
+                    //let json = JSON(value)
+                    print("yes!")
                 }
             case .failure(let error):
                 if let value = response.result.value{
-                    let json = JSON(value)
-                    print(json["error-message"])
+                   // let json = JSON(value)
+                    print("no!")
                 }
             }
         }
