@@ -148,12 +148,12 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/air/Rise/Make%20School%20Project/FacePass/FacePass/MemberService.swift"
-                  timestampString = "526925379.948748"
+                  timestampString = "527001807.125673"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
                   endingLineNumber = "36"
-                  offsetFromSymbolStart = "712">
+                  offsetFromSymbolStart = "920">
                </Location>
                <Location
                   shouldBeEnabled = "No"
@@ -163,7 +163,7 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/air/Rise/Make%20School%20Project/FacePass/FacePass/MemberService.swift"
-                  timestampString = "526925379.953379"
+                  timestampString = "527001807.129049"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
@@ -196,11 +196,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/MemberService.swift"
-            timestampString = "526927918.470914"
+            timestampString = "526951153.133096"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "create(image:name:birthday:gender:email:phone:id:completion:)"
             landmarkType = "7">
          </BreakpointContent>

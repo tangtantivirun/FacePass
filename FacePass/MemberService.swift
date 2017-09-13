@@ -24,15 +24,38 @@ struct MemberService {
         guard let imageData = UIImagePNGRepresentation(image) else {
             fatalError("Image to data conversion failure")
         }
-        let base64 = imageData.base64EncodedData()
+        let base64 = imageData.base64EncodedString(options: .endLineWithLineFeed)
         print(base64)
-        let detectParams = ["api_key":"6-B5r-ipEj2SOQtcJnPbYrvcJNOURhJ8",
-                          "api_secret":"rwVd7UqEBnl5Ff5KF3h9jI80cz32hXPX",
-                          "image_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505841092&di=8e1816a09e2a35cad273733b89464c1b&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.musicdu.com%2FUpload%2F2016New%2F12%2F9%2F20161209115103.jpg"] as [String : Any]
-        let detectFaces = "https://api-cn.faceplusplus.com/facepp/v3/detect"
+        let detectParams = ["api_key":"XWUByShXgb6CConfOR5-T3ORi5CDsJAL",
+                            "api_secret":"P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
+                          "image_base64":base64] as [String : Any]
+        let detectFaces = "https://api-us.faceplusplus.com/facepp/v3/detect"
         
         //let addFaces = "https://api-us.faceplusplus.com/facepp/v3/faceset/addface"
-        
+        Alamofire.upload(
+            multipartFormData: { multipartFormData in
+                // Here is where things would change for you
+                // With name is the thing between the $files, and filename is the temp name.
+                // Make sure mimeType is the same as the type of imagedata you made!
+                multipartFormData.append(imageData, withName: "image", fileName: "image.jpg", mimeType: "image/jpeg")
+        },
+            to: "https://api-us.faceplusplus.com/facepp/v3/detect",
+            encodingCompletion: { encodingResult in
+                switch encodingResult {
+                case .success(let upload, _, _):
+                    upload.responseJSON { response in
+                        if let result = response.result.value {
+                            // Get the json response. From this, we can get all things we send back to the app.
+                            let JSON = result as! NSDictionary
+                            debugPrint(response)
+                        }
+                    }
+                case .failure(let encodingError):
+                    print(encodingError)
+                }
+        }
+        )
+
         Alamofire.request(detectFaces, method: .post, parameters: detectParams, encoding: URLEncoding.default).responseJSON { response in
             switch response.result {
             case .success:
