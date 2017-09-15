@@ -10,6 +10,6 @@ import UIKit
 
 class Cell: NSObject {
     
-    var name: String?
+    var name: String = ""
    
 }

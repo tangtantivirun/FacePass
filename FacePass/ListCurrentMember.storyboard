@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="U1p-qu-eL1" userLabel="contact info cell" customClass="CustomTableViewCell" customModule="FacePass" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="U1p-qu-eL1" userLabel="contact info cell">
                                 <rect key="frame" x="0.0" y="28" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U1p-qu-eL1" id="msX-fa-v0M">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Member name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNQ-OQ-lMQ">
@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBm-C7-eaB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="-428.63568215892059"/>
+            <point key="canvasLocation" x="1764" y="-429"/>
         </scene>
         <!--Member Information-->
         <scene sceneID="8or-gk-ExK">
@@ -63,7 +63,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hz9-hg-P0C">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hz9-hg-P0C">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1fX-Xy-GhL">
@@ -136,8 +136,10 @@
                             <constraint firstItem="0cl-bm-Qzp" firstAttribute="top" secondItem="1fX-Xy-GhL" secondAttribute="bottom" constant="396" id="6o2-8S-9KE"/>
                             <constraint firstItem="iM7-GF-2vZ" firstAttribute="top" secondItem="1fX-Xy-GhL" secondAttribute="bottom" constant="30" id="Isd-A6-s5t"/>
                             <constraint firstItem="1fX-Xy-GhL" firstAttribute="centerX" secondItem="hz9-hg-P0C" secondAttribute="centerX" id="LuS-LP-Ref"/>
+                            <constraint firstItem="hz9-hg-P0C" firstAttribute="bottom" secondItem="F2c-lY-uKp" secondAttribute="bottom" id="PHe-SF-W2o"/>
                             <constraint firstItem="iM7-GF-2vZ" firstAttribute="centerX" secondItem="LXN-4G-KSg" secondAttribute="centerX" id="W9h-5G-xa0"/>
                             <constraint firstItem="1fX-Xy-GhL" firstAttribute="centerX" secondItem="LXN-4G-KSg" secondAttribute="centerX" id="YSd-zw-vcb"/>
+                            <constraint firstItem="hz9-hg-P0C" firstAttribute="leading" secondItem="LXN-4G-KSg" secondAttribute="leading" id="dEY-qL-OcZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Member Information" id="Dt0-ER-VKU">

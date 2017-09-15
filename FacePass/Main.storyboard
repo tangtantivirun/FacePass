@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--View Controller-->
         <scene sceneID="NbI-ZD-t0G">
             <objects>
-                <viewController id="peZ-82-vRF" customClass="MainViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="peZ-82-vRF" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RVs-xg-I9T"/>
                         <viewControllerLayoutGuide type="bottom" id="Prh-Wf-ZSr"/>
@@ -52,7 +52,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="HVh-iZ-5hS" kind="show" id="2Yj-uC-tA4"/>
+                                            <segue destination="oM2-Z2-XKz" kind="show" id="o0H-KG-lKO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -109,6 +109,34 @@
             </objects>
             <point key="canvasLocation" x="847" y="-783"/>
         </scene>
+        <!--List Current Member View Controller-->
+        <scene sceneID="atz-Bm-EFQ">
+            <objects>
+                <tableViewController id="oM2-Z2-XKz" customClass="ListCurrentMemberViewController" customModule="FacePass" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MEf-EC-Jrj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pFh-ey-l1l">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pFh-ey-l1l" id="8lo-Ju-oc0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oM2-Z2-XKz" id="s6s-RG-Dr1"/>
+                            <outlet property="delegate" destination="oM2-Z2-XKz" id="ap7-yK-8kh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fmd-Qi-eEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-318"/>
+        </scene>
         <!--VerifyMember-->
         <scene sceneID="e1C-HG-KS5">
             <objects>
@@ -116,14 +144,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1mY-qd-oAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="846" y="-966"/>
-        </scene>
-        <!--ListCurrentMember-->
-        <scene sceneID="jan-uH-yVd">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ListCurrentMember" id="HVh-iZ-5hS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PAD-tB-oLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="896.79999999999995" y="-428.63568215892059"/>
         </scene>
     </scenes>
     <resources>

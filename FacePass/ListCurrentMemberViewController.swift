@@ -19,42 +19,88 @@ class ListCurrentMemberViewController: UITableViewController
     
     let cellId = "cellId"
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         ref = Database.database().reference()
         fetchMembers()
-
     }
+    
     override func tableView(_ tableView: UITableView,numberOfRowsInSection section: Int) ->Int {
-       return memberList.count
+        return memberList.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellId)
-       
+        
         //set cell contents (what goes inside the cells)
-        cell.textLabel?.text = memberList[indexPath.row].name
+        cell.textLabel!.text = memberList[indexPath.row].name
         
         return cell
     }
-    func fetchMembers(){
+    func fetchMembers() {
         refHandle = ref.child("members").observe(.childAdded, with: { (snapshots) in
-            if let dictionary = snapshots.value as? [String: AnyObject] {
-                print(dictionary)
-               
-                let member = Cell()
-                
-                member.setValuesForKeys(dictionary)
-                self.memberList.append(member)
-               
-                DispatchQueue.main.async(execute: {
-                    self.tableView.reloadData()
+        if let dictionary = snapshots.value as? [String: AnyObject] {
+        print(dictionary)
+            
+        let member = Cell()
+            
+        member.setValuesForKeys(dictionary)
+        self.memberList.append(member)
+            
+        DispatchQueue.main.async(execute: {
+        self.tableView.reloadData()
                 })
             }
         })
-
+            
     }
+    
 }
+
+//    var ref: DatabaseReference!
+//    var refHandle: UInt!
+//    var memberList = [Cell]()
+//    
+//    let cellId = "cellId"
+//    
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        
+//    }
+////        ref = Database.database().reference()
+////        fetchMembers()
+//
+//
+//    override func tableView(_ tableView: UITableView,numberOfRowsInSection section: Int) ->Int {
+//       return 5
+//    }
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: cellId)
+//       
+//        //set cell contents (what goes inside the cells)
+//        cell.textLabel?.text = "I love bunnies"
+//        
+//        return cell
+//    }
+//    func fetchMembers(){
+//        refHandle = ref.child("members").observe(.childAdded, with: { (snapshots) in
+//            if let dictionary = snapshots.value as? [String: AnyObject] {
+//                print(dictionary)
+//               
+//                let member = Cell()
+//                
+//                member.setValuesForKeys(dictionary)
+//                self.memberList.append(member)
+//               
+//                DispatchQueue.main.async(execute: {
+//                    self.tableView.reloadData()
+//                })
+//            }
+//        })
+//
+//    }
 //    
 //     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections

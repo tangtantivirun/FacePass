@@ -63,6 +63,7 @@
 		24C47EB71F25C73100756D70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24C47EBA1F25C73100756D70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		24C47EC11F25C73100756D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C6626F1F6ACB6E0085E0A0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		24C767F61F6A21E8008F8557 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		24F82E351F263D8700EBB6C9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyMemberViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +206,7 @@
 		F6BCE271951E6FF7934834FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24C6626F1F6ACB6E0085E0A0 /* AdSupport.framework */,
 				38F51DD11F26F5E8003C36E0 /* SwiftyJSON.framework */,
 				4A0E6DF1048B5C256EF0833B /* Pods_FacePass.framework */,
 			);
@@ -246,7 +248,7 @@
 				TargetAttributes = {
 					24C47EB11F25C73100756D70 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = YR5G82MK8H;
+						DevelopmentTeam = 463ZNHD98J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -476,10 +478,10 @@
 			baseConfigurationReference = EAC0139462B21BA6C022F5A5 /* Pods-FacePass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YR5G82MK8H;
+				DEVELOPMENT_TEAM = 463ZNHD98J;
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jen.FacePass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantivirun.FacePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -490,10 +492,10 @@
 			baseConfigurationReference = C6B95B54CB5A5C4CBF2029D0 /* Pods-FacePass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = YR5G82MK8H;
+				DEVELOPMENT_TEAM = 463ZNHD98J;
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jen.FacePass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantivirun.FacePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
