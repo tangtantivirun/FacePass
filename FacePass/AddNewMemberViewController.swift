@@ -65,11 +65,13 @@ class AddNewMemberViewController: UIViewController
                 self.view.window?.makeKeyAndVisible()
                 guard let newMember = newMember else { return }
                 // Add member to User.current.members
-
-            
             }
-
-           // self.performSegue(withIdentifier: "addMemberInfo", sender: nil)
+        
+        let alert = UIAlertController(title:"Success", message: "New member has been created successfully.", preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction(title:"OK", style: UIAlertActionStyle.default, handler:{
+            (action) in self.performSegue(withIdentifier: "backToMain", sender: self)
+        })
+        alert.addAction(action)
     }
 }
 

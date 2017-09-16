@@ -32,6 +32,7 @@
 		24FF7EBB1F29CFD400D9835A /* VerifyMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */; };
 		24FF7EBD1F29CFF800D9835A /* VerifyMember.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF7EBC1F29CFF800D9835A /* VerifyMember.storyboard */; };
 		24FF7EC11F29DB5100D9835A /* CheckMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */; };
+		3834F4F51F6D7A0E0054218A /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3834F4F41F6D7A0E0054218A /* MainPageViewController.swift */; };
 		383BF7901F511D73005771F5 /* DisplayInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383BF78F1F511D72005771F5 /* DisplayInfoViewController.swift */; };
 		38BC7E761F51A641009AD149 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38BC7E751F51A641009AD149 /* GoogleService-Info.plist */; };
 		38C11BAE1F284A3B0019FB65 /* AddNewMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */; };
@@ -69,6 +70,7 @@
 		24FF7EBA1F29CFD400D9835A /* VerifyMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyMemberViewController.swift; sourceTree = "<group>"; };
 		24FF7EBC1F29CFF800D9835A /* VerifyMember.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VerifyMember.storyboard; sourceTree = "<group>"; };
 		24FF7EC01F29DB5100D9835A /* CheckMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckMemberViewController.swift; sourceTree = "<group>"; };
+		3834F4F41F6D7A0E0054218A /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		383BF78F1F511D72005771F5 /* DisplayInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayInfoViewController.swift; sourceTree = "<group>"; };
 		38BC7E751F51A641009AD149 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		38C11BAD1F284A3B0019FB65 /* AddNewMemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewMemberViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				24624E231F2A362F00BB0961 /* ListCurrentMemberViewController.swift */,
 				383BF78F1F511D72005771F5 /* DisplayInfoViewController.swift */,
 				24B411E31F5A8E8D00FA4929 /* CustomTableViewCell.swift */,
+				3834F4F41F6D7A0E0054218A /* MainPageViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3834F4F51F6D7A0E0054218A /* MainPageViewController.swift in Sources */,
 				24B411E41F5A8E8D00FA4929 /* CustomTableViewCell.swift in Sources */,
 				24FF7EBB1F29CFD400D9835A /* VerifyMemberViewController.swift in Sources */,
 				2435B3611F25D86D003A0913 /* LoginViewController.swift in Sources */,

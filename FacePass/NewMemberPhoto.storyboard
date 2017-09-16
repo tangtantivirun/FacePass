@@ -224,9 +224,11 @@
                         <outlet property="nameTextField" destination="uyS-eY-6Oa" id="otq-9E-Kn5"/>
                         <outlet property="phoneTextField" destination="tgT-ew-uPd" id="40n-ku-kti"/>
                         <outlet property="profileImageView" destination="tj2-bt-4CV" id="npl-X6-7DD"/>
+                        <segue destination="DeW-2T-JqA" kind="unwind" identifier="backToMain" unwindAction="unwindToMenu:" id="jT4-lT-qEj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doR-VN-7of" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="DeW-2T-JqA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3572" y="-553.67316341829087"/>
         </scene>
