@@ -31,12 +31,13 @@ struct MemberService {
                             "api_secret":"P5cpB52PnrOBdIZ2jIJpKGco7c4W9Uom",
                             "image_url": "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3824774894,765266735%26fm=27%26gp=0.jpg"] as [String : Any]
         let addFaces = "https://api-us.faceplusplus.com/facepp/v3/faceset/addface"
-                Alamofire.upload(multipartFormData: { multipartFormData in
-                        multipartFormData.append(imageData, withName: "image_file", fileName: name + ".jpeg", mimeType: "image/jpeg")
+        Alamofire.upload(multipartFormData: { multipartFormData in
+            
+            multipartFormData.append(imageData, withName: "image_file", fileName: name + ".jpeg", mimeType: "image/jpeg")
         
                         // Send parameters
-                        multipartFormData.append(apiKey.data(using: String.Encoding.utf8)!, withName: "api_key")
-                        multipartFormData.append(apiSecret.data(using: .utf8)!, withName: "api_secret")},to: detectFaces,
+            multipartFormData.append(apiKey.data(using: String.Encoding.utf8)!, withName: "api_key")
+            multipartFormData.append(apiSecret.data(using: .utf8)!, withName: "api_secret")},to:detectFaces, headers: ["content-type":"multipart/form-data"],
                     encodingCompletion: { encodingResult in
                 switch encodingResult {
                 case .success(let upload, _, _):
