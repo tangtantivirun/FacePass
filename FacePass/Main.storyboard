@@ -122,8 +122,21 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pFh-ey-l1l" id="8lo-Ju-oc0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KX4-L7-eaX">
+                                            <rect key="frame" x="20" y="0.0" width="102" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KX4-L7-eaX" secondAttribute="trailing" constant="245" id="Yyq-hd-6id"/>
+                                        <constraint firstItem="KX4-L7-eaX" firstAttribute="leading" secondItem="8lo-Ju-oc0" secondAttribute="leading" constant="20" id="c9e-C4-gdE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="KX4-L7-eaX" secondAttribute="bottom" constant="14.5" id="hnR-GN-L8n"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -135,7 +148,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmd-Qi-eEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="-318"/>
+            <point key="canvasLocation" x="901.60000000000002" y="-318.89055472263868"/>
         </scene>
         <!--VerifyMember-->
         <scene sceneID="e1C-HG-KS5">

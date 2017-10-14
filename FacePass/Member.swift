@@ -12,13 +12,13 @@ import FirebaseDatabase.FIRDataSnapshot
 
 
 class Member:NSObject {
-    let name: String
-    let birthday: String
-    let gender: Gender
+    var name: String
+    var birthday: String
+    var gender: Gender
     var email: String
     var phone: String
-    let id: String
-    let key: String
+    var id: String
+    var key: String
     
     var dictValue: [String: String] {
         let memberAttrs = ["name": name,

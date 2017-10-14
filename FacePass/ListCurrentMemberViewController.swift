@@ -22,8 +22,11 @@ class ListCurrentMemberViewController: UITableViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ref = Database.database().reference()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .Plain, target: self, action: #selector(handleCancel))
+        
         fetchMembers()
+//        ref = Database.database().reference()
+//        fetchMembers()
     }
     
     override func tableView(_ tableView: UITableView,numberOfRowsInSection section: Int) ->Int {
@@ -38,21 +41,23 @@ class ListCurrentMemberViewController: UITableViewController
         return cell
     }
     func fetchMembers() {
-        refHandle = ref.child("members").observe(.childAdded, with: { (snapshots) in
-        if let dictionary = snapshots.value as? [String: AnyObject] {
-        print(dictionary)
-            
-        let member = Cell()
-            
-        member.setValuesForKeys(dictionary)
-        self.memberList.append(member)
-            
-        DispatchQueue.main.async(execute: {
-        self.tableView.reloadData()
-                })
-            }
-        })
-            
+     
+        
+//        refHandle = ref.child("members").observe(.childAdded, with: { (snapshots) in
+//        if let dictionary = snapshots.value as? [String: AnyObject] {
+//        print(dictionary)
+//            
+//        let member = Cell()
+//            
+//        member.setValuesForKeys(dictionary)
+//        self.memberList.append(member)
+//            
+//        DispatchQueue.main.async(execute: {
+//        self.tableView.reloadData()
+//                })
+//            }
+//        })
+//            
     }
     
 }

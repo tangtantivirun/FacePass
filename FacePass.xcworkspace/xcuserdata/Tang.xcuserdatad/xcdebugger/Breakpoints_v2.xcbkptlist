@@ -146,7 +146,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FacePass/Cell.swift"
-            timestampString = "527121116.450778"
+            timestampString = "527379330.895516"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
@@ -162,11 +162,11 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/Cell.swift"
-                  timestampString = "527121312.329094"
+                  timestampString = "527382080.126216"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
                   offsetFromSymbolStart = "53">
                </Location>
                <Location
@@ -177,11 +177,11 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/Cell.swift"
-                  timestampString = "527121312.333995"
+                  timestampString = "527382080.128772"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
                   offsetFromSymbolStart = "95">
                </Location>
                <Location
@@ -192,11 +192,11 @@
                   moduleName = "FacePass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Tang/Desktop/FacePass/FacePass/Cell.swift"
-                  timestampString = "527121312.338838"
+                  timestampString = "527382080.131688"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "13"
-                  endingLineNumber = "13"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
                   offsetFromSymbolStart = "28">
                </Location>
             </Locations>
@@ -216,6 +216,22 @@
             endingLineNumber = "10"
             landmarkName = "Cell"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FacePass/ListCurrentMemberViewController.swift"
+            timestampString = "527526846.988585"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
