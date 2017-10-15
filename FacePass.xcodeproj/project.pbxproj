@@ -251,7 +251,7 @@
 				TargetAttributes = {
 					24C47EB11F25C73100756D70 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 463ZNHD98J;
+						DevelopmentTeam = YR5G82MK8H;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -482,10 +482,10 @@
 			baseConfigurationReference = EAC0139462B21BA6C022F5A5 /* Pods-FacePass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 463ZNHD98J;
+				DEVELOPMENT_TEAM = YR5G82MK8H;
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tantivirun.FacePass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantivirunJ.FacePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -496,10 +496,10 @@
 			baseConfigurationReference = C6B95B54CB5A5C4CBF2029D0 /* Pods-FacePass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 463ZNHD98J;
+				DEVELOPMENT_TEAM = YR5G82MK8H;
 				INFOPLIST_FILE = FacePass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tantivirun.FacePass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tantivirunJ.FacePass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

@@ -57,24 +57,29 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you want to do? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOo-q9-BtL">
-                                <rect key="frame" x="63" y="223" width="249" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to do? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOo-q9-BtL">
+                                <rect key="frame" x="63" y="187" width="249" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FacePassLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="urk-sO-SBA">
-                                <rect key="frame" x="82" y="91" width="220" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FacePassLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="urk-sO-SBA">
+                                <rect key="frame" x="88" y="91" width="214" height="76"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="a5M-NG-UgT" secondAttribute="trailing" constant="40" id="0Ix-hN-gXl"/>
+                            <constraint firstItem="urk-sO-SBA" firstAttribute="top" secondItem="RVs-xg-I9T" secondAttribute="bottom" constant="27" id="2ee-C1-nlS"/>
+                            <constraint firstItem="KOo-q9-BtL" firstAttribute="top" secondItem="urk-sO-SBA" secondAttribute="bottom" constant="20" id="8Xq-wa-vu1"/>
+                            <constraint firstItem="urk-sO-SBA" firstAttribute="leading" secondItem="Wrx-hy-hrI" secondAttribute="leadingMargin" constant="72" id="J1w-dZ-xeB"/>
                             <constraint firstItem="a5M-NG-UgT" firstAttribute="leading" secondItem="Wrx-hy-hrI" secondAttribute="leadingMargin" constant="40" id="JxR-66-kPt"/>
                             <constraint firstItem="a5M-NG-UgT" firstAttribute="centerY" secondItem="Wrx-hy-hrI" secondAttribute="centerY" id="O58-Yn-xiD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KOo-q9-BtL" secondAttribute="trailing" constant="47" id="R6l-Rg-ZfE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="urk-sO-SBA" secondAttribute="trailing" constant="57" id="Uqz-xs-jDM"/>
+                            <constraint firstItem="Prh-Wf-ZSr" firstAttribute="top" secondItem="urk-sO-SBA" secondAttribute="bottom" constant="500" id="hsG-sD-1Fe"/>
                             <constraint firstItem="a5M-NG-UgT" firstAttribute="centerX" secondItem="Wrx-hy-hrI" secondAttribute="centerX" id="iA3-dm-ZrS"/>
+                            <constraint firstItem="KOo-q9-BtL" firstAttribute="leading" secondItem="Wrx-hy-hrI" secondAttribute="leadingMargin" constant="47" id="o6P-VD-HB9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZC1-vW-WwD"/>
@@ -122,7 +127,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pFh-ey-l1l" id="8lo-Ju-oc0">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KX4-L7-eaX">
