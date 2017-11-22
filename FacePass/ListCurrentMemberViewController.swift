@@ -41,7 +41,6 @@ class ListCurrentMemberViewController: UITableViewController
         return cell
     }
     func fetchMembers() {
-     
         
 //        refHandle = ref.child("members").observe(.childAdded, with: { (snapshots) in
 //        if let dictionary = snapshots.value as? [String: AnyObject] {
